@@ -1,0 +1,599 @@
+﻿File,Key,CultureInvariantString,Translation
+Everlasting_summer\Content\DialogSystem\DialogHUDI.json,EC285DBB499303C297C772A87BD5957C,asd,asd
+Everlasting_summer\Content\DialogSystem\DialogHUDI.json,9EF765CF4EE1E0C8797F569C54B4CF30,鱼,Рыба
+Everlasting_summer\Content\DialogSystem\DialogHUDI.json,TextBlockDefaultValue,Text Block,文本块
+Everlasting_summer\Content\DialogSystem\знакомство\а_как_тебе_это_место.json,070EC9A94EF07B196E50688EC4BFA37E,"Ты знаешь, тут здорово.",你知道吗，这里真的太棒了。
+Everlasting_summer\Content\DialogSystem\знакомство\а_как_тебе_это_место.json,513A01B9420C674A16A3F7A2458FA535,Не когда не думала что лагерь может оказаться класным местом.,我以前从没想过营地能是这么好的地方。
+Everlasting_summer\Content\DialogSystem\знакомство\а_как_тебе_это_место.json,5626C2A044FFBD5655E6C7AA7C132AEB,Я сначала даже не хотела ехать.,我一开始甚至不想来。
+Everlasting_summer\Content\DialogSystem\знакомство\а_как_тебе_это_место.json,160049D54A53EB0F414DCDBFB2A413D8,И что же тебя тут так привлекло?,那这里到底是什么吸引了你？
+Everlasting_summer\Content\DialogSystem\знакомство\а_как_тебе_это_место.json,3FA30FCA4738F077B0B7D0B337B208F4,Да много всего.,方方面面吧。
+Everlasting_summer\Content\DialogSystem\знакомство\а_как_тебе_это_место.json,B40A58954CD26B5FAFBCA7823EB9D18D,"Самое главное тут постоянно солнечно почти нет ветра, а так же речка в которой можно поплавать.",最主要的是这里总是阳光灿烂，几乎没有风，还有一条可以游泳的河。
+Everlasting_summer\Content\DialogSystem\знакомство\а_как_тебе_это_место.json,F81D10AE45D42411F34CF48B221921B1,А у тебя дома нет речки?,难道你家那边没有河吗？
+Everlasting_summer\Content\DialogSystem\знакомство\а_как_тебе_это_место.json,2435B1A64FF7D1F1FF08E9AB044BEFDC,"Есть конечно, но по ней можно только ходить так как ее обычное состояние это замерзшее.",当然有，不过基本上只能在上面走，因为它常年都是冻着的。
+Everlasting_summer\Content\DialogSystem\знакомство\а_как_тебе_это_место.json,C608CAB347E2A72E60B383821395D581,"Иногда она конечно оттаивает, но купать в нем все же сложно.",偶尔也会解冻，但要在里面游泳还是太难了。
+Everlasting_summer\Content\DialogSystem\знакомство\а_как_тебе_это_место.json,64856C1C45F593D424E5B98485902A95,"Так как она создана только для моржей, ну или для тех кто готов на следующий день готов лежать с простудой.",那条河只适合冬泳狂人，或者那种第二天心甘情愿感冒卧床的人。
+Everlasting_summer\Content\DialogSystem\знакомство\а_как_тебе_это_место.json,91E601BC4A0274F96CED96807951E6A9,А тебе  самому тут нравиться?,那你自己喜欢这里吗？
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Вера.json,711420CB40453309728DC38B06BB9D61," Привет! Я тебя знаю, ты Семен, верно?",你好！我认识你，你是谢苗，对吧？
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Вера.json,303CF202435FE985BDBF54AF00883D36,"Да, а ты кто?",是的，你是谁？
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Вера.json,C4BE7F3340C6C27986B4C4A49FC9FFAE,"Я Вера. Ты, наверное, недавно приехал?",我是维拉。你大概是最近才到的吧？
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Вера.json,389F7DCC48AC076199CCA18976122DBE," Да, может быть, ты мне что-нибудь расскажешь?",是的，或许你能给我讲讲什么吗？
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Вера.json,8E00E1194404D49807199B8E6253FD40,"Я не очень хорошо знакома с этим лагерем, но знаю, что у кибернетиков в подсобке есть телевизор с видеомагнитофоном.",我对这个营地不是很熟，但我知道控制论爱好者在工具房里有台带录像机的电视。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Вера.json,AA30AC56482C9CEFB3819BA9CFF05EEB,"Правда, все кассеты уже разобрали по другим частям лагеря, поэтому если хочешь посмотреть что-то интересное, поищи в других местах.",不过，所有录像带都被分散到营地各处了，想看点好看的，就去别的地方找找吧。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Вера.json,31E4B1E84E00626CFD50F4BEDAEDBA20,"Хорошо, спасибо за подсказку!",好的，谢谢你的提示！
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Вера.json,56BFE9C14DE3E1CF9980CA9518671C3C,Пока!,拜拜！
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Вика.json,5100E154406DD03D70E3EEA4E6A7E54E,Привет! Не могла бы ты мне помочь?,你好！你能帮我个忙吗？
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Вика.json,3EA0D744417E4DCC94E36397AD4B1974,"Да, конечно. Как тебя зовут?",嗯，当然。你叫什么名字？
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Вика.json,5DE8224643CAD70E59F4ADA20B370F1F, Меня зовут Семен.,我叫谢苗。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Вика.json,01976B0046ABEA7CAAEB01B8EA5E0AF9, А меня Вика. В чём заключается  помощь?,我叫维卡。需要帮什么忙？
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Вика.json,CCEED42C4C4388A5960C479946C0F043,"Я хотел бы узнать, чем можно заняться в лагере.",我想知道在营地里能做些什么。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Вика.json,D12A98EF4726A9193F1690BC3B1219F2,"О, это легко!",哦，这简单！
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Вика.json,13E639C741709BC69B8A7992AC1976EA,"У нас есть тир, который находится за футбольным полем. Также я слышала, что здесь каждый день собираются любители игры в карты. Правда, я не знаю, где именно, потому что это не моё увлечение. Кажется, это происходит в каком-то домике.",足球场后面有个射击场。我还听说营地里每天都有人聚在一起打牌，不过我不知道具体在哪，因为那不是我的爱好。好像是在某个小屋里。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Вика.json,4FDDD66A4D6B317AC1CA00B1325BAC5A,"В административном здании есть игровая комната, но она закрыта на ключ.",行政楼里有一间游戏室，但它是锁着的。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Вика.json,D704BFCD43D0625F5DB906B3D95E1052,"Здесь также можно порыбачить, хотя мне не очень нравится этот вид отдыха.",在这里也可以钓鱼，虽然我不太喜欢这种休闲方式。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Вика.json,B357B234447454D0A8954692F4C6187E," А ещё говорят, что в лагере полно секретных головоломок, но я ничего подобного не замечала",另外据说营地里藏了不少秘密谜题，不过我是从来没注意到过。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Вика.json,8A7A479243E32739E7ED96BEB8E79552,"Также поговаривают, что за лагерем в лесах спрятаны таинственные храмы, но я не проверяла, потому что далеко ходить в лес мне страшновато.",也有人说营地外的树林里藏着神秘的庙，但我没去验证——深山老林的，有点怕。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Вика.json,1538923C47ABB2586302B8B683DC5032," В целом, лагерь очень интересный, изучи его как следует. Если что-то найдёшь, не забудь рассказать мне, я люблю подобные истории.",总的来说，这个营地非常有趣，你好好探索一下吧。如果你找到了什么，别忘了告诉我，我喜欢这类故事。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Вика.json,7100547E41488DAC1D063EBE132299E4,"Хорошо, спасибо за помощь.",好的，谢谢你的帮助。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Виталя.json,6B974ADC49115AB1B8ACF6862B8985E6,Привет! Можешь немного рассказать о столовой?,你好！你能给我稍微讲讲食堂吗？
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Виталя.json,92EFBF25433C9D22CC4905A6D6A6BBF8,"Привет! Ну, кормят здесь неплохо.",你好！嗯，这里吃得还不错。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Виталя.json,6CC378E248FF3F88624F92AC974903B0,"Повариха готовит очень вкусный компот. Она довольно красивая. Знаешь, однажды она положила мне две котлеты. Кажется, я ей нравлюсь! Я пытался узнать её имя, но у меня не вышло.",女厨师煮的果子露可好喝了。她人也相当漂亮。你知道吗，她有一次给我盛了两块肉饼，我寻思她是不是对我有意思！就是问名字的时候没问成功。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Виталя.json,1AE20E13448C6A4B083C16AF8266FF53,"Она чем-то похожа на Ольгу Дмитриевну, даже поговаривают, что они сестры. Но это только слухи.",她有点像奥尔加·德米特里耶夫娜，甚至有人说她们是姐妹。但那只是传言。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Виталя.json,D870781F4AF4DA16F3CD798AC75CDAE2,"Мне было неловко спрашивать об этом лично, и я не решился.",当面问这种事太尴尬，我就没开口。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Виталя.json,81E9E28644A6D15FC3C9DFB757D989D3,"Понятно, спасибо, я пойду.",明白了，谢谢，我走了。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Виталя.json,641ABBEE402FE6B89F32BBBA350ACA9C,"Меня если что зовут Виталя, до встречи.",有需要的话我叫维塔利亚，再见。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Влад.json,EE3DEF6B40825E661EC48F8BCEAF7253,"Привет! Меня зовут Влад, а тебя как?",你好！我叫弗拉德，你呢？
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Влад.json,4AF830FE4B7442174C5EFC993EBA4D9B, Семен.,谢苗。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Влад.json,0DD8329940EE461A0D6D688F55B96481," Слушай, Семен, поддержание физической формы — это очень полезно для организма. Не хочешь присоединиться к нашему клубу, который ведёт тренер?",听着，谢苗，保持体能对健康非常有益。你想不想加入我们的俱乐部，就是教练带的那个？
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Влад.json,01D0FDA6444AAA10BBF9ACA1B599DE98,Не планировал пока.,暂时还没这个打算。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Влад.json,C171EDDC4C53119D48D8BAAF9BF27C0F,"Не спеши отказываться, наш тренер — настоящий мастер своего дела. Он способен превратить любого в настоящего спортсмена.",别急着拒绝，我们的教练是真正的行家。他能把任何人变成真正的运动员。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Влад.json,982530B44366AED84D4E70A9A7E44DEB,"Когда я пришёл к нему, то ни разу не пожалел об этом. Да, занятия бывают тяжёлыми, но где сейчас легко, верно?",当初找上教练，我这辈子都没后悔过。训练是挺苦的，不过现在哪儿有什么容易事，对吧？
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Влад.json,B017C8DA4602D873FC3DDDAF66C53DB9,"Так что подумай и приходи, если решишься. Тренер будет очень рад видеть тебя.",所以考虑一下，决定了就来。教练会很高兴见到你的。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Влад.json,3CD00B8C4B5700897B1822A8F6911C5A,"Хорошо, я подумаю. А сейчас мне пора идти.",好的，我会考虑的。现在我得走了。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Влад.json,8AAC7A4249BF3CD238E493AD47BE4F18,"Конечно, иди. И помни: в здоровом теле — здоровый дух!",走吧。记住：健全的精神寓于健全的体魄！
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Вова.json,DCED0B4C49BE90E64C885B943373A412,"Привет Семен, недавно приехал смотрю.",你好谢苗，我看你是新来的。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Вова.json,D8E66C3C40C5F4AC406B19B9BF7676A6,Ты меня знаешь?,你认识我？
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Вова.json,8FABA52A43CAB83F92DEBB85B5347A5E,"Да, мне про тебя Электроник рассказывал. Меня зовут Вова.",是的，电子小子跟我说起过你。我叫沃瓦。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Вова.json,7D2F257A41FEB00A136647B861977818,"Кстати, ты умеешь плавать?",对了，你会游泳吗？
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Вова.json,4391DE174896B53DA83BD19A70F387BE,"Немного умею, а что?",会一点，怎么了？
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Вова.json,8BA9C9724D0DCAA082E977AA6A2537A7, У нас с другом возник спор: можно ли доплыть до острова вплавь.,我和朋友打了个赌：能不能游泳到那个岛。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Вова.json,F7F9E0BA45072AF1768620B9D3225FB9,"И как, получилось?",那结果呢，游到了吗？
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Вова.json,DBA25F9B4A54D2A183FF8B818AC5A3D9,"Пока не удалось, но говорят, что это того стоит.",暂时还没成功，但听说那是值得的。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Вова.json,A787CBDC474E9EAF5D3D86950F71EC90,"Так что если захочешь проверить себя, не пожалеешь.",所以如果你想挑战一下自己，不会后悔的。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Вова.json,0878AC2D45152B01F09057BF550F7975,"Спасибо, я попробую. До встречи!",谢谢，我会试试的。再见！
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Вова.json,309B814E4970E89D181A7BBFF58E8D61,"Ага, бывай.",嗯，再会。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Дима.json,5686F60B4573FD85F0DF7FB4AD1956AB,"Привет! Меня зовут Дима, а тебя я раньше здесь не встречал.",你好！我叫季马，我以前没见过你。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Дима.json,2395DBC94AAA9A38749907895036FD7A,Ты здесь недавно?,你是刚来的吗？
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Дима.json,0BB9667043F6C024D599A489273E0EB6,"Да, я только приехал. Кстати, меня зовут Семен.",是的，我刚到。对了，我叫谢苗。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Дима.json,82AB5B0B47B39D41FA805B864E53384E," Ну что ж, будем знакомы.",那好，认识一下。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Дима.json,1DA31DDA488360BB173BBFB095F4CBBF,А ты сам давно здесь?,你自己在这里很久了吗？
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Дима.json,FDB5085E4F365A945A38319AF54DF5B6,"Я здесь с самого начала смены. Нам с другом повезло, наши родители получили путевку на работе.",我从这一期一开始就在了。我和朋友挺走运的，我们爸妈从单位弄到了旅行证。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Дима.json,43A099934512754806A64A8B45A56DDB,"Понятно. Знаешь, у меня ещё есть дела, но потом мы обязательно поболтаем.",明白了。你知道，我还有些事，但我们回头一定要聊聊。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Дима.json,FF336BD64389EBEC4ACF4190420B65E7,Ладно,好的。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Игорь.json,BAC3C6E54E5AFA1A5ADDF99965967828,"Привет! Меня зовут Игорь, а твоё имя я уже знаю.",你好！我叫伊戈尔，你的名字我已经知道了。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Игорь.json,8494BD1141CE75ADC88FB0BFB577FA7F,Откуда?,从哪知道的？
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Игорь.json,761CFD7D4A2E5927B0435B970F7842CE,Электроник рассказал.,电子小子说的。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Игорь.json,4DC9497A4239832B56D8539D53C2B9D7,Ясно.,明白了。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Игорь.json,68FB8B914A104AE3835F3B95B683B5C8,"Откуда знает электроник, я решил не спрашивать.",他是怎么知道的，我就没多问。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Игорь.json,18C02B5546BC478413B23681F5016102,Ты уже видел местных девчонок?,你已经见过本地的姑娘们了吗？
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Игорь.json,6E1EF173440351EF34CF908085580774,"Да, познакомился с некоторыми.",是的，认识了几个。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Игорь.json,FB93909E41AAB2C58C1C2FAA45905EC7,"Правда, красивые?",说实话，漂亮吗？
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Игорь.json,8365B3D2422A7FEB4C7BF393781D9C20,Есть такое.,确实有漂亮的。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Игорь.json,ED28D9C943EBA6253795E19F8B0B4CE2,"Не верится, что в этой смене все просто красавицы, даже повариха.",真没想到，这一期的全是美女，连女厨师都是。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Игорь.json,B903A9374372BF0DA97DB0AD7292334B,Я решил промолчать.,我决定保持沉默。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Игорь.json,5745D02B45B64315E09094B377C70279,"У нас в школьной столовой в дверь не могла войти, а тут просто с конкурса красоты.",我们学校食堂的那个，门都进不去，这儿的简直是直接从选美比赛里出来的。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Игорь.json,699B28D3414A0A3812E2F2B775C25EFA,"Походи, осмотрись на девчонок, увидишь, что я прав.",你到处走走，看看姑娘们，就会明白我是对的。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Игорь.json,9DD9D87B4D123B9932567989A708DA16,"Хорошо, так и сделаю.",好的，我会的。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Игорь.json,3232513E49080396664075820C7506CF,"Ты ещё вспомнишь меня, когда убедишься.",等确认了，你会想起我的。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Ира.json,0FF1DD394D0D0799DEBA0689ED98D803,"Привет! Я здесь недавно, не могла бы ты рассказать мне немного о лагере?",你好！我刚来不久，你能给我稍微讲讲这个营地吗？
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Ира.json,5B6FB9C44467108FCEBAEEADE31360EE,"Привет! Да, это отличное место, мне очень нравится!",你好！是的，这是个超棒的地方，我非常喜欢！
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Ира.json,CAF1F7234616F243F2562EA49FA260C2,"Пляж здесь превосходный, а речка тёплая — просто наслаждение!",这里的沙滩棒极了，河水很温暖——简直是享受！
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Ира.json,A6649C574A5E0C15C0E0D789AFD6AB10,"А там, где ты живёшь, нет речки?",你住的地方没有河吗？
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Ира.json,C37EF1994A18A66372830DA82FF7FDC9,"Я хотел бы узнать, чем можно заняться в лагере.",我想知道在营地里能做些什么。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Ира.json,D7A4A3E647F73566BB6DCC81545CFD5B,"Есть, конечно, но пляж там из камней, да ещё и острых.",当然有河，但那里的沙滩是石头的，而且还是尖的。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Ира.json,5901167D4AB387EA8F9D1089F3C2E362,"Можно, конечно, плавать в тапках, но там такое течение, что очень легко их потерять.",当然，也可以穿着拖鞋游泳，但那水流太急，很容易把鞋弄丢。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Ира.json,06B806A9492F67CFCC627794647ACB9A,"А здесь тёплый песочек, почти никакого течения — одно удовольствие!",而这里温暖的细沙，几乎没有水流，简直是享受！
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Ира.json,92DAC328486E075FE743F7A5626C649C,"Ну, по твоему рассказу, это действительно звучит прекрасно!",嗯，听你这么说，听起来确实很棒！
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Ира.json,85CFDF8141DE38A2CE95F7A9965C069C,"Да только за одно это место можно сюда приехать, я здесь счастлива!",就为了这一个地方就值得来这里，我在这里很幸福！
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Ира.json,89CADC2D40D8D88E688EAAB99682EABA,Рад за тебя!,为你高兴！
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Ира.json,5C8EFA7E4CA72F48CCFBF69DB6DCBE09,"Кстати, меня зовут Ира, а тебя?",对了，我叫伊拉，你呢？
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Ира.json,404307084AE4F5E926F898AFE2EDFF0E,"Семен, я пойду.",谢苗，我走了。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Ира.json,0ED5BAA04B128692CC1C7DBF40123F24,"Ага, встретимся на пляже!",嗯，沙滩上见！
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Лера.json,4BA673184E80E9E059E499BB63316A4E,Привет! Не могла бы ты рассказать немного о нашем лагере?,你好！你能稍微讲讲我们的营地吗？
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Лера.json,1DBE524C4D4A6516BEEDDFB3FE2B26CA,"Привет! Здесь очень красиво, особенно природа. Вода, пляж, люди — всё просто замечательно.",你好！这里非常美，尤其是大自然。水、沙滩、人——一切都简直太棒了。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Лера.json,71DFD44E4B42541A9D71FAB487071A30,"Но больше всего мне нравится проводить здесь ночи. Как-нибудь прогуляйся тут ночью и поймёшь, о чём я говорю.",不过我最喜欢的是在这里度过夜晚。你哪天夜里出来走走，就明白我说的了。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Лера.json,227DF2AC46C9DA495A5B4B8909C4F426,"Спасибо за рассказ! Кстати, меня зовут Семен, а тебя?",谢谢你的讲述！对了，我叫谢苗，你呢？
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Лера.json,328DCE5B405A551B792FBE9ECCB6AB0B,"Лера, очень приятно познакомиться.",列拉，很高兴认识你。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Лера.json,89ACA25C4093C8EDEA89F2A77E0F8254,"Ну что ж, мне пора. До встречи!",那么，我该走了。再见！
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Лера.json,95F9CFB74D681E30544B7DB9D512E254,Пока!,拜拜！
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Маша.json,A83A72F74E56EC6E63EAF09A71D1E77F,Привет! Можешь рассказать мне об этом лагере?,你好！你能给我讲讲这个营地吗？
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Маша.json,2767F9A1479FCCCD263758BF24218B24,Привет! Это обычный пионерский лагерь. Я была в нескольких таких и этот почти не отличается.,你好！就是个普通的少先队营地。我去过好几个，这个跟其他的差不多。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Маша.json,FCF82D2448457C1C971B8DA70610F256,"Питание три раза в день, лагерные мероприятия, распорядок дня. Правда, вожатые здесь не так строго контролируют.",一日三餐、各种营地活动、统一作息。不过这里的辅导员管得相对宽松一些。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Маша.json,6A712121449103E4E213BC9B3448F9DA,"И, конечно, здесь рассказывают разные истории о лагере. Как я уже говорила, обычный лагерь.",当然，这里也流传着各种关于营地的故事。就像我说的，普通营地该有的都有。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Маша.json,38F1F89F4A8217410938A8A59C0EFD19,Понятно. А как тебя зовут?,明白了。你叫什么名字？
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Маша.json,2AA6F6884FD85409D68667A6A469C699,Маша,玛莎。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Маша.json,D1CE2DFC4ADAE5E7C03A86BF371A1826,Я Семен.,我是谢苗。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Маша.json,B7661193461DB125D1C3EDA38335FBB7,А тебе здесь нравится?,那你喜欢这里吗？
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Маша.json,6AAED70D4FBD48F28CB060B30D1C663D,"Да, из всех лагерей, в которых я была, этот лучше всего, хотя и не могу объяснить, почему.",喜欢，在我去过的所有营地中，这个是最好的，虽然我也解释不清为什么。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Маша.json,15B8A7EC4CC509E8FF3C30ABDB664896,Понятно. Я пойду.,明白了。我走了。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Маша.json,921A675D429F7C24324995BF10347A13," Хорошо, до встречи.",好的，再见。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Миша.json,0A11933C46244E250132FD9C84359D9F,Привет!,你好！
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Миша.json,C006E9894CA4565DD2F67481E0F3CBC8,Привет!,你好！
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Миша.json,7F025B13456E0ECA9BC43CA6D7EDFC9C,Меня зовут Семен.,我叫谢苗。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Миша.json,C0BBE87A45144A507FD06F8189FBFB1F,А меня Миша. Ты что-то хотел спросить?,我是米莎。你想问点什么吗？
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Миша.json,E919F11A48782B62C35C598B687A1A4C,"Да, я хотел узнать, что тебе известно об Ольге Дмитриевне.",是的，我想了解一下关于奥尔加·德米特里耶夫娜你知道些什么。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Миша.json,34A4B03649834AA748680A8A4C4B5047,"О, она настоящий «зверь»! С ней лучше не связываться.",哦，她可是个真正的「猛兽」！最好离她远点。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Миша.json,6F20051D41ECE80DC4847C80B6B94325,Однажды она застала парней за попыткой развести костер в лагере. После этого она заставила каждого пересказать книгу о безопасности в лесу.,有一次，她逮到几个男生想在营地里生篝火。之后让他们每人把一整本森林防火手册背了一遍。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Миша.json,6FF211F9423E63FF4A1A5AAFA2A52141,"Также были случаи, когда двое ребят пытались плавать в неположенном месте, и потом им пришлось мыть машину.",还有人在禁游区游泳，被抓到之后罚去洗车。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Миша.json,CEDBCD44460697375D18838E369C73BF,"Были и другие инциденты, но я не знаю подробностей.",还有其他一些事，但细节我不清楚。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Миша.json,10A08CAA48F826EE84A096BC10600C62,"Характер у неё, конечно, взрывной. К счастью, она часто пропадает у себя с книжкой.",她脾气是真的火爆。好在她大多数时候都一个人在房间里看书，省事。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Миша.json,E82121684612CD736E0F1D91510C5557,Будь осторожен с ней.,对她小心点。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Миша.json,7CFB669D45F7942E1234D4BCFE2BC04E,"Хорошо, я учту это. До встречи!",好的，我会注意的。再见！
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Миша.json,3ACFF0E447B899E3819BEDAA5E825C48,"Ага, только, пожалуйста, не рассказывай ей, что я про неё говорил.",嗯，只是请别跟她说我讲了她的那些话。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Миша.json,95410CA4426678F23CCC7EA95566FCB3,Хорошо.,好的。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Настя.json,5DDDECA74F1AC1BF7C32B19579DFB7CF," Привет! Можешь рассказать, чем можно заняться в лагере?",你好！能讲讲在营地里可以做什么吗？
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Настя.json,6D4E2BFF45F2AF4DFDF5FF8BC430B05D,"Привет! В лагере есть библиотека, в которой много книг, но мне не нравится, что среди них мало художественной литературы.",你好！营地里有个图书馆，有很多书，但我不喜欢的是里面文学小说很少。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Настя.json,9493862E4FA1EDB0B4CDCABF1B4811BE,"Есть музыкальный кружок, но я не умею играть и не хочу учиться.",有个音乐小组，但我不会演奏也不想学。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Настя.json,2742BDA140C81CE044F93DB878546BBA,"Клуб энергетиков не для меня, хотя два друга активно пытаются всех туда привлечь, но делают это слишком настойчиво.",动力爱好者俱乐部不适合我——虽然有两个人一直在积极拉人入伙，但那架势实在太让人烦了。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Настя.json,43A9F2294C2FD86261F7F4BCEAF984BE,"Я хотела помогать местной медсестре, но она настолько популярна, что пионеры бегут к ней даже по пустяковым причинам.",我本来想帮营地的护士干活，但她太受欢迎了，少先队员们连芝麻大点的事都要跑去找她。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Настя.json,03BC7D3F4904905A9D8CA7B160C8DB28, Неужели тебе совсем нечем заняться?,难道你真的一点事都没得做吗？
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Настя.json,AC774F424364A2D54CE7AD8F18710152,"Я люблю танцевать, но здесь для этого нет подходящих условий.",我喜欢跳舞，但这里根本没有合适的条件。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Настя.json,246731E04FD2FCF3138E9C95E82429C8,"Ясно, меня зовут Семен.",明白了，我叫谢苗。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Настя.json,BFA1ECCA4BB7B23245C21198EBD447BF,А меня Настя.,我叫娜斯佳。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Настя.json,BBF726574A46B18F96A28789754BA01C,"Спасибо за информацию, я пойду.",谢谢你提供的信息，我走了。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Настя.json,D504E99A43104E457FF592BB15976C6D,"Приходи, если что-то понадобится.",如果有需要就过来。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\нечегосказать.json,ACA492274D2561BCFD7327854AE50843,"Я захотел познакомиться и как-то начать разговор, но не смог придумать подходящую тему.",我想认识她，想找个话题聊起来，但脑子里就是想不出。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\нечегосказать.json,F06E89E943D908C6317420ADD8D934FB,"Жизнь затворника имеет свои недостатки. Общение с компьютером, конечно, гораздо проще.",宅男的通病。跟电脑打交道当然容易多了。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\нечегосказать.json,2124F159488765594E9D8599A337467E,"Мы молча смотрели друг на друга, и я решил уйти.",我们默默地看着对方，于是我决定离开。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Николай.json,08E3C4444CDB847A409611AA36FDF260,Привет! Ты можешь мне подсказать немного по лагерю.,你好！你能给我指点一下营地的事吗？
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Николай.json,7F0B145E4456B325812935B71203C1DB,"Привет, конечно!",你好，当然可以！
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Николай.json,F088EA464E31837F89B772BF900417DB,Что тебя интересует?,你对什么感兴趣？
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Николай.json,D63D997A4022E5D61FE5099AEF9CEEC3,"Может, ты знаешь, как выбраться отсюда?",或许，你知道怎么从这里出去吗？
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Николай.json,D27010B74AD78CB174CC81A4B30F5F8A,"Ну если к дороге, что с двух сторон лагеря есть забор.",嗯，如果说去大路，营地两边都有栅栏。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Николай.json,D552570945ED867B0A183EBF2D3D2CED,"А если в лес, то есть 3 выхода по периметру",如果说去森林，周边有三个出口。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Николай.json,BD2D2E25451CE4B9B6DDA796F6643E1D,"Нет, ты не понимаешь, я говорю про вообще.",不，你没明白，我说的是彻底离开这里。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Николай.json,3EC8F944421D272BF88EF5A45034B710,"Ааа! Ну если в деревню собрался, по главной дороге до конца.",啊啊！嗯，如果你想去村子，就沿着主路走到头。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Николай.json,81319F08428F2F45E97BFF9B662E75CE,"Правда, я не знаю, сколько идти придется.",不过，我不知道得走多久。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Николай.json,CD0682484D5944A24652D0AAE9DEC186,"Нет, я не про деревню",不，我不是说村子。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Николай.json,AE666200460078334561FF8E938818B9,"Допустим, город или райцентр, здесь ведь по-любому есть способ.",假设是去城市或者区中心，这里肯定有办法的。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Николай.json,9187DC8E4F322AE00DB9378B736125E9,"Это только на автобусе, как и все прибывшие сюда.",这只能坐公交车，和所有来这里的人一样。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Николай.json,D0A12B734FB553967FD19C84A14048D0,А больше нет никакого транспорта?,再也没有其他交通工具了吗？
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Николай.json,01BF78094AA4200626B9C5BDD110EE4D,"Нет, только автобус.",没有了，只有公交车。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Николай.json,4FE346D4450B98591F7AC292F3EC033C,"Конечно, тут есть судоходная речка.",当然，这里有条可以通航的河。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Николай.json,9FE53D2A4C714B7F9F4FA1A30CF67B5F,"Но, думаю, приплывать сюда под завязку набитым паромом как-то не очень.",不过满满一船的渡轮……想想就有点受不了。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Николай.json,90E5DCB74CDCDCEAD59EC0BEEC16D047,"Ладно, спасибо за помощь.",好吧，谢谢你的帮助。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Николай.json,805FF9AD462F1572DD0512A2B6892DDD,Меня Семён зовут.,我叫谢苗。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Николай.json,1B8EE3ED4A3736E48F7BE387FC5F248F,А меня Коля зовут.,我叫科利亚。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Николай.json,62DCFF73405CB856A91577A36399D985,"Очень приятно, до встречи!",很高兴认识你，再见！
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Николай.json,2DE351014D6CDE3BAD2673AA08233871,Пока,拜拜。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Нина.json,599BA1BE4ABBAA6C0EC8908B32472B93,Привет! Можешь немного рассказать о лагере?,你好！能稍微讲讲营地的事吗？
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Нина.json,DC1126444D5D489D23F20D97801306CF,"Привет! Я не очень много знаю, но есть одна забавная история.",你好！我知道的不多，但有一个好笑的故事。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Нина.json,57D70B794C3ACF18659C4FA46AED4FEC,"Несколько дней назад казалось, что машина возле столовой забыта теми, кто строил этот лагерь. Но теперь она блестит как алмаз!",几天前，食堂旁边那辆车还像是建这个营地时被人遗忘在这里的。现在它擦得跟钻石一样锃亮！
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Нина.json,935507EF442D16140BBEE190790192D9,Кто же так помыл её?,是谁把它洗成这样的？
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Нина.json,58510DB240DD41D1993476B2A5015722,"У нас были два любителя поплавать до островов на спор, кто быстрее. Но так как до острова можно добираться только на лодке, нашей вожатой это не понравилось.",我们营地有两个人打赌，看谁先游泳到岛上。但那个岛只能坐船过去，辅导员一听就不乐意了。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Нина.json,93179C2C4540A782172BEC828352DD0E,"Когда она увидела этих счастливых ребят, возвращающихся обратно, я думала, что она взорвётся. Что, в принципе, и произошло.",看到那俩人乐呵呵地游回来的时候，我还以为她要当场爆炸。事实上，她确实炸了。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Нина.json,C641BF4943D83E352EA8C899C42D19BB,"Их лица за секунду изменились, а голос вожатой было слышно во всём лагере.",那俩人脸色瞬间就变了，辅导员的声音整个营地都听得到。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Нина.json,90745AB1466105B61F3CA88588E87DA6,"Эти бедолаги, наверное, дня три мыли машину, пока вожатая не осталась довольна результатом.",这两个可怜蛋大概洗了三天车，直到辅导员满意为止。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Нина.json,46AA90194F853A67EB75299DD441227C,Забавно!,真有意思！
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Нина.json,F2FB7EDD4B719558E65928B85C88D82E,"Кстати, меня зовут Нина, а тебя как?",对了，我叫尼娜，你叫什么？
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Нина.json,873424314751C0E1E217D0956D1541E1,Семен.,谢苗。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Нина.json,B1851939428D8C9D72B04B85CEEEF368,"Ты приходи ещё, поболтаем, если будет что-то интересное.",你以后再来啊，要是有有趣的事，我们再聊。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Повариха.json,70A7A71C489571DD5276F69D9B1A9C05,"Привет, пионер! Новенький? Меня Нина зовут. Как тебе наша еда сегодня?",你好，少先队员！新来的？我叫尼娜。你觉得我们今天的饭怎么样？
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Повариха.json,9613AA8141F3D4D85986648EE7221A35,"Меня — Семён. Эээ... Здравствуйте, тетя Нина! Если честно, я ожидал чего-то более вкусного на завтрак... Эта утренняя каша как-то не совсем радует. Вот борщик — другое дело.",我叫谢苗。呃……尼娜阿姨您好！说实话，早饭我期待更好一点……这早上的粥吃着总觉得少点什么。不过红菜汤就是另一回事了。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Повариха.json,2169A1CC4980A91975999B8AE84E5DD1,"Ишь-ты! Поди-ж ты! Худой ещё, клещ, кушать надо! Ну не будь слишком строгим... Я сделала ее на молоке, добавила сахар. Может, с вареньем станет вкуснее?",你说什么呢！哎哟！瘦得跟根柴火似的，要多吃！行了，也别太挑剔……我是用牛奶煮的，还加了糖，放点果酱会好吃一些，要不要试试？
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Повариха.json,E6B11D9B41EBB557F6F341A32716AC0A,Варенье! Это уже другой разговор! А будут пирожки с капустой?,果酱！那就不一样了！那卷心菜馅饼还会有吗？
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Повариха.json,ED3CE518402FAA6E0A32A9BD14A9CF36,Пирожки только по праздникам!,馅饼只在过节才有！
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Повариха.json,7ACA307746D2C9BEFF3FB7ADAED17B3D,Досадно...,真遗憾……
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Повариха.json,F43059EB4A7E0863F07806A878CA425D,"Чего ты болтаешь, прохлаждаешься? У нас работы непочатый край!",你在这儿磨蹭什么，闲聊？我们这儿活堆成山了！
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Повариха.json,05D701F648A02E6A39240FAECAA454BF," Тетя Нина! Я просто... думал о том, как бы улучшить ваше меню.",尼娜阿姨！我只是……在想怎么帮您改进一下菜单。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Повариха.json,BE9E820246302C39C2FE3CA74CC9EEC7,"Хорошие мысли, но думать не на кухне надо! Лучше прими участие в делах лагеря. А если не хочешь, могу предложить тебе мыть всю посуду после обеда!",想法倒不错，但别在厨房里想！还是多参与参与营地里的活动。要是不想，我可以让你午饭后来刷所有的碗！
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Повариха.json,D1DA1F714F46507668CF8683D542A87E,"Нет-нет-нет! Пойду, пожалуй, дел так много... ",不不不！我走了，我还有很多事情要做……
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Повариха.json,5F70034D49B6986BF054C6B3C7BB234C,"Давай, нарежешь овощи для завтрака, картошку почисти. У меня ее целая гора, а то еще мясо тушить!",那好，你来把早饭的菜切一切，土豆削一削。我这儿土豆堆成山，还有肉要炖！
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Повариха.json,A430F9F9471253870ECFFC86FD99AC53,"С радостью, в следующий раз! Но за качество не ручаюсь!",下次一定！但质量嘛，我可不敢保证！
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Повариха.json,280551A04E320B9773B82C92C969E8E3,"Ха-ха! Ты попробуй, не пожалеешь. Лучше быть занятым на кухне, чем протирать книги в библиотеке!",哈哈！来试试吧，不会亏的。在厨房里干活，总比在图书馆擦书强！
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Повариха.json,5DD132DB40B8196E608E68A4FE90E973,"Простите, как-нибудь в следующий раз. Пойду вожатой помогу.",抱歉，改天吧。我去帮辅导员了。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Повариха.json,7472D7D14AA38379B3B032B58AA2A078,"Вот и правильно! Действуй, пионер!",这就对了！行动起来吧，少先队员！
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Ринка.json,C3DB7FC24CA784B67E6045AE2B4E6578,"Здравствуй, Семён! Зови меня — Ринка!",你好，谢苗！叫我琳卡就行！
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Ринка.json,525DD61C4BEBAC9FE5834A851DFD0F79,Что? Ты откуда моё имя знаешь?,什么？你从哪知道我的名字的？
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Ринка.json,04DADEA646522DD8E24164899ED5524C,"Я главная помощница вожатой! Если у тебя будут какие-то проблемы, можешь обратиться за помощью ко мне!",我是辅导员的头号助手！如果你有什么问题，可以来找我帮忙！
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Ринка.json,6DD3B8214D5E22A3B611308762076D0C,Спасибо. Тебе нравится чувствовать себя главной что-ли?,谢谢。你是真的喜欢当头儿是吧？
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Ринка.json,BAC220D04F206C207AC988B9C815C8F5,Как грубо! Мне нравится помогать людям и быть нужной!,这话说得！我只是喜欢帮助别人、喜欢被需要的感觉！
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Ринка.json,03F32F71444EB7FDC150E08E9415B966,"Нужной, значит... Тебе не кажется, что вожатая тебя будет просто эксплуатировать?",被需要……你不觉得辅导员是在利用你吗？
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Ринка.json,0CC37DA14CB98ED3145E9B8B2BB220DF,"Я же делаю что-то важное для этого места и людей здесь, а, значит, всё не зря!",但我为这个地方和这里的人们在做重要的事，所以，一切都不是白费的！
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Ринка.json,5F08B5664D15CD3C08FE358EE1970A65,Какая-то ты уж совсем позитивная. Аж зубы сводит.,你这也太乐观了，看得我牙都酸了。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Ринка.json,B7FFA9574ACA897A75F2AE8CFB099240,"Ну ты тиво... Расслабься! Постарайся весело провести время. Здесь есть много всего веселого, поверь!",哟，你这人……放松点！好好享受时光嘛。这里有很多有趣的事，相信我！
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Ринка.json,8D1B836E4EDA464482E43A8C98BB426F,"Проверять я это, конечно же, не буду.",反正我是不打算去验证的。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Ринка.json,87EB4D454DE3B4BEEF89CF8C02DF12F6,"Ай-яй! Посмотри вокруг, это лето создано для тебя! Только в лесу не заблудись. Я, кончено, помогу чем смогу, но не везде безопасно.",哎呀！看看周围，这个夏天就是为你而来的！只要别在森林里迷路就好。我肯定会尽力帮忙，但不是所有地方都安全哦。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Ринка.json,4BD189DE40D2E408508B1CB40456523E,Да не надо мне помогать! Сам как-нибудь.,我才不需要你帮忙呢！我自己能行。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Ринка.json,B34F80C843F872D23FF38A83A7AEE7FE,"Хе-хе. Погуляй вдоль реки? Там такие места! Тебе понравится, обещаю.",嘿嘿。沿着河边走走吧？那儿可好看了！你会喜欢的，我保证。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Ринка.json,07C8D53640493EAF25E1989CE97B5A98,Ох... Пойду я.,唉……我走了。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Ринка.json,F3534CF5472E9C3A9B4F3D85B3E6BE29,Пока! Хорошего тебе настроения и отдыха!,拜拜！祝你玩得开心！
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Ринка.json,91BB02E3471B0CCC018A3EAB9B629CCF,Спасибо. И тебе...,谢谢。你也……
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Рома.json,91EC2F854598BA682AAA4086377AF19D,"Привет, я Рома, а тебя как зовут?",你好，我是罗玛，你叫什么名字？
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Рома.json,3B37EA9143E163FBB014AFA35DF5917B,Я Семён.,我叫谢苗。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Рома.json,D81FCFFB4AE7E21BA99FCF89C50F824E,"Ну что, уже освоился в лагере?",怎么样，在营地已经熟悉了吗？
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Рома.json,680B049749E00445E11CC7BBFA846002,"Ещё разбираюсь. Может, расскажешь что-нибудь интересное?",还在摸索。也许你能讲点什么有趣的事？
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Рома.json,61036A0F4BAA61DC7DC0F4AB57F653D8,"Могу рассказать, что на втором этаже административного здания есть игровая комната, но она закрыта.",我可以告诉你，行政楼二楼有一间游戏室，但它是锁着的。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Рома.json,BCFAAC9F47E3847007DC318C5DFED884,"Ключ есть, но он заперт на кодовый замок. А пароля я не знаю.",钥匙倒是有，但上面有个密码锁。而我不知道密码。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Рома.json,7B6562334CB8773DBC21C481375E9F1B," В комнате есть игровой автомат, который выдаёт разные вещи, но для него нужны жетоны.",房间里有一台游戏机，会掉出各种东西，但需要代币才能玩。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Рома.json,E78DDFDB420156715CB4A7A968AF66AE,"Хотелось бы туда попасть, но не хотелось бы попасться на глаза вожатой.",我很想进去看看，但又不想被辅导员撞见。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Рома.json,E9C08C4C42E43DC94138B3BBB1D6BDB6,"Попробуй, может, у тебя получится.",你试试吧，说不定你能成。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Рома.json,4B35FCA5472817DCB9B5AB899AB7A074,"Спасибо, я учту. До встречи.",谢谢，我会记住的。再见。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Рома.json,EF304E2B45D8F7F8C0E983B8678AFF80,Пока.,拜拜。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Саманта.json,B48A4A304E662ACBAF21E1A322D4216D,Привет?,你好？
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Саманта.json,B4CC574D4A9E0ED856E27AB3D913CA78,Пуривет? Хэллоу? Совиет Юнион из со гу-у-уд! Май нейм из Саманта. Джаст Сэм! Хау ар ю дуин’? Ит’с сач эн эйвсам писфул плейс!,你好？哈喽？苏联好棒！我叫萨曼塔，叫我萨姆就行！你好吗？这个地方真的超级棒，好安宁！
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Саманта.json,AB2BD9BC4A967EAD70E3D2AE2A741F62,Нейм? Семен? Ты иностранка! Найс…,名字？谢苗？你是外国人啊！不错不错……
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Саманта.json,B61C482B4F2DF6779F2E33A5DCC6063C,"Семен? Найс нейм, Семен! Летс би френдс? Ай эм фром ЮЭСЭЙ! Сач э вандерфул шайни везер хиа!",谢苗？好名字，谢苗！交个朋友吧？我来自美国！这里的天气和阳光真的太美了！
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Саманта.json,06AF18D14CA98EE1A786038E50A5C982,"Вери гуд! Сори ай дон’т спик английский язык, Ландан из зе кэпитал оф Грейт Британ…",非常好！不好意思我不太会说英语，伦敦是英国的首都……
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Саманта.json,AA3E401F4B522761555EB78247B208F3,Оу… Гуд! Йор инглиш из грейт! ,哦……厉害！你的英语说得很好！
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Саманта.json,88FE9487484C954830A3B5A176F2B711,Спасибо! Бай… Как там… Гуд бай.,谢谢！拜……怎么说来着……再见。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Саманта.json,621030414B2B586FAB386C994B2B81E1,Си ю некст тайм!,下次见！
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Саманта.json,DEFF540B44B6671010AA279D1C34DB97,Покеда…,再见……
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Саманта.json,28D0422E47F2D26A8846E5BF6BD64104, Фух...,呼……
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Саша.json,C036136341CAFBBB4BD1599DC78F84BD,"Привет! Меня зовут Саша, а тебя — Семен. Мне про тебя рассказал Электроник.",你好！我叫萨莎，你叫谢苗。关于你的事，电子小子跟我说了。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Саша.json,D4011AE14E67583D04F1F8B961938A7C,Будем знакомы.,我们认识一下。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Саша.json,4362D4AC473D62922DA8B091EA5CAB81,"Расскажи что-нибудь интересное о лагере, например, о лодочной станции.",给我讲点关于营地的趣事吧，比如那个船站。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Саша.json,58AD5AEE419061F0CDC551B17C230171,"Это место меня очень заинтересовало. Я пару раз заглядывал туда через окно и видел, что оно активно используется. Но ни разу не замечал, чтобы кто-то заходил внутрь.",这个地方让我很感兴趣。我有几次从窗户往里看，感觉里面经常有人在用，但从来没看到有人进出过。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Саша.json,664BFB1D468144FE07C18D850A15A5E0,"Сам я побоялся зайти без разрешения, особенно зная характер нашей вожатой.",我自己没敢擅自进去，尤其是知道我们辅导员的脾气之后。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Саша.json,8C2ECBCD424BCAF6BDE5709F09C92B04," Но самое интересное там — это радио, которое не ловит сигналы, как его ни настраивай.",不过那里最有意思的是一台收音机，不管怎么调都收不到信号。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Саша.json,D53E75D94A428E1D72C1B5B05E9C9F19,"Это, конечно, всего лишь слухи, но поговаривают, что в определённое время можно услышать голос, который будет звать тебя в свой склеп.",这当然只是传言，但据说在特定时间能听到一个声音，呼唤你去它的墓穴。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Саша.json,8B691B9441AF3FD9A28C68A5D82CD57B,"Также говорят, что за лагерем есть таинственная закрытая дверь. Если посмотреть в щель, можно увидеть, что она ведёт глубоко вниз. Возможно, там кто-то живёт!",也有人说，营地后面有一扇神秘紧闭的门。如果透过缝隙往里看，可以看到它通向很深的地下。也许，有人住在那里！
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Саша.json,4B7A24144D1C3BA6318B13BF40ED139D,Звучит как-то неправдоподобно.,听起来像假的似的。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Саша.json,693C647B4BD37213CB23B28040834A87,"Может быть, но дверь действительно существует.",也许吧，但那扇门确实存在。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Саша.json,D50859C44CA9A2A0CD7D5C91E7426BA4," Хорошо, спасибо за рассказ, я пойду.",好吧，谢谢你讲的故事，我走了。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Саша.json,E46EFE1C468DC82AAFA43EA1D8A90313,Удачи!,祝你好运！
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Света.json,7F742A76416C6B01A472E08D63983FD5,Привет! Как тебя зовут?,你好！你叫什么名字？
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Света.json,F2A8C06546ABB9BB619413ADEDE4FA41,Семен.,谢苗。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Света.json,55B01BFE436DD577F7229D911D6FD457,"Рада знакомству, я Света.",很高兴认识你，我是斯维塔。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Света.json,6D74872A4D1E02F441EFA2914E4CECDD, Как твои дела? Чем обычно занимаешься в лагере?,你过得怎么样？在营地一般做什么？
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Света.json,BE82B13F461DDC3E30E969A4B357BF50,Нормально.,还行吧。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Света.json,3CAB9CB344ABCFBEB96D42872D8CE27F,"Если можно так сказать, мои дела не самые лучшие, но не говорить же ей правду.",说起来，我的状态不算好，但总不能当面跟她承认吧。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Света.json,9CCF44FA41BF545023145FA83366D286,"А так, я тут недавно  ещё не определился, чем хочу заниматься.",话说回来，我刚来不久，还没决定想做什么。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Света.json,5DC967DC4DCF6D320B4901872FE66AC7,"Понятно. Я вообще люблю читать, если тебе захочется почитать, могу одолжить книгу.",明白了。总的来说我喜欢看书，如果你想看书，我可以借你一本。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Света.json,DAB028BA49596980B0AF34973BD560C0," Спасибо, буду знать, к кому обратиться, если что. А сейчас мне нужно идти.",谢谢，我有需要就知道该找谁了。而现在我得走了。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Света.json,AAF787AB491C332D152C7FBF25FAECBB," Ага, увидимся.",嗯，回头见。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Сергей.json,7012B4984B738604ACFA278AAD8FA19E,"Привет! Меня зовут Семен, можно у тебя кое-что спросить?",你好！我叫谢苗，能问你点事吗？
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Сергей.json,10AD0693427E7F8EB6A9E3B849D71A49,"Привет, я Сергей, конечно, спрашивай.",你好，我是谢尔盖，当然，问吧。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Сергей.json,97FA42474024938DC10F35AC4A9DFCD8,"Сегодня очень жарко, где у вас можно помыться?",今天特别热，你们这儿能在哪里洗澡？
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Сергей.json,89D78FAE43833105D4C57AAA9C81E446,"У нас есть душевые, но они закрыты на ремонт.",我们这儿有淋浴间，但关了在维修。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Сергей.json,54BF754B4C82ED6D9EBAAC8A138EB829,"Все ходят в баню, которая находится за лагерем, примерно в ста метрах, если идти в сторону сцены.",大家都去澡堂，在营地外，朝舞台方向走大概一百米。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Сергей.json,2D7143F74DD3672CE361FF86DAB941A4,"Спасибо, буду иметь в виду.",谢谢，我记下了。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Сергей.json,0F0FAB214C3108266019AC9890195065,А сейчас я пойду.,现在我走了。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Сергей.json,705C1BAA48F5D0C3EC9457A387CBF2FE,"Хорошо, приходи, если что.",好的，有事就来。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Тацумаки.json,C273E1EC48D220C38CDAA9893D143FE4,Привет! Я хотел бы узнать твое имя.,你好！我想知道你的名字。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Тацумаки.json,479083E4490D14E6A48EE694B65C9B32,"Я здесь не для того, чтобы с тобой знакомиться. У меня важное дело, и если ты будешь мне мешать, то пожалеешь об этом. Не буду повторять дважды!",我可不是来交朋友的。我有正事要办，要是你妨碍我，你会后悔的。别让我说第二遍。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Тацумаки.json,BC6974CE475D69BF59A5AE92C096C0F6,"Прости, я не хотел создавать проблем. Просто мне интересно, кто ты. У тебя такой необычный вид. Что ты делаешь?",对不起，我没想制造麻烦。只是我很好奇你是谁。你的样子这么与众不同。你在做什么？
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Тацумаки.json,723F9268449163BC5E363D874FE8A267,"Необычный? Ты меня за кого принимаешь? Я — Тацумаки! А ты, кажется, просто пионер, мечтающий о приключениях. У тебя есть десять секунд, чтобы назвать своё имя!",与众不同？你以为我是谁？我是龙卷！你不过是个做着冒险梦的小少先队员。给你十秒钟，报上名来！
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Тацумаки.json,A860CDEA4258754F24BC9FA6EB335936,"Кхм... Это впечатляет! Я Семён, просто пионер. Я проходил мимо.",咳……这真够厉害的！我是谢苗，只是个少先队员。我路过而已。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Тацумаки.json,47CF6ECB4C54628EB32046BF428F5E23,"Эй, постой, я ищу... людей, которые способны на что-то стоящее. Что ты умеешь?",等等，我在找……有点用的人。你有什么能耐？
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Тацумаки.json,AD2FD52D45374432A1524680A5DE28F8,"Конечно, я мог бы рассказать ей о своих успехах в играх и просмотренных аниме, но, думаю, это бы ее не впечатлило.",当然，我可以给她讲讲我在游戏和看过的动漫上的成就，但我觉得这不会让她印象深刻。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Тацумаки.json,7EAECAF24DDE3AB334927180880F1FEC,"Э-э, ну, что с меня взять, я даже палатку поставить не смогу.",呃，嗯，我能有什么本事，我连帐篷都搭不起来。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Тацумаки.json,98112A8D4BEEEBE1441DA6A53DEFEF42, Что-то ты не договариваешь!,你话没说完！
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Тацумаки.json,C6C861524F4766B975A69CB684838C0F,"А что ты сама умеешь делать, кроме как пугать людей?",那你自己除了吓人，又能干什么？
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Тацумаки.json,1BA7EE9343D4E32E68DEE897760EA085,"Сейчас огребешь! У меня есть силы, которые дадут тебе понять, на что я способна! Если хочешь, могу продемонстрировать их! Правда, не сейчас.",你找打！我有能耐，能让你见识见识我的本事！想看的话，我可以演示给你看！不过……不是现在。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Тацумаки.json,F95697F64E447CD29BD2469BCA16EE51,"А что, что-то сломалось?",怎么，什么东西坏了吗？
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Тацумаки.json,13D69AB542612A3E6D0D999CFDA2C6E8,Просто... Скоро... Ладно. Мы ещё увидимся! До встречи!,只是……快了……算了。我们后会有期！再见！
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Харуки.json,E8CCE6314617C75C508DD8BE48C90B78,"Судзумия Харухи! Я с востока! Обычные люди меня не интересуют. Если здесь есть пришельцы, гости из будущего, люди из параллельных миров, экстрасенсы – милости прошу. Это все.",凉宫春日！来自东方！对普通人没有兴趣。如果这里有外星人、未来人、异世界来客或者超能力者——欢迎找我。就这样。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Харуки.json,7FBCF35543349144FD4111A1436E2FCF,Вот так неожиданность: два совпадения из четырёх.,这倒出乎意料：四个条件，居然中了两个。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Харуки.json,72DBB2334420952ACF2D21B853DCB844,"Однако мне показалось, что она несерьёзно.",不过她看起来不像是在认真说。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Харуки.json,978C0A574B3E4C283BEF34814DAC10DA,"Привет. Меня зовут Семён... Дай угадаю, ты собираешься устроить что-то невероятное?",你好。我叫谢苗……让我猜猜，你打算搞点不可思议的事？
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Харуки.json,F1E7705D4ABCEBF98761F89652A0F110,Привет! Конечно! Я все еще планирую организовать соревнования по экстремальным видам спорта! У тебя есть какие-то идеи?,当然！我还在筹划组织一场极限运动赛事！你有什么想法吗？
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Харуки.json,C63726924B5D2996BBB4C8B74F78F0F3,"Ого, звучит круто! Но... может, лучше сначала поговорим с вожатой? Она может не одобрить такие «экстремальные» мероприятия.",哇，听起来挺刺激！不过……还是先跟辅导员沟通一下比较好？这种「极限」项目她不一定会批。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Харуки.json,BCAD8144495BE65D8C4223A612EF8B25,"Эх, всегда они что-то запрещают! Я просто хочу, чтобы эта смена была полна захватывающих событий! Мы можем собрать всех и поделиться идеями!",唉，总是禁止这个禁止那个！我只是想让这一期充满让人难忘的事！我们可以把大家召集起来一起讨论！
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Харуки.json,E0A0461143203963160134B50ACDE514," Да, это хорошая идея, собери всех и узнай! Но я все же предлагаю начать с чего-то менее опасного. Может, состязания по рисованию или танцам?",对，这个主意不错，问问大家就知道了！不过我还是建议从危险系数低一点的开始。比如画画比赛或者舞蹈？
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Харуки.json,CAF975F34049D1D405778DAC5FD9B9AB," Рисование? Танцы? Это скучно! Давай лучше сделаем что-то потрясающее, чтобы все запомнили этот лагерь!",画画？跳舞？也太无聊了！要做就做让所有人都铭记这个夏令营的大事！
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Харуки.json,ADBBD4E546ED5E1AB743318C2C0D2AC1,Я пас...,我……算了。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Харуки.json,894F62A5403F19D59755C0900BAA68A7,"Ну ты ску-у-учный... Эй, Семён, или как там тебя... Ты слышал, что в этом лесу можно заблудится так, что никогда оттуда не выйдешь? Там настоящий лабиринт минотавра!",哎，你真是无——聊……嘿，谢苗，或者你叫啥来着……你听说过吗，这片森林迷进去就别想出来了？里面可是真正的米诺陶迷宫！
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Харуки.json,2AC31D004D0D7238DED0AC94870BFB0B,И минотавр есть?,里面有米诺陶洛斯吗？
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Харуки.json,B40B2E5A437C5A9FCCAD798BF7E497DF,"Кто знает, сколько загадок хранит эта местность... Я найду их все!",谁知道呢，这片土地上藏着多少谜……我要把它们全部找出来！
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Харуки.json,5B468DCB4FF158847B327F9D0DE106F0,"Удачи тебе, Харухи! А я пойду.",祝你好运，春日！我走了。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Харуки.json,083EB60546930F9AE02520881ABE5B8B,"Эй, каланча, забегай к нам в картишки играть!",嘿，大高个，有空来我们这儿打牌！
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Харуки.json,5209C07A4CD0C7DFD1E55B97DFD12ED0,Каланча?!,大高个？！
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Харуки.json,835EAA394986C999516B86AD89B5870F,Ладно-ладно... До встречи!,好吧好吧……再见！
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Холо.json,C047220741AD3E0F4161648CDBD536C8,...,……
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Холо.json,AC6D3EBD45FF8D750B42B8A3FE7446A5,Здравствуй?,你好？
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Холо.json,E0EF3FF64594084C2A102BB5DA88B654," Как прекрасны ваши края, особенно залитые солнцем поля колосьев пшеницы... Пшеница... У тебя вино есть? А яблочки? Эх, где здесь хоть один кусочек вкусной еды?",你们这里真美，尤其是那片被阳光照得金灿灿的麦田……小麦啊……你这里有酒吗？那苹果呢？唉，这里就没有一样像样的吃食吗？
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Холо.json,953C4E504C5EB610CE7EE6A43DA5C21D,"Как это где? В столовой борщик с капустой, котлеты с пюрешкой. Яблочки были, съели что ли?",怎么叫没有？食堂有卷心菜红菜汤，肉饼配土豆泥。苹果本来应该有的，或许被人吃光了？
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Холо.json,6374445F47F0084C24A9F583F1241CAC,"Последнее из-под носа уволокли... А остальное, разве, еда?",最后一个苹果就在咱的眼皮子底下被人抢走了……剩下的那些，也配叫食物？
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Холо.json,5936D3E34DED6B4B5AE6A5B4DEC5FC49,Сочувствую. Как тебя зовут?,深表同情。你叫什么名字？
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Холо.json,128C0CD34B655800EFDB5CAA17DC682C,"Мое имя Холо, и я давно уже не принимала эту форму. Хм, а она по-прежнему не так уж плоха.",咱叫赫萝，好久没变成这副形态了。嗯……看来咱的风姿依旧不减当年。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Холо.json,48853DD641481EFF18AC6D8F0C308A5D,Форму?,形态？
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Холо.json,412D2EB54132C2691AB43AA403A7D9AE,Пионерскую...,少先队员的形态……
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Холо.json,0ADB2EC044C0C8AC8F17F89AB9E38476,"Стоп... Холо?... Кажется, мне знакомо это имя...",等等……赫萝？……这名字好像在哪儿听过……
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Холо.json,E6C7C76E486447AE77C6D9B859607F01,"О, ты знаешь кого-то, у кого такое же имя, как и у меня? А откуда этот человек родом?",哦？你认识一位与咱同名的人？那位是哪里人？
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Холо.json,1436AC014246EEC3AD44F8807071877E,Так зовут богиню урожая из старых сказок. Ты богиня?,那是古老传说里丰收女神的名字。你该不会真是女神吧？
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Холо.json,FE588AAA4BB22BDFF131448C8D484264,"Ха-ха, так меня уже давно никто не называл!",哈哈，已经很久没人这么叫咱了！
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Холо.json,BD05FDB24AC4C310EE7587A64AD50034,Откуда ты родом?,你从哪里来？
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Холо.json,643CA7AD446D2A67ADF3EF840798C029,"Далеко... Это мир, где все сверкает серебристо-белым блеском, где лета короткие, а зимы длинные. Ты, ведь, Семен, верно? Электроник о тебе уже всем рассказал.",很远很远的地方……那是个一切都闪耀着银白光芒的世界，夏天短暂，冬天漫长。你就是谢苗对吧？电子小子早把你的事说给大家听了。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Холо.json,C69044DF43B0D56B3ACE74B06DD74E23,Вот болтун!,这个大嘴巴！
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Холо.json,B6B824ED457C21C7DE52C1841AE59C8A,Хе-хе. ,呵呵。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Холо.json,FD0F89DD470BFF32DBB13C89F41C77A8,...,……
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Холо.json,9E0F01814B7DE8C8135179BC8F3EC735,"Ладно, бывай!",好了，拜拜！
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Холо.json,2A12045B4BA2E915666E3F8EEEEB88A9,До встречи.,再见。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Яна.json,C6E84CC841CA94FCE75D9F923C338323,"Привет! Меня зовут Яна, а тебя, я знаю, Семен.",你好！我叫亚娜。而你，我知道，叫谢苗。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Яна.json,83F6BB4F454F605F8EA77F8E8362B79D,Откуда ты знаешь моё имя?,你怎么知道我的名字？
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Яна.json,712A86664EF2DC2727DD30BD91CA4123, Мне рассказал Электроник.,是电子小子告诉我的。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Яна.json,B319186348E973D2324605897DFD34F4,Ясно!,明白了！
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Яна.json,C0CE7BED41CD7CF7FF421BA9BF30B334,"Ты здесь недавно, поэтому позволь дать тебе совет: не связывайся с нашим физруком. Он помешан на тренировках.",你刚来不久，所以容我给你个建议：别去招惹我们的体育老师。他对训练着了魔。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Яна.json,646A55C94A22AFAA09379D86C0DE8741, Но в этом же нет ничего плохого.,但这也没什么不好啊。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Яна.json,C62567994FED08190EB6FDBC81DBBB48,"Ты не прав. Я приехала сюда с другом, и когда мы гуляли, он подошёл к нам и предложил моему другу заняться спортом, чтобы подтянуть форму.",你错了。我和一个朋友一起来的，我们散步的时候，他走过来建议我朋友去锻炼身体，增强体魄。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Яна.json,6AE9F25C432EAE9BB3DE98A407CA9AA7,"Мой друг согласился, и с тех пор я почти не вижу его. Он ходит уставший, но довольный.",我朋友同意了，从那以后我几乎就见不到他的人了。他每天都走得筋疲力尽，但又心满意足。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Яна.json,1F2D9A9244170C82E61C45B53923E263,"У них там какая-то секта качков, и все разговоры только о гирях.",他们那里就像个什么肌肉狂热教派，所有对话都离不开哑铃。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Яна.json,4FE072054276A2A082844DA116129BF5,Мой совет: обходи это место стороной.,我的建议是：绕着那个地方走。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Яна.json,9ED53A154CD3D7791EEDC7A22EE6A68F,"Хорошо, я так и сделаю.",好的，我会照做的。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Яна.json,F49E9659427011AE7B50B781C6DB1571,Удачи!,祝你好运！
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Ярослав.json,F438BF40433F524D792405894B176885,"Привет, как дела? Меня зовут Семен, а тебя?",你好，过得怎么样？我叫谢苗，你呢？
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Ярослав.json,F0A4266048A2CEA4067D2CACD834D2BD," Хорошо, правда сегодня жарче обычного. А меня зовут Ярослав.",还不错，说实话今天比往常更热。我叫雅罗斯拉夫。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Ярослав.json,F0D9335D479CA2474A4D2C93CA0F2563,"Можешь рассказать, чем занимаются люди в лагере?",能讲讲人们在营地都做些什么吗？
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Ярослав.json,8FFED66248EBA3F92EC591BB01B2AB91,"Ну, люди участвуют в лагерных мероприятиях, играют в футбол, отдыхают на пляже, читают, но в основном общаются.",嗯，大家会参加营地活动、踢足球、在沙滩上休息、看书，但主要还是聊天。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Ярослав.json,AD5A41BB44F9B23BD5C0A0AA3AD9C804,"Есть и те, кто занимается своей деятельностью, но они стараются не привлекать внимание вожатой, так как она этого не любит.",也有一些人忙自己的事，但他们尽量不去引起辅导员的注意，因为她不喜欢那样。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Ярослав.json,606306D04B14D0436D7E32B277C6051F,"Я иногда собирался играть в карты в домике, было весело, попробуй и ты.",我有时候会去小屋里打牌，挺有意思的，你也试试吧。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Ярослав.json,44C9A36343F0C67B1870EA8456D713B0," Понятно, спасибо, я пойду.",明白了，谢谢，我走了。
+Everlasting_summer\Content\DialogSystem\знакомство\болталки\Ярослав.json,7B71B9204AAD165D3126EDB5D3414876,До встречи.,再见。
+Everlasting_summer\Content\DialogSystem\знакомство\виола_откачал.json,8D9E7BE443CBA11AA24BBFA44E6FF52A,Больше не пугай нас так!,别再这么吓我们了！
+Everlasting_summer\Content\DialogSystem\знакомство\виола_откачал.json,A63F2F3741309DC37EA0E99969550EBB,Не забудь зайти в медпункт,别忘了去医疗室一趟。
+Everlasting_summer\Content\DialogSystem\знакомство\виола_откачал.json,CF0A9DA74F9CCF71CA970DA1858D9E57,"Убедимся, что с твоим здоровьем всё в порядке, пионер!",我们得确认你的健康状况没问题，少先队员！
+Everlasting_summer\Content\DialogSystem\знакомство\включил_р.json,FF51FD244EE934ECD680C3927A355AA5,"Наконец-то,! Все детали на месте, и можно уже включать эту машину",终于！所有零件都到位了，可以启动这台机器了。
+Everlasting_summer\Content\DialogSystem\знакомство\включил_р.json,DEDCC13A4ECA72318CACB8AE4970EF2E,"Надеюсь, она не развалится при запуске или, гляди того хуже...",希望它启动时不会散架，或者更糟……
+Everlasting_summer\Content\DialogSystem\знакомство\включил_р.json,A4A7FD404123C0022C4C9C9443DE6CE5,Я переклучил рубильник,我合上了闸刀开关。
+Everlasting_summer\Content\DialogSystem\знакомство\включил_р.json,B35DC73C4E14740BF12029A7D6841886,Не рвануло,没爆炸。
+Everlasting_summer\Content\DialogSystem\знакомство\знакомство_даша.json,724942C646F415B3EFB3BC9D60F29787,Ты чего то хотел?,你是想做什么来着？
+Everlasting_summer\Content\DialogSystem\знакомство\знакомство_даша.json,DDA65D56410105D1F6F0FB99E6BD1B7D,Я хотел узнать твое имя.,我想知道你的名字。
+Everlasting_summer\Content\DialogSystem\знакомство\знакомство_даша.json,A6BE830148374D7A535256BB9CBC49A3,"Меня зовут Даша, а тебя?",我叫达莎，你呢？
+Everlasting_summer\Content\DialogSystem\знакомство\знакомство_даша.json,2CF78BF94ABC14A1C3CFB39809148019,А я Семен.,我是谢苗。
+Everlasting_summer\Content\DialogSystem\знакомство\знакомство_даша.json,58886EE147F6A885D56571A4D2F3738A,Приятно познакомиться Семен.,很高兴认识你，谢苗。
+Everlasting_summer\Content\DialogSystem\знакомство\знакомство_даша.json,C897002841CF70EC267F7785035965EF,...,……
+Everlasting_summer\Content\DialogSystem\знакомство\знакомство_даша.json,9930032E43A041015E4DE189DBB5A5A0,И вот это самое сложное в начале любого разговора...,而这正是任何对话开始时最困难的部分……
+Everlasting_summer\Content\DialogSystem\знакомство\знакомство_даша.json,E93D8D2C4EB08DABF75FD0A5278D49A3,"Это придумать, что сказать, чтобы он не закончился после его начала.",就是想出接下来该说什么，才能让对话不在开始后就结束。
+Everlasting_summer\Content\DialogSystem\знакомство\знакомство_даша.json,AEB21FBF4738825882294389075B72FB,"Ну, так чего ты замолчал? Ты же не только хотел узнать мое имя?",嗯，你怎么不说话了？你该不会只是想问我名字吧？
+Everlasting_summer\Content\DialogSystem\знакомство\нашел_мику.json,A3EC63C944D1AC7EDCCEAD8300C1D143,"Семен, слава богу, я уже боялась, что за мной никто не придет",谢苗，谢天谢地，我还以为没人会来找我呢。
+Everlasting_summer\Content\DialogSystem\знакомство\нашел_мику.json,8A3169024DC755A7F7C5C0B5FC37CD35,"Вставай, нам нужно выбираться отсюда",快起来，我们得离开这里。
+Everlasting_summer\Content\DialogSystem\знакомство\нашел_мику.json,C260AFE247BD14014EFC10BD6DE05B55,"Нет, я туда ни за что не вернусь",不……我绝对不回那里。
+Everlasting_summer\Content\DialogSystem\знакомство\нашел_мику.json,8030840A481215DB40CA83884B94FF42,Ведь там ходит она,因为那个东西还在那儿游荡。
+Everlasting_summer\Content\DialogSystem\знакомство\нашел_мику.json,AC48106147317AB99117F6A68866E273,Я никогда не видела нечего подобного,我从来没见过那种东西。
+Everlasting_summer\Content\DialogSystem\знакомство\нашел_мику.json,BEB833FD4E4CFCE4E0644DB13832C390,В нее что то вселилось. Мне страшно,有什么东西附在它身上了。我好害怕。
+Everlasting_summer\Content\DialogSystem\знакомство\нашел_мику.json,7D34457D455FB192D3179EA5BD5F1FF9,"Вставай пожалуйста, я понимаю, что страшно, но она и сюда сможет добраться",请你起来吧，我知道很可怕，但它也可以追到这里来的。
+Everlasting_summer\Content\DialogSystem\знакомство\нашел_мику.json,5B346BAB44E64D18BA41B6A3DB330D8B,Я не могу встать,我起不来。
+Everlasting_summer\Content\DialogSystem\знакомство\нашел_мику.json,9C36B94046DE80E503C4FE9D5037DD8D,Понеси меня...,你背我吧……
+Everlasting_summer\Content\DialogSystem\знакомство\нашел_мику.json,A5E0A79348D873480FE5E2B1F8D89BAD,Что?,什么？
+Everlasting_summer\Content\DialogSystem\знакомство\нашел_мику.json,D251BEE14A644500C1FC78896E1B385F,"Понеси меня пожалуйста, мне так страшно, что ноги не держат",求你背我走吧，我吓得两腿发软，根本站不起来。
+Everlasting_summer\Content\DialogSystem\знакомство\нашел_мику.json,EBD486C54A659FD7FC9187966538F08F,Не оставляй меня тут одну с ней,别把我一个人留下来和它在一起。
+Everlasting_summer\Content\DialogSystem\знакомство\нашел_мику.json,0058DA5C44169F00C22D08B86CA05AB9,"Ладно, только тихо, она реагирует на звук",好，但要安静，它对声音有反应。
+Everlasting_summer\Content\DialogSystem\знакомство\нашел_мику.json,F80324A8474D1DE4A54DC8B656CD18A7,"Хорошо, спасибо тебе, что не бросил",好的，谢谢你没有丢下我。
+Everlasting_summer\Content\DialogSystem\знакомство\нашел_мику.json,98EBFE5946B31A629A70078B33FF5274,",,,",……
+Everlasting_summer\Content\DialogSystem\знакомство\нашел_поезд.json,2A2C4AC744B2E93CB4173595D504B2F6,Ты уверен?,你确定吗？
+Everlasting_summer\Content\DialogSystem\знакомство\нашел_поезд.json,DCE9F44D4067896FFA5EA68A76377DA0,Абсолютно,绝对确定。
+Everlasting_summer\Content\DialogSystem\знакомство\нашел_поезд.json,CB93728B41372EF07979B7B4614615F5,"Хорошо, я сейчас дистанционно отсоединю вагон",好，我现在远程断开这节车厢。
+Everlasting_summer\Content\DialogSystem\знакомство\нашел_поезд.json,1F849FFA4DD20AD066C48296A02B1220,"Если, ты ошибся, то она сейчас ворвется сюда",如果你搞错了，它马上就会冲进来。
+Everlasting_summer\Content\DialogSystem\знакомство\нашел_поезд.json,60D8994C47233CB725FF629FC1DC99DC,Следи за проходом,看好过道。
+Everlasting_summer\Content\DialogSystem\знакомство\нашел_поезд.json,B720AAE747DA44E61D207882934A87B5,Ладно,好。
+Everlasting_summer\Content\DialogSystem\знакомство\нашел_поезд.json,F937209A48528BBE55E6E7A02D346501,",,,",……
+Everlasting_summer\Content\DialogSystem\знакомство\осмотреть_Р.json,A903B39A46BB3A1694D00FB4D04BB04F,"Робот довольно тяжелый, так что поднять его и полностью осмотреть не удалось",这机器人相当重，所以没法把它抬起来全面检查。
+Everlasting_summer\Content\DialogSystem\знакомство\осмотреть_Р.json,C578B46448B90CD74117FA861D8DCA76,"Немного осмотрев робота, я заметил переключатель на ее спине",我稍微检查了一下机器人，注意到它背上有个开关。
+Everlasting_summer\Content\DialogSystem\знакомство\осмотреть_Р.json,262464124F040FB88B9B53BB918B03E6,"И открытую крышку с микросхемами, в которой не хватало деталей",还有一块打开的盖子，里面是电路板，但缺少了一些零件。
+Everlasting_summer\Content\DialogSystem\знакомство\осмотреть_Р.json,F8F35A694308838CEC0A1CBA3D595D6C,"Очевидно, что без них робот не запустится",显然，没有这些零件机器人是无法启动的。
+Everlasting_summer\Content\DialogSystem\знакомство\повтори.json,A3CED61449367BC88016C9954DDD6930,"Три вагона, один из них ненастоящий!",三节车厢，其中有一节是假的！
+Everlasting_summer\Content\DialogSystem\знакомство\повтори.json,D1FE3FEB45296B74103D66AD97A7C265,"Они обсолютно идентичны, но есть аномальный",它们完全相同，但有一节存在异常。
+Everlasting_summer\Content\DialogSystem\знакомство\повтори.json,97E0FBBA4DC126FDA5EB7FB50D55CAA7,Именно он отличается от других интерьером,正是这节车厢的内部陈设和其他不同。
+Everlasting_summer\Content\DialogSystem\знакомство\повтори.json,A4D2ED264F6952F84E623A9B29461F33,"Смотри на мельчайшие детали, там могут быть переставлены вещи или добавлены новые, а могу совсем отсуствовать",留意最微小的细节，那里可能有些东西被移动过，或者被添加了新的，也可能完全缺失。
+Everlasting_summer\Content\DialogSystem\знакомство\повтори.json,5E1C61B14A258D50E820EE8EF2A9C691,"Будь внимателен, и обращай внимания на плакаты и стенды",留心观察，注意海报和展板。
+Everlasting_summer\Content\DialogSystem\знакомство\повтори.json,776108344D6F7064E7E892B56B06B197,Понял,明白了。
+Everlasting_summer\Content\DialogSystem\знакомство\поезд.json,E583FA544F0521923ACEACBBC405F629,"Фух, еле удрали",呼，好不容易才逃掉。
+Everlasting_summer\Content\DialogSystem\знакомство\поезд.json,EE0AD302413D44F772EFAEBA265A96C8,Вы будто призрака увидели,你们好像见了鬼似的。
+Everlasting_summer\Content\DialogSystem\знакомство\поезд.json,4A7EC21E4198B784071B73B2E4331E8A,"Ты не поверишь, но там и правда какая-то чертовщина!",你不会信的，里面真的有某种邪门的东西！
+Everlasting_summer\Content\DialogSystem\знакомство\поезд.json,1FFED1AB4F631F8C7CF5E7AF79D046D3,Звучит неубедительно,听起来没什么说服力。
+Everlasting_summer\Content\DialogSystem\знакомство\поезд.json,6EAE0BFB44D82FAA4D20C487626B6247,"Если хочешь, иди сам проверь, а я туда ни ногой",你要是想，就自己去看吧，我反正是一步也不踏进去了。
+Everlasting_summer\Content\DialogSystem\знакомство\поезд.json,1914277945C9E19CB488A08098926511,Я тоже.,我也是。
+Everlasting_summer\Content\DialogSystem\знакомство\поезд.json,7E05901449014A3241866D98C339A81B,Да что там случилось?,那里到底发生了什么？
+Everlasting_summer\Content\DialogSystem\знакомство\поезд.json,B06A4567464671DBE0136784B60C668A,Там в Лену будто что-то вселилось,那里好像有什么东西附在了列娜身上。
+Everlasting_summer\Content\DialogSystem\знакомство\поезд.json,BD4C60534CAA598D77A5BBB8D7C98ABE,Бродит жутко по темным вагонам с ножом никого не признает,她拿着刀，在黑暗的车厢里阴森森地来回游荡，谁也不认了。
+Everlasting_summer\Content\DialogSystem\знакомство\поезд.json,9E0FF2B74AA98664EA5A248A54B4901E,А еще там осталась Мику,而且未来还留在里面。
+Everlasting_summer\Content\DialogSystem\знакомство\поезд.json,91E9D1A74D51D89001F7F4AB56C328FE,Где она?,她在哪？
+Everlasting_summer\Content\DialogSystem\знакомство\поезд.json,5B7A60134EA52754F793ECB06F4A0C0C,Мы незнаем где-то прячется,我们不知道，她藏在某个地方了。
+Everlasting_summer\Content\DialogSystem\знакомство\поезд.json,C835457C48BCCB5E3873DB87FACF3D52,"Ладно, пойду посмотрю ",好吧，我去看看。
+Everlasting_summer\Content\DialogSystem\знакомство\поезд.json,F13FA56C421A161FDE223B8165D4D94B,....,……
+Everlasting_summer\Content\DialogSystem\знакомство\поезд.json,C209BE3A4BF8AE8921F2498C823B0434,Куда идешь?,你去哪？
+Everlasting_summer\Content\DialogSystem\знакомство\поезд.json,D0DD15C6450D8FFFB2B677867C315868,"Меня остановила девочка, которую, я где-то видел, но не могу вспомнить ее имени",一个女孩叫住了我，我之前在哪儿见过她，但想不起她的名字了。
+Everlasting_summer\Content\DialogSystem\знакомство\поезд.json,334052FE4F43E3FB2924D9A7F8DC3E5A,"За Мику, она там прячется ",去找未来，她藏在那里面。
+Everlasting_summer\Content\DialogSystem\знакомство\поезд.json,A28A3AFF49BFBAFAE701A692F0993CE8,Оно тебе не даст,它是不会让你得逞的。
+Everlasting_summer\Content\DialogSystem\знакомство\поезд.json,254565B14B12C954D91ECB8AE91939D9,Кто?,谁？
+Everlasting_summer\Content\DialogSystem\знакомство\поезд.json,E9926A3F43701637576F9B8ED1C5BC6D,"То, что захватило вагон",那个占据了车厢的东西。
+Everlasting_summer\Content\DialogSystem\знакомство\поезд.json,969277E944C788A5BD05AAA60D363497,Послушай,听着。
+Everlasting_summer\Content\DialogSystem\знакомство\поезд.json,AF8260B342D180C7279BECAB9EFC9BE6,"Оно прячется в каком-то из вагонов, который маскируется под обычный",它就藏在某一节伪装成普通车厢的车厢里。
+Everlasting_summer\Content\DialogSystem\знакомство\поезд.json,BFE1209145497AF60A327A82D33A0D75,Запомни,记住。
+Everlasting_summer\Content\DialogSystem\знакомство\поезд.json,39CEC876437F698C964A00A9DE6BB9EE,"Там 3 вагона, один из них ненастоящий",那里有3节车厢，其中一节是假的。
+Everlasting_summer\Content\DialogSystem\знакомство\поезд.json,763F85754875F92276A785BFA98C2C94,И как я пойму?,那我怎么分辨？
+Everlasting_summer\Content\DialogSystem\знакомство\поезд.json,A1D5476647A7019DA9E41C9FEF77369E,"Все вагоны идентичны друг другу, кроме одного",所有车厢彼此都一样，除了那一节。
+Everlasting_summer\Content\DialogSystem\знакомство\поезд.json,F585B735448D867179F41B804B089FFE,"Обращай внимания на вещи внутри, если найдешь несоответствие, то скажи мне",注意车厢里的东西，如果你发现了不一致的地方，就告诉我。
+Everlasting_summer\Content\DialogSystem\знакомство\поезд.json,75A704974183ACE679AC659232D54D59,"Если правильно определишь ненастоящий вагон, мы избавимся от нечисти",如果你正确指出了假车厢，我们就能清除掉这个邪物。
+Everlasting_summer\Content\DialogSystem\знакомство\поезд.json,EB2C6D924276552CC7F5BBBEE5C74555,А если нет?,要是错了吗？
+Everlasting_summer\Content\DialogSystem\знакомство\поезд.json,8F6A61BA4CD07E7DDD39558915EFDDED,То оно доберется сюда,那它就会来到这里。
+Everlasting_summer\Content\DialogSystem\знакомство\поезд.json,5F362FB84F94C6DCABD25B8EFCB00977,"Хорошо, я найду и скажу",好，我会找到并告诉你的。
+Everlasting_summer\Content\DialogSystem\знакомство\попытаться_включит_Рь.json,AE3B6E064FEF065955D1359E02CEC7C8,Я подвигал переключатель несколько раз вверх-вниз,我把那个开关上下拨动了好几次。
+Everlasting_summer\Content\DialogSystem\знакомство\попытаться_включит_Рь.json,227BF06042388C2E591E93AEE4F7C295,Ничего не произошло,什么都没有发生。
+Everlasting_summer\Content\DialogSystem\знакомство\попытаться_включит_Рь.json,461D27694B22B60C716F96B2FF824991,"Наверное, не хватает деталей",大概是缺少零件。
+Everlasting_summer\Content\DialogSystem\знакомство\привел_мику.json,783C513E4E6D6F87C847A6BDCC97817E,"Спасибо тебе огромное, Семен!",谢苗，真的太谢谢你了！
+Everlasting_summer\Content\DialogSystem\знакомство\привел_мику.json,BB95C32B47A095165793A190922F3459,"Я даже не знаю, как тебя отблагодарить",我都不知道怎么回报你才好。
+Everlasting_summer\Content\DialogSystem\знакомство\привел_мику.json,9D08E4F640330E20BCD79DB5D0917F84,"Все в порядке, я не мог там тебя оставить",没事的，我不能把你一个人留在那里。
+Everlasting_summer\Content\DialogSystem\знакомство\привел_мику.json,D2783C454664528045E22A9CC9084947,"Спасибо еще раз, я никогда этого не забуду",再次谢谢你，我永远都不会忘记的。
+Everlasting_summer\Content\DialogSystem\знакомство\привел_мику.json,0E3154CF4181E7F680CE5FB0E6D0042D,Мику обняла меня,未来抱住了我。
+Everlasting_summer\Content\DialogSystem\знакомство\привел_мику.json,34A5D49B483F23D69D1712B087804F2E,"Теперь все позади, можешь отдыхать",一切都过去了，好好休息吧。
+Everlasting_summer\Content\DialogSystem\знакомство\привел_мику.json,C0F226A44A39914160CA3FBE5C525EAA,А мне нужно еще закончить с кое-чем,而我还有点事需要去收尾。
+Everlasting_summer\Content\DialogSystem\знакомство\привел_мику.json,F2B6BBDF4E9769DD767EDFBE900FCADE,Хорошо,好的。
+Everlasting_summer\Content\DialogSystem\знакомство\привел_мику.json,513BEF944C985AC0EBBE0AB5A64F8D2A,",,,",……
+Everlasting_summer\Content\DialogSystem\знакомство\пригласил_виолу.json,4C76EFD9436197161DFA8AA2AB04AD09,Это так мило с твой стороны,你真的好体贴。
+Everlasting_summer\Content\DialogSystem\знакомство\пригласил_виолу.json,DE55FCF740B54C02C45896B9C64810C3,"Думаю, нечего страшного не случится за это время.",我想这段时间里应该不会出什么事。
+Everlasting_summer\Content\DialogSystem\знакомство\пригласил_виолу.json,7ABAD33E49742F0D04267681757772E1,"Смотри, Семен, пока я не натанцуюсь, ты не будешь свободен.",听好了，谢苗，我跳够之前，你别想走。
+Everlasting_summer\Content\DialogSystem\знакомство\пригласил_виолу.json,C696C7A34C1DFE9FAEE596B01872B852,Хорошо,好吧。
+Everlasting_summer\Content\DialogSystem\знакомство\пригласил_виолу.json,110C6C4347AA4188A69BADBC2B873F01,Мы вышли на середину площади,我们走到了广场中央。
+Everlasting_summer\Content\DialogSystem\знакомство\пригласил_од.json,3E15A0014DDC504FFA4A5998075429B4,"Так, Семен, я не поняла, а ты чего не танцуешь?",喂，谢苗，你怎么不跳啊？
+Everlasting_summer\Content\DialogSystem\знакомство\пригласил_од.json,4316B7284DA7DC8601018B8E48B2F662,Да я как-то не планировал особо,是，我本来也没特别打算跳。
+Everlasting_summer\Content\DialogSystem\знакомство\пригласил_од.json,93D311A04AF8463CB4C531BA58375882,Глупости все это. Другого шанса может не представиться,别犯傻了。这种机会可不会有第二次。
+Everlasting_summer\Content\DialogSystem\знакомство\пригласил_од.json,D8DB98944B46633141E844B672259194,"Да, но я все же воздержусь",是的，但我还是算了吧。
+Everlasting_summer\Content\DialogSystem\знакомство\пригласил_од.json,73421A694A557F85527AA6BD1CC65D07,"Нечего не знаю, марш танцевать!",不管了，给我去跳！
+Everlasting_summer\Content\DialogSystem\знакомство\пригласил_од.json,D796AEA94FF08A16F0D3B9A8DC38EC46,Удумал мне тут,还想跟我讲条件。
+Everlasting_summer\Content\DialogSystem\знакомство\пригласил_од.json,F44B2F1F43240B32E73586A7F707F203,Мы вышли на середину площади,我们走到了广场中央。
+Everlasting_summer\Content\DialogSystem\знакомство\пригласим_мику.json,8B8EB5BF4E8C3D100761718265B693C1,А? Что!? Ты и в правду меня приглашаешь!?,啊？什么！？你……你真的要邀请我！？
+Everlasting_summer\Content\DialogSystem\знакомство\пригласим_мику.json,52072A8740A702851F715AB5CA6DFB1F,Конечно.,当然。
+Everlasting_summer\Content\DialogSystem\знакомство\пригласим_мику.json,8C6A3CFF4ADB43AFCBED2A8728DCD8AF,"Хорошо, просто я....",好的，只是我……
+Everlasting_summer\Content\DialogSystem\знакомство\пригласим_мику.json,BB20393A4ED56ED27A1A81AFE011E6BB,Хотя не важно. Пойдем.,不过不重要了。我们走吧。
+Everlasting_summer\Content\DialogSystem\знакомство\пригласим_мику.json,CFE7F3B146E7891BE7460FB0B5EE3F1C,Мы вышли на середину площади,我们走到了广场中央。
+Everlasting_summer\Content\DialogSystem\знакомство\прошел.json,B532996D40C240020D5C59B4ED9A5ED7,"Полагаю, у нас все получилось",我想，我们成功了。
+Everlasting_summer\Content\DialogSystem\знакомство\прошел.json,67442D974CBD2EA9EEFCE38C2BE4130A,И что теперь?,那现在呢？
+Everlasting_summer\Content\DialogSystem\знакомство\прошел.json,221DE3E4481CF052EAAFEE9C5B9E008F,????,？？？？
+Everlasting_summer\Content\DialogSystem\знакомство\прошел.json,0E1774E24E3BE68D06E1199CC67A4ADC,Куда она делась!?,她跑哪儿去了！？
+Everlasting_summer\Content\DialogSystem\знакомство\прошел.json,3C628E144323EBD53B913DA9C1B4D5F8,"Семен, займи свое место, мы отправляемся",谢苗，回到你的座位上去，我们出发了。
+Everlasting_summer\Content\DialogSystem\знакомство\прошел.json,73E82FE54B577B2F7853828ABA381C51,"А? Да, хорошо",啊？好，好的。
+Everlasting_summer\Content\DialogSystem\знакомство\прошел.json,BA8C2F594476BC8240C195A0FB2FDA77,....,……
+Everlasting_summer\Content\DialogSystem\знакомство\прошел.json,C8E9363D4C45AD18294DF395BEBCA9D3,Куда же она делась? ,她到底去哪了？
+Everlasting_summer\Content\DialogSystem\знакомство\прошел.json,9301209E4EB9C28C83EFAE8E1D526108,И кто она?,她又是谁？
+Everlasting_summer\Content\DialogSystem\знакомство\прошел.json,967E12DE41F79F16502273B8DD77ABD1,"А впрочем, неважно",不过，算了，不重要。
+Everlasting_summer\Content\DialogSystem\знакомство\ринка_убежал.json,55A8FA4443D43C5431E13A82FAE1DF35,А что это ты тут делаешь?,你在这里干什么呢？
+Everlasting_summer\Content\DialogSystem\знакомство\ринка_убежал.json,7E55731B44CA0EFF13D449B2D80F1013,"Ты слишком далеко ушел, заблудиться же можешь!",你走得太远了，可是会迷路的！
+Everlasting_summer\Content\DialogSystem\знакомство\ринка_убежал.json,D2C44D03417385E3DA5E4F9AC913912F,"Пойдем со мной, пойдем, я провожу тебя в лагерь",跟我来，走，我送你回营地。
+Everlasting_summer\Content\DialogSystem\знакомство\сигареты.json,D0234537416672F1D9FC619E6501A47A,"Семен, ты в своем уме!?",谢苗，你疯了吗！？
+Everlasting_summer\Content\DialogSystem\знакомство\сигареты.json,4CD2222340BC7AB59FB5959D9C6D3584,Где ты вообще взял эту гадость?,你到底从哪弄来这种肮脏东西的？
+Everlasting_summer\Content\DialogSystem\знакомство\сигареты.json,07D177AB448FD5806151CDBCE52BF7B8,"Честно признаться, сказать мне было совершенно нечего",老实说，我完全无言以对。
+Everlasting_summer\Content\DialogSystem\знакомство\сигареты.json,90F011B8472CFD74A8BDE388396D3594,"Я сейчас был похож на школьника, которого поймали с сигаретами за школой",我此刻就像个在学校后面被抓到抽烟的小学生。
+Everlasting_summer\Content\DialogSystem\знакомство\сигареты.json,135C8C364CF0BFDC3BC0F9A22C0CC3A8,"И в голову не приходила ни единая мысль, которая могла бы логически объяснить происходящее",脑子里想不出任何一句话，可以合乎逻辑地解释眼前发生的事情。
+Everlasting_summer\Content\DialogSystem\знакомство\сигареты.json,CA69EBB9441A5214EF778AA7A7E5B887,"Не говорить же ей правду, где я нашел сигареты, и что мне захотелось покурить",总不能告诉她实话，说我在哪里找到了烟，然后自己突然想抽一根吧。
+Everlasting_summer\Content\DialogSystem\знакомство\сигареты.json,3E0266644BA60D6210EDB481963848B6,Что молчишь?,你沉默什么？
+Everlasting_summer\Content\DialogSystem\знакомство\сигареты.json,55290E8B4D310FEF04CDB8BCAF25EE37,Простите,对不起。
+Everlasting_summer\Content\DialogSystem\знакомство\сигареты.json,4E923E9F45A3962046F27CB558B566E8,Виновато выдавил я из себя,我愧疚地挤出了这句话。
+Everlasting_summer\Content\DialogSystem\знакомство\сигареты.json,19539D2648490D4E01D47A92C9AB9E46,"Семен, настоящие пионеры себя так не ведут",谢苗，真正的少先队员不应该有这种行为。
+Everlasting_summer\Content\DialogSystem\знакомство\сигареты.json,D9231795464633AFD95994AC8558ACCF,Ты теперь наказан,你现在被罚了。
+Everlasting_summer\Content\DialogSystem\знакомство\сигареты.json,84B2DA0D4505B05290A866BD8C9743EF,Иди за мной,跟我走。
+Everlasting_summer\Content\DialogSystem\знакомство\сигареты.json,6089F18A438C03A84E4D099D214FC36F,Мы пришли в здание администрации,我们来到了行政楼。
+Everlasting_summer\Content\DialogSystem\знакомство\сигареты.json,72FB48CE4CA2931D3891D9BA3A2D3CDA,Бери метлу и принимайся за уборку,拿起扫帚，开始打扫。
+Everlasting_summer\Content\DialogSystem\знакомство\сигареты.json,0ED5F9AC4C992E595D762CB133A0C3D1,"Пока все не подметешь, отсюда не выйдешь",不把所有地方扫干净，就别想离开这里。
+Everlasting_summer\Content\DialogSystem\знакомство\сигареты.json,7D62EF6F4052274BBB148CB2AFD34CB8,Хорошо,好。
+Everlasting_summer\Content\DialogSystem\знакомство\сигареты.json,9CADF27B479965CFB6AD3D8E9BE1E10E,Неохотно согласился я,我不情愿地答应了。
+Everlasting_summer\Content\DialogSystem\знакомство\случилось.json,3801DAC542A96AB89E8DA18BF74FE761,Хотя я догадывался в чем причина,虽然我多少猜到是什么原因。
+Everlasting_summer\Content\DialogSystem\знакомство\случилось.json,B5B13B964D8A482BC4A94CA02AF04AD5,"Одиночество — это та жизнь, которая была привычной для меня еще несколько дней назад",孤独——是几天前我还习以为常的生活。
+Everlasting_summer\Content\DialogSystem\знакомство\случилось.json,9159657F4A7F004BB4235494D865E3AC,А для некоторых оно становится не выносимой пыткой,而对有些人来说，它却变成了难以忍受的折磨。
+Everlasting_summer\Content\DialogSystem\знакомство\случилось.json,200A4FAE4AD80266AFB40882C04BDB2F,Мику через время ответила...,未来过了一会儿才回应……
+Everlasting_summer\Content\DialogSystem\знакомство\случилось.json,02A53716483CA8E6AAA649B2B7390543,Ничего. Оставь меня одну...,没什么。让我一个人待着……
+Everlasting_summer\Content\DialogSystem\знакомство\случилось.json,ADF927744ECE9CBCBCAD6B92E31865DB,Я не знал как поступить,我不知道该怎么办。
+Everlasting_summer\Content\DialogSystem\знакомство\случилось.json,59C92E4048BCAD935BB749ABD6EF5575,"Лучше сделать что она просит, или же остаться и помочь успокоиться",是该顺着她，还是留下来陪她冷静一下。
+Everlasting_summer\Content\DialogSystem\знакомство\случилось.json,2D3715664255AE318393318F91B2CAF6,"Я выбрал второй вариант, тем более, потому что чуствовал вину",我选了后者——更何况，我本来就心有愧疚。
+Everlasting_summer\Content\DialogSystem\знакомство\случилось.json,0CDFE2274ACB99EF2C0CB8B4B0F138E8,"Прости меня, я поступил с тобой грубо",对不起，我之前对你太粗暴了。
+Everlasting_summer\Content\DialogSystem\знакомство\случилось.json,65F642DC4328FC20178FA2885A0BEE2C,Мне не следовало так себя вести,我不应该那样做的。
+Everlasting_summer\Content\DialogSystem\знакомство\случилось.json,035A32DA411D8ACC83E154B1A5FBF838,"Ты не виноват, со мной так все поступают",你没有错，大家都是这么对我的。
+Everlasting_summer\Content\DialogSystem\знакомство\случилось.json,530D1F044E86085F6BAFDC9E4B1B7F0D,"Я сижу тут днями, ко мне почти не кто не заходит, и все шарахаются как от огня",我整天坐在这里，几乎没人来，大家见到我就像躲瘟疫一样绕道走。
+Everlasting_summer\Content\DialogSystem\знакомство\случилось.json,214BDBA240D94D0D004B7396C85BE204,А я ведь просто хочу хотя бы одного друга,可我只是想要有一个朋友而已。
+Everlasting_summer\Content\DialogSystem\знакомство\случилось.json,10E812934E265075AF80B49F6D7A3278,Не плачь пожалуйста,别哭了，好吗。
+Everlasting_summer\Content\DialogSystem\знакомство\случилось.json,6665670F43C5629DC4CE658B15BB415E,Давай я буду твоим другом?,那我来做你的朋友怎么样？
+Everlasting_summer\Content\DialogSystem\знакомство\случилось.json,004F1578436AEE7C73E1CA8A8D891F82,Мне не нужна дружба из жалости,我不需要出于同情的友谊。
+Everlasting_summer\Content\DialogSystem\знакомство\случилось.json,82F603944EE185AF57CBD0A79E09755F,"Это не жалость, я обещаю, что буду заходить к тебе почаще",不是同情，我保证，我以后会常来找你的。
+Everlasting_summer\Content\DialogSystem\знакомство\случилось.json,900923F547E32F7C13D0D68F0F818AE1,Если ты не против конечно,当然，如果你不反对的话。
+Everlasting_summer\Content\DialogSystem\знакомство\случилось.json,B2AE31A94589AF95CE14B3AB33387C13,Правда?,真的吗？
+Everlasting_summer\Content\DialogSystem\знакомство\случилось.json,DC735EF841A4E656D0F5F58A8756EAC1,Конечно,当然。
+Everlasting_summer\Content\DialogSystem\знакомство\случилось.json,5BD254254A195FE7549BCEB26A68DB3F,Ты станешь моим другом?,你真的会成为我的朋友吗？
+Everlasting_summer\Content\DialogSystem\знакомство\случилось.json,4583B358492EFEFED0CBAB923A2E1195,Да,是的。
+Everlasting_summer\Content\DialogSystem\знакомство\случилось.json,E193AF224AAA7AEFA2639D8EF29F91ED,Очень тихо ответила она,她轻轻地回答了一声。
+Everlasting_summer\Content\DialogSystem\знакомство\случилось.json,DEDBEDC04245740C4FD4E9BB763F179C,"Вот и хорошо, тогда я заскочу к тебе ",那就说定了，我回头来找你。
+Everlasting_summer\Content\DialogSystem\знакомство\случилось.json,5112833F42C3205953CD4D95B28D7CFC,А сейчас мне нужно поискать Шурика,不过现在我得先去找一下舒里克。
+Everlasting_summer\Content\DialogSystem\знакомство\случилось.json,6BE67BBB4B8044B9E536B885DBCD3309,Хорошо,好的。
+Everlasting_summer\Content\DialogSystem\знакомство\случилось.json,F782D5704BB8F2C47060CA901BB96076,Я пойду,我走了。
+Everlasting_summer\Content\DialogSystem\знакомство\случилось.json,A234B6F54EED0C7789A86A9D1BF3ED73,Подожди,等等。
+Everlasting_summer\Content\DialogSystem\знакомство\случилось.json,D1B2CE534D682A4C4BD9FEA4722B45E4,Спасибо тебе,谢谢你。
+Everlasting_summer\Content\DialogSystem\знакомство\случилось.json,3597DBE7400AF30259E17585FD531676,И не расказывай пожалуйста никому,还有……请你不要告诉任何人。
+Everlasting_summer\Content\DialogSystem\знакомство\случилось.json,FB0075F24929AEF38555879303832C55,Обещаю,我保证。
+Everlasting_summer\Content\DialogSystem\знакомство\сон_2_день.json,78A6293047BB4F4B14E8F0B63B431656,"Попрошу минутку внимания! Я спросила у машиниста, и он сказал, что мы уже скоро прибудем",请大家注意！我刚问过列车员，他说我们快到了。
+Everlasting_summer\Content\DialogSystem\знакомство\сон_2_день.json,D0B484EE4E4B226DAEC40DA94EA33203,"Так что большая просьба, не разбредаться по вагонам, и, главное, не забудьте свои личные вещи",所以麻烦大家别在车厢里乱走，最重要的是，别忘了带好自己的随身物品。
+Everlasting_summer\Content\DialogSystem\знакомство\сон_2_день.json,71A9C671473CBA467043A88F57E4BFC6,"Ольга Дмитриевна продолжала что-то говорить, но меня привлекла одна странная деталь: у меня нет с собой вещей",奥尔加·德米特里耶夫娜还在继续说，但我的注意力被一个奇怪的细节吸引了：我没有任何行李。
+Everlasting_summer\Content\DialogSystem\знакомство\сон_2_день.json,25E0386040FDA943A0924B84B0AFFC6A,Никаких,一点都没有。
+Everlasting_summer\Content\DialogSystem\знакомство\сон_2_день.json,4359B1B54707CA031DE564A8329DCC72,"Странно. Там, куда мы направляемся, они бы мне очень пригодились",奇怪。去那个地方，行李应该很有用才对。
+Everlasting_summer\Content\DialogSystem\знакомство\сон_2_день.json,9D80C0564B04FA2FED28258FAFBE2033,"А куда это ""туда""?",“那个地方”是哪儿？
+Everlasting_summer\Content\DialogSystem\знакомство\сон_2_день.json,3B80F30449EB4F55A231799C3DDC06C5,"Не могу понять, куда мы направляемся, но было отчётливое приятное чувство, что я бывал там много раз",我想不清楚我们要去哪，但有一种清晰而熟悉的感觉——那个地方我曾经去过很多次。
+Everlasting_summer\Content\DialogSystem\знакомство\сон_2_день.json,03B9CA1544C9CC86ED6915864A80F023,"Думая об этом месте, меня охватывало приятное теплое чувство, которое разливалось по всему телу",每当想到那个地方，一股温热的感觉就会从心底漫开，传遍全身。
+Everlasting_summer\Content\DialogSystem\знакомство\сон_2_день.json,520CB6094EB5E3610BB87D97E7E77236,"Я точно знал, что это место не дом. ",我确切地知道，那个地方不是家。
+Everlasting_summer\Content\DialogSystem\знакомство\сон_2_день.json,F385C3664856D91E5F52A9AD1A070CF3,Но ведь что может быть лучше возвращения домой?! ,但又有什么能比得过回家呢？！
+Everlasting_summer\Content\DialogSystem\знакомство\сон_2_день.json,FAD723D341D69F99F6613BB2BA502D57,... ,……
+Everlasting_summer\Content\DialogSystem\знакомство\сон_2_день.json,33D356C94ECDE7C3E615A393D0666AA0,"По-видимому, из за этого еле ощутимого чувства все же, что-то да может",看来，正是这种难以言说的感觉，让我觉得世上确实有比家更好的地方。
+Everlasting_summer\Content\DialogSystem\знакомство\сон_2_день.json,6B4E2F9D41B68AF3EE0E5D83477F9D59,"Потратив ещё немного времени на попытки вспомнить место назначения, я понял, что сам я ни к чему не приду, и лучше будет просто спросить...",又在那儿冥思苦想了一会儿，我意识到靠自己根本想不出来，还不如直接去问……
+Everlasting_summer\Content\DialogSystem\знакомство\сон_2_день.json,487D962444474ECD72947391299929E4,"Ольга Дмитриевна, скажите, а куда мы точно направляемся? ",奥尔加·德米特里耶夫娜，请问，我们到底是去哪里？
+Everlasting_summer\Content\DialogSystem\знакомство\сон_2_день.json,EBB749DB42CBFAF80A46E78DE1E461A5,...,……
+Everlasting_summer\Content\DialogSystem\знакомство\сон_2_день.json,BC91D9A54A465E85C5C40FAD9EB97057,"Семён, ты чем слушал, когда я только что объясняла? ",谢苗，我刚才说话的时候，你耳朵搁哪儿了？
+Everlasting_summer\Content\DialogSystem\знакомство\сон_2_день.json,0949CC2844BD72DC644C5BA7C3AB861D,Надо было все же послушать,早知道应该认真听的。
+Everlasting_summer\Content\DialogSystem\знакомство\сон_2_день.json,8E0B338B4F58297266B037B2A4A38225,"Простите, наверное, засмотрелся просторами родного космоса",对不起，我大概是……看着车窗外的风景出神了。
+Everlasting_summer\Content\DialogSystem\знакомство\сон_2_день.json,7E638228467335E62EA98AB7EC5195EF,"Не могли бы вы повторить, пожалуйста? ",麻烦您再说一遍，好吗？
+Everlasting_summer\Content\DialogSystem\знакомство\сон_2_день.json,27A3DA844F4F9FCCCDA7B59566704E8A,"Ладно, но больше повторять не буду",好吧，但我不会再重复了。
+Everlasting_summer\Content\DialogSystem\знакомство\сон_2_день.json,CF172E1E4A230B041B2743BC1381F83D,"Сейчас мы направляемся в перевалочный пункт, где совершим пересадку, и уже оттуда направимся в место назначения",我们现在前往一个中转站，在那里换乘，然后再出发前往目的地。
+Everlasting_summer\Content\DialogSystem\знакомство\сон_2_день.json,6579E4D448290A283FF58F94AEC6C902,А какой у нас пункт назначения? ,那我们的终点站是哪里？
+Everlasting_summer\Content\DialogSystem\знакомство\сон_2_день.json,F158B0FF4D431D1234A52097269862DF,"Семён, ты что, даже этого не знаешь?! ",谢苗，你连这个都不知道吗？！
+Everlasting_summer\Content\DialogSystem\знакомство\сон_2_день.json,04461BAC4DC51695C35D0DBE99208855,Простите....,对不起……
+Everlasting_summer\Content\DialogSystem\знакомство\сон_2_день.json,6BE520F0432748D3C4E8C9905C810A7F,"Запоминай, мы направляемся ",记清楚了，我们要去——
+Everlasting_summer\Content\DialogSystem\знакомство\сон_2_день.json,8E7983674912329DC76999971E2AE7B5,Что-то случилось? ,发生什么事了吗？
+Everlasting_summer\Content\DialogSystem\знакомство\сон_2_день.json,6323402E4A0497E600FC82BA06C5530F,"Не знаю, пойду спрошу у машиниста...",不知道，我去问问列车员……
+Everlasting_summer\Content\DialogSystem\знакомство\сон_2_день.json,D70790D845EB76CBABB5E5A4B9832739,...,……
+Everlasting_summer\Content\DialogSystem\знакомство\сон_2_день.json,8CB7DED54054A6C026F0B2877B5A7D5C,Я так толком нечего и не выяснил ,我什么也没打听到。
+Everlasting_summer\Content\DialogSystem\знакомство\сон_2_день.json,8AF6EA5C4BC02709AA16C1AB91BE2A76,"Ладно, может получится выяснить что-то у пионеров",算了，也许能从少先队员那里打听出点什么。
+Everlasting_summer\Content\DialogSystem\знакомство\сон_2_день.json,23C5AB654646391E472868A31B2E4119,"Тем более, в вагоне явно чувствуется взволнованность происходящим",再说，车厢里的气氛明显有些不对劲，大家都感觉到了。
+Everlasting_summer\Content\DialogSystem\знакомство\сон_2_день.json,7EBAEE174B136AD0ADFA668610351023,Время действовать,是时候行动了。
+Everlasting_summer\Content\DialogSystem\знакомство\сон_2_день.json,BB84856B4F6D73340F3B47B5C6F9F1F1,...,……
+Everlasting_summer\Content\DialogSystem\знакомство\сон_2_день.json,386578B245FA69A4624F1EBA8B3AA320,...,……
+Everlasting_summer\Content\DialogSystem\знакомство\тут_здорово.json,F31F93BB497F06EB0E8C6D8095C6B3B2,Я так рада что не только мне тут одной нравиться.,真高兴不止我一个人喜欢这里。
+Everlasting_summer\Content\DialogSystem\знакомство\тут_здорово.json,5F555E76473484054A4F158DEE37E6CD,А то я уже стала подумывать что я тут одна с приветом.,不然我都要开始怀疑自己是不是脑袋有问题了。
+Everlasting_summer\Content\DialogSystem\знакомство\тут_здорово.json,686FD7BF4D3C25B099317CA182AD422C,А что остальным тут не особо нравиться?,难道其他人都没那么喜欢这里吗？
+Everlasting_summer\Content\DialogSystem\знакомство\тут_здорово.json,BFF81CFE4A590951E9537D8260EA3452,"Ну не то чтобы не нравиться, просто они так говорят как будто для них это уже тысячная поездка.",也不是不喜欢，只是他们说话的语气，就好像这已经是他们的第一千次出行了。
+Everlasting_summer\Content\DialogSystem\знакомство\тут_здорово.json,0540BE81418D347C3CEE33AEAA256E00,И что они проехали все лучшие лагеря странны а в этот их силой привезли.,说什么走遍了全国最好的营地，被硬送到这个地方来的。
+Everlasting_summer\Content\DialogSystem\знакомство\тут_здорово.json,59BF33E04F924D69B81C32BE15C5819B,И что они проехали все лучшие лагеря странны а в этот их силой привезли.,说什么走遍了全国最好的营地，被硬送到这个地方来的。
+Everlasting_summer\Content\DialogSystem\знакомство\тут_здорово.json,A6C72CDF47515E3F1F7F85AB4DF28BBE,Может быть кого-то из пионеров тоже сюда силой переслали как меня?!,难道有些少先队员也跟我一样，是被强行送来的？！
+Everlasting_summer\Content\DialogSystem\знакомство\тут_здорово.json,1EC73C3A405D6B33AA23FA9D6361FA83,Но смотря на местных пионеров не видно чтобы хоть как то выделялись из общего поведения.,但看看本地的少先队员，看不出有任何行为举止与众不同的地方。
+Everlasting_summer\Content\DialogSystem\знакомство\тут_здорово.json,A187CF52401C90F5BD225985E78C5D4E,Неужели они все так мастерски скрывают что они тоже доставлены из своего времени.,难道他们都这么巧妙地隐藏了自己同样来自另一个时代的事实？
+Everlasting_summer\Content\DialogSystem\знакомство\тут_здорово.json,C67DF5BE41E5EABFB3432B9A25666432,Думать об этом все равно к ответу не прийти.,光靠想反正也得不出答案。
+Everlasting_summer\Content\DialogSystem\знакомство\тут_здорово.json,C8245D8B48384E266A790A8D1A4394C9,А ты?,你呢？
+Everlasting_summer\Content\DialogSystem\знакомство\тут_здорово.json,2FBA2BB6473F1A685A2B06A8C080792A,Ааа?!,啊啊？！
+Everlasting_summer\Content\DialogSystem\знакомство\тут_здорово.json,1A95C25C44397898AF4E7CB652C4AB4C,Ты что не слушал?,你没在听吗？
+Everlasting_summer\Content\DialogSystem\знакомство\тут_здорово.json,98614F234ADAA4C5F2CD1CBFA1C2E6B1,Повтори пожалуйста я просто не расслышал.,请你重复一遍，我刚才没听清。
+Everlasting_summer\Content\DialogSystem\знакомство\тут_здорово.json,FF6195944C6640118B1F1F9E5470A846,Я спросила ты тоже в лагере впервые?,我问你也是第一次来营地吗？
+Everlasting_summer\Content\DialogSystem\знакомство\тут_здорово.json,B9D4FF4442D53CA9DA37EAB6530A9C1C,Из за того что я прослушал контекст не понятно спрашивает она про этот лагерь или про лагеря вообще.,因为走神了，我搞不清楚她问的是这个营地还是泛指所有的营地。
+Everlasting_summer\Content\DialogSystem\знакомство\тут_здорово.json,DBB9405148C1CFDED29441886DCE78B8,А переспрашивать вновь будет неуместно.,再追问一次未免太尴尬了。
+Everlasting_summer\Content\DialogSystem\знакомство\тут_здорово.json,8E7F001E468A3D35B587D18E4967F990,"Придётся соврать, хотя и ложью это назвать сложно.",只好撒谎，虽然这也算不上真正的谎言。
+Everlasting_summer\Content\DialogSystem\знакомство\тут_здорово.json,CC9F429A45C7708E4B9B21836AFAFB7B,Да впервые.,是，第一次。
+Everlasting_summer\Content\DialogSystem\знакомство\тут_здорово.json,6B7ADFC84684D0A3FF9026B21AC78BD1,Понятненько.,明白了。
+Everlasting_summer\Content\DialogSystem\знакомство\тут_здорово.json,5B8883CD4E8B5BBB965D13B86AFAFB87,"Знаешь у меня сейчас дела, но ты подходи ещё поболтаем позже.",我现在有点事，不过你以后再来，咱们再聊。
+Everlasting_summer\Content\DialogSystem\знакомство\тут_здорово.json,B4E2C0F346B34105B60FD0B65A6F14A4,Хорошо.,好的。
+Everlasting_summer\Content\DialogSystem\знакомство\убегаш.json,BED627034814C26910E60D92CD6990A6,Ты ещё не закончил,你还没做完呢。
+Everlasting_summer\Content\DialogSystem\знакомство\убегаш.json,4870D94E44D16A01DFE31790A5485647,Чего прохлаждаешься?,偷什么懒？
+Everlasting_summer\Content\DialogSystem\знакомство\убегаш.json,34E0193D4095676231BDA09B0B691B29,"Я же сказала, не отпущу, пока не закончишь",我说了，不做完不会放你走的。
+Everlasting_summer\Content\DialogSystem\знакомство\убегаш.json,4EB6979A4589551DB0A994B4632B699F,"Давай-давай, убирайся",快点快点，快收拾。
+Everlasting_summer\Content\DialogSystem\знакомство\убрался_наказан.json,17B3D8D74A00C736A69B58AA4C052C7D,Молодец Семен!,好样的谢苗！
+Everlasting_summer\Content\DialogSystem\знакомство\убрался_наказан.json,219017324E2FC0C8458A4385DAF283BC,Хорошо убрался,打扫得真干净。
+Everlasting_summer\Content\DialogSystem\знакомство\убрался_наказан.json,40A46BF241A56B2DF7150EA600B80D78,Теперь можешь идти,现在你可以走了。
+Everlasting_summer\Content\DialogSystem\знакомство\убрался_наказан.json,5D6E2A014AB0477D05D22AA5DB8D309C,И чтобы я больше не видела нечего подобного,还有别再让我看见任何类似的事情。
+Everlasting_summer\Content\DialogSystem\знакомство\убрался_наказан.json,CE3830564BF4D552700FF99867D63385,Ты меня понял?,你明白我的意思吗？
+Everlasting_summer\Content\DialogSystem\знакомство\убрался_наказан.json,E1FE9F714DC1E52C09C148AC50EA9F2D,"Да, понял...",是的，明白……
+Everlasting_summer\Content\DialogSystem\знакомство\убрался_наказан.json,F98A5982443F003D944A6E81F4714026,Вот и отлично,那太好了。
+Everlasting_summer\Content\DialogSystem\знакомство\хорошая_погода.json,EF3C5D0F4E2C77C37DD80AAFCF38F776,"И правда, погода сегодня просто замечательная.",说真的，今天的天气真是太好了。
+Everlasting_summer\Content\DialogSystem\знакомство\хорошая_погода.json,03D69A7B498861C20DD43695CA554EE5,"Особенно по сравнению с местом, откуда я приехала.",尤其是跟我来的地方相比。
+Everlasting_summer\Content\DialogSystem\знакомство\хорошая_погода.json,678944F0428274DA2269FBA5A4B4A63B,Это просто небо и земля.,这简直是天壤之别。
+Everlasting_summer\Content\DialogSystem\знакомство\хорошая_погода.json,6E7F4C82497A495B334E5295091ABA37,"Знаешь там почти постоянно холодно, даже летом.",你知道，那里几乎全年都是冷的，就算是夏天也不例外。
+Everlasting_summer\Content\DialogSystem\знакомство\хорошая_погода.json,08A9009A453479210954B1A8673E0325,"Ну, хотя летом бывает один два месяца тепло, и то тепло можно назвать с натяжкой.",嗯，夏天是能暖和个一两个月，但那也只是勉勉强强叫做暖和。
+Everlasting_summer\Content\DialogSystem\знакомство\хорошая_погода.json,33587E8443220902F40F74930233BDFA,"Но все остальные месяцы либо зима, либо осень.",但其他所有月份，要么是冬天，要么是秋天。
+Everlasting_summer\Content\DialogSystem\знакомство\хорошая_погода.json,AAF61E1C4CFE8B27CBCDFAA7A8D742A1,"Поэтому здесь мне очень нравиться, так бы и осталась тут жить вечно.",所以我太喜欢这里了，真想就这么永远留下来。
+Everlasting_summer\Content\DialogSystem\знакомство\хорошая_погода.json,00F2400040DB4E6A1FFF3D8235E86887,И вроде медведей тут нет.,而且这里好像也没有熊。
+Everlasting_summer\Content\DialogSystem\знакомство\хорошая_погода.json,311696A241B4C26671DC08AC1229E1B3,"Ну знаешь зимой у нас все одеты как медведи, что не отлечить от настоящих.",你知道吗，冬天我们那边人人都穿得像熊一样，跟真熊根本分不清楚。
+Everlasting_summer\Content\DialogSystem\знакомство\хорошая_погода.json,F0D758554D47A8C011E106B4D12191C9,"Ну знаешь зимой у нас все одеты как медведи, что не отлечить от настоящих.",你知道吗，冬天我们那边人人都穿得像熊一样，跟真熊根本分不清楚。
+Everlasting_summer\Content\DialogSystem\знакомство\хорошая_погода.json,CD33DEEC4E797322CFDEABA346412DD2,"А если серьезно, то да изредко в город может зайти медведь.",说正经的，熊偶尔确实会进城。
+Everlasting_summer\Content\DialogSystem\знакомство\хорошая_погода.json,091EEC72414E90FD36B99BA2793C6CF5,"К счастью страдают от него только мусорки, но иногда все же страшновато.",幸好通常只是翻翻垃圾桶，但有时候还是挺吓人的。
+Everlasting_summer\Content\DialogSystem\знакомство\хорошая_погода.json,A1FE073C4BD47C81B7260E9BF550E02A,Особенно утром пока темно.,尤其是天还没亮的时候。
+Everlasting_summer\Content\DialogSystem\знакомство\хорошая_погода.json,2ECFA6094F561DE10F8ED89FC26B39F1,А там где ты живешь тоже холодно?,那你住的地方也冷吗？
+Everlasting_summer\Content\DialogSystem\знакомство\эл_боиться.json,6AF994E14D7DAE3EFD23F5A13D22C7DF,Семен? Это ты?,谢苗？是你吗？
+Everlasting_summer\Content\DialogSystem\знакомство\эл_боиться.json,F3CAAE5E49CFDB6094202BB422F1F99D,Да... А ты...,是的……你是……
+Everlasting_summer\Content\DialogSystem\знакомство\эл_боиться.json,532F72BA450BBC3BB003119354A24321,Ты один?,你一个人吗？
+Everlasting_summer\Content\DialogSystem\знакомство\эл_боиться.json,959ECE8C4116CF7427F72483D4C95148,"Да, а ты чего в кустах сидишь?",是的，你蹲在灌木丛里干嘛？
+Everlasting_summer\Content\DialogSystem\знакомство\эл_боиться.json,52643CD24706ED6EC0EB19A84065381F,"А? Я? Да ты знаешь кое-что потерял тут, вот ищу",啊？我嘛……你知道我在这边丢了东西，正找着呢。
+Everlasting_summer\Content\DialogSystem\знакомство\эл_боиться.json,FEB5C80E4A992F79FE8A54B70B5FBE7D,Тебе помочь?,需要帮你吗？
+Everlasting_summer\Content\DialogSystem\знакомство\эл_боиться.json,AAFE57B44C2B832F4C0A099FF335C65D,"Нет, не надо, я уже почти нашел",不，不用，我差不多已经找到了。
+Everlasting_summer\Content\DialogSystem\знакомство\эл_боиться.json,7979C9E841E0E7CF23F93795CACB7D3E,Ну хорошо...,那好吧……
+Everlasting_summer\Content\DialogSystem\знакомство\эл_боиться.json,63F1B80E42FAC39B34FC78B665BA37F0,Не видел... Алису?,你没看见……阿丽夏吗？
+Everlasting_summer\Content\DialogSystem\знакомство\эл_боиться.json,86BB95094A094315113EEBB8C902C198,Нет,没看见。
+Everlasting_summer\Content\DialogSystem\знакомство\эл_боиться.json,CFEB1EB7455B2964D60156BBEC03EB16,Вот оно как,原来是这样啊。
+Everlasting_summer\Content\DialogSystem\знакомство\эл_боиться.json,0190F232429F4C9F90AE96914EF198A9,"Ну ладно. Я тут еще посижу... Ну, то есть поищу",那算了。我在这儿再待一会儿……嗯，是再找一会儿。
+Everlasting_summer\Content\DialogSystem\знакомство\эл_боиться.json,94B4B97349FB9ADD8F097FB56A5B4042,"Если что, ты меня не видел!",有人问起，就当没见过我！
+Everlasting_summer\Content\DialogSystem\знакомство\эл_боиться.json,C9C86B2A4F96A2C2AE46EA984CF4B060,Ладно,好吧。
+Everlasting_summer\Content\DialogSystem\знакомство\эл_боиться.json,0D32C4784AF6B86593200B82DCD07A0E,"Видимо, эта девочка местный авторитет, раз от нее парни по кустам прячутся",看来这姑娘在营地里挺有威望的，连男生都要躲到灌木丛里。
+Everlasting_summer\Content\DialogSystem\знакомство\эл_боиться.json,36F2777A4642DBCAF45F1E9E489453EF,Я направился дальше,我继续往前走了。
+Everlasting_summer\Content\DialogSystem\знакомство\я_пока_не_решил.json,AB44F59841F7BCF2FC73628B879A97F9,Я так рада что не только мне тут одной нравиться.,真高兴不止我一个人喜欢这里。
+Everlasting_summer\Content\DialogSystem\знакомство\я_пока_не_решил.json,7EBA06944D59A751F6B6229F177C84AE,А то я уже стала подумывать что я тут одна с приветом.,不然我都要开始怀疑自己是不是脑袋有问题了。

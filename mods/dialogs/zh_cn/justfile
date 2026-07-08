@@ -1,0 +1,37 @@
+# dialogs / zh_cn
+
+import '../justfile'
+import '../../locale.just'
+
+locale := "zh_cn"
+locale_dir := justfile_directory()
+
+font_url := "https://github.com/lxgw/LxgwWenKai/releases/download/v1.522/LXGWWenKai-Regular.ttf"
+font_asset := locale_assets + "/Everlasting_summer/Content/main/hud/hp/Neucha-Regular.ufont"
+
+[script("powershell", "-NoProfile", "-ExecutionPolicy", "Bypass")]
+_ensure-assets:
+    $ErrorActionPreference = 'Stop'
+    $tag = '{{mod}}:{{locale}}'
+    $dest = '{{font_asset}}'
+    if (Test-Path -LiteralPath $dest) {
+        Write-Host "[${tag}:ensure-assets] font cached: $dest"
+        return
+    }
+    $dir = Split-Path -Parent $dest
+    New-Item -ItemType Directory -Force -Path $dir | Out-Null
+    Write-Host "[${tag}:ensure-assets] downloading font -> $dest"
+    Invoke-WebRequest -Uri '{{font_url}}' -OutFile $dest -UseBasicParsing
+    Write-Host "[${tag}:ensure-assets] done"
+
+[doc("Re-download LXGW WenKai dialog font into mods/.../assets/")]
+[script("powershell", "-NoProfile", "-ExecutionPolicy", "Bypass")]
+fetch-font:
+    $ErrorActionPreference = 'Stop'
+    $tag = '{{mod}}:{{locale}}'
+    $dest = '{{font_asset}}'
+    $dir = Split-Path -Parent $dest
+    New-Item -ItemType Directory -Force -Path $dir | Out-Null
+    Write-Host "[${tag}:fetch-font] downloading -> $dest"
+    Invoke-WebRequest -Uri '{{font_url}}' -OutFile $dest -UseBasicParsing
+    Write-Host "[${tag}:fetch-font] done"

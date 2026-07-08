@@ -1,0 +1,8 @@
+# voice_day_5 — day 5 voiced lines (озвучка_5_день)
+
+import '../justfile'
+
+mod := "voice_day_5"
+unpack_paths := ["Everlasting_summer/Content/main/звуки/озвучка_5_день"]
+tojson_exclude := ["*LipSyncSequence.uasset"]
+uexp_signatures := ["0d02", "0d04", "1606", "0002", "0302", "0d06", "1402", "1102"]

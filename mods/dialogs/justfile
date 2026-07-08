@@ -1,0 +1,14 @@
+# dialogs — dialog text (DialogSystem); sidecar bp + skel pass through unchanged
+
+import '../justfile'
+
+mod := "dialogs"
+unpack_paths := [
+  "Everlasting_summer/Content/main/bp",
+  "Everlasting_summer/Content/main/models/руф/skel/",
+  "Everlasting_summer/Content/DialogSystem/",
+]
+tojson_exclude := ["**/main/*"]
+uexp_signatures := ["0004", "0003"]
+merge_extracted := "true"
+fromjson_inplace := "true"

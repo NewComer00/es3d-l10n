@@ -1,5 +1,10 @@
 # es3d-l10n — Бесконечное лето 3D localization toolchain
 
+set unstable
+set lists
+set allow-duplicate-recipes
+set allow-duplicate-variables
+
 set shell := ["powershell.exe", "-NoProfile", "-ExecutionPolicy", "Bypass", "-Command"]
 set windows-shell := ["powershell.exe", "-NoProfile", "-ExecutionPolicy", "Bypass", "-Command"]
 
@@ -87,17 +92,21 @@ _help-intro:
     Write-Section 'Build a mod'
     Write-Cmd '  just mod help'
     Write-Cmd '  just mod-locale help'
+    Write-Cmd '  just mod NAME'
+    Write-Note '      unpack, tojson          (default: help)'
     Write-Cmd '  just mod NAME RECIPE'
-    Write-Note '      unpack, tojson          (shared across locales)'
+    Write-Note '      run a mod recipe'
+    Write-Cmd '  just mod-locale NAME LOCALE'
+    Write-Note '      seed-locale, apply, build-pak, ...  (default: help)'
     Write-Cmd '  just mod-locale NAME LOCALE RECIPE'
-    Write-Note '      seed-locale, extract-csv, apply, all, ...'
+    Write-Note '      run a locale recipe'
     Write-Host ''
 
     Write-Section 'Quick example — voice_prolog / zh_cn'
     Write-Cmd '  just mod voice_prolog unpack'
-    Write-Cmd '  just mod voice_prolog tojson'
+    Write-Note '      optional; tojson (auto from locale recipes) runs unpack'
     Write-Cmd '  just mod-locale voice_prolog zh_cn seed-locale'
-    Write-Cmd '  just mod-locale voice_prolog zh_cn all'
+    Write-Cmd '  just mod-locale voice_prolog zh_cn build-pak'
     Write-Host ''
 
     Write-Section 'Locale CSV'
@@ -404,8 +413,8 @@ _help-mod name='':
     Write-Section 'Usage'
     Write-Cmd '  just mod help'
     Write-Note '      this overview'
-    Write-Cmd '  just mod NAME help'
-    Write-Note '      recipes for one mod'
+    Write-Cmd '  just mod NAME'
+    Write-Note '      recipes for one mod (default)'
     Write-Cmd '  just mod NAME RECIPE'
     Write-Note '      run a recipe (unpack, tojson, ...)'
     Write-Host ''
@@ -477,17 +486,18 @@ _help-mod-locale name='' locale='':
     Write-Section 'Usage'
     Write-Cmd '  just mod-locale help'
     Write-Note '      this overview'
-    Write-Cmd '  just mod-locale NAME LOCALE help'
-    Write-Note '      recipes for one locale'
+    Write-Cmd '  just mod-locale NAME LOCALE'
+    Write-Note '      recipes for one locale (default)'
     Write-Cmd '  just mod-locale NAME LOCALE RECIPE'
-    Write-Note '      run a recipe (seed-locale, apply, all, ...)'
+    Write-Note '      run a recipe (seed-locale, apply, build-pak, ...)'
     Write-Host ''
 
     Write-Section 'Pipeline'
     Write-Note '  seed-locale / extract-csv   prepare build/.../locale.csv'
     Write-Note '  diff-locale                 archive vs active CSV'
     Write-Note '  apply → fromjson → strip → pack'
-    Write-Note '  all                         full pipeline through pack'
+    Write-Note '  build-pak                   apply → fromjson → strip → pack'
+    Write-Note '  extract-csv / apply / build-pak   auto-run just mod NAME tojson if json missing'
     Write-Host ''
 
     Write-Section 'Locale CSV'
@@ -500,7 +510,7 @@ _help-mod-locale name='' locale='':
         if (-not (Test-Path -LiteralPath $jf)) { throw "Locale not found: $name/$locale (expected $jf)" }
         Write-Section "$name / $locale"
         Write-Host ''
-        Show-RecipeList $jf @('seed-locale', 'extract-csv', 'diff-locale', 'apply', 'fromjson', 'strip', 'pack', 'all')
+        Show-RecipeList $jf @('seed-locale', 'extract-csv', 'diff-locale', 'apply', 'fromjson', 'strip', 'pack', 'build-pak')
     } else {
         Write-Section 'Available mods'
         $exampleJf = $null
@@ -522,11 +532,11 @@ _help-mod-locale name='' locale='':
         } else {
             Write-Host ''
             Write-Section 'Example recipe list'
-            Show-RecipeList $exampleJf @('seed-locale', 'extract-csv', 'diff-locale', 'apply', 'fromjson', 'strip', 'pack', 'all')
+            Show-RecipeList $exampleJf @('seed-locale', 'extract-csv', 'diff-locale', 'apply', 'fromjson', 'strip', 'pack', 'build-pak')
         }
     }
 
-[doc("Mod recipes: just mod help | just mod NAME help | just mod NAME RECIPE")]
+[doc("Mod recipes: just mod help | just mod NAME | just mod NAME RECIPE")]
 [script("powershell", "-NoProfile", "-ExecutionPolicy", "Bypass")]
 mod NAME *ARGS:
     $ErrorActionPreference = 'Stop'
@@ -536,16 +546,16 @@ mod NAME *ARGS:
         & '{{just_exe}}' '_help-mod'
         exit 0
     }
-    if ($extra -eq 'help') {
+    if (-not $extra -or $extra -eq 'help') {
         & '{{just_exe}}' '_help-mod' '{{NAME}}'
         exit 0
     }
     $jf = Join-Path (Join-Path '{{mods_dir}}' '{{NAME}}') 'justfile'
     $argList = @('-f', $jf)
-    if ($extra) { $argList += $extra -split '\s+' }
+    $argList += $extra -split '\s+'
     & '{{just_exe}}' @argList
 
-[doc("Locale recipes: just mod-locale help | just mod-locale NAME LOCALE help | just mod-locale NAME LOCALE RECIPE")]
+[doc("Locale recipes: just mod-locale help | just mod-locale NAME LOCALE | just mod-locale NAME LOCALE RECIPE")]
 [script("powershell", "-NoProfile", "-ExecutionPolicy", "Bypass")]
 mod-locale NAME LOCALE='' *ARGS:
     $ErrorActionPreference = 'Stop'
@@ -556,13 +566,12 @@ mod-locale NAME LOCALE='' *ARGS:
         & '{{just_exe}}' '_help-mod-locale'
         exit 0
     }
-    if ($extra -eq 'help') {
-        if (-not $locale) { throw 'Usage: just mod-locale NAME LOCALE help' }
+    if (-not $locale) { throw 'Usage: just mod-locale NAME LOCALE [RECIPE]  (or: just mod-locale help)' }
+    if (-not $extra -or $extra -eq 'help') {
         & '{{just_exe}}' '_help-mod-locale' '{{NAME}}' '{{LOCALE}}'
         exit 0
     }
-    if (-not $locale) { throw 'Usage: just mod-locale NAME LOCALE RECIPE  (or: just mod-locale help)' }
     $jf = Join-Path (Join-Path (Join-Path '{{mods_dir}}' '{{NAME}}') '{{LOCALE}}') 'justfile'
     $argList = @('-f', $jf)
-    if ($extra) { $argList += $extra -split '\s+' }
+    $argList += $extra -split '\s+'
     & '{{just_exe}}' @argList

@@ -3,6 +3,6 @@
 import '../justfile'
 
 mod := "voice_day_3"
-unpack_include := "Everlasting_summer/Content/main/звуки/озвучка_3_день"
-tojson_exclude := "*LipSyncSequence.uasset"
-uexp_signatures := "0d02 0d04 1606 0002 0302 0d06 1402"
+unpack_paths := ["Everlasting_summer/Content/main/звуки/озвучка_3_день"]
+tojson_exclude := ["*LipSyncSequence.uasset"]
+uexp_signatures := ["0d02", "0d04", "1606", "0002", "0302", "0d06", "1402"]

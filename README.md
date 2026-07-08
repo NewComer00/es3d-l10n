@@ -39,8 +39,10 @@ Activate `.venv` in every new PowerShell window before `just`:
 
 ```powershell
 just help                   # root recipes
-just mod help               # per-mod: unpack, tojson
-just mod-locale help        # per-locale: apply, pack, …
+just mod help               # mod overview
+just mod NAME               # per-mod recipes (default)
+just mod-locale help        # locale overview
+just mod-locale NAME LOCALE # per-locale recipes (default)
 ```
 
 ---
@@ -52,10 +54,8 @@ Example: prologue subtitles (`voice_prolog` / `zh_cn`).
 ```powershell
 . .\.venv\Scripts\Activate.ps1
 
-just mod voice_prolog unpack
-just mod voice_prolog tojson
 just mod-locale voice_prolog zh_cn seed-locale
-just mod-locale voice_prolog zh_cn all
+just mod-locale voice_prolog zh_cn build-pak   # apply → pack → dist/mod_voice_prolog_zh_cn_P.pak
 ```
 
 Install output: `dist/mod_voice_prolog_zh_cn_P.pak` → `Everlasting_summer/Content/Paks/`.
@@ -82,9 +82,9 @@ mods/my_mod/zh_cn/locale.csv    ← optional; add after first extract-csv
 import '../justfile'
 
 mod := "my_mod"
-unpack_include := "Everlasting_summer/Content/main/your/pak/path"
-tojson_exclude := "*LipSyncSequence.uasset"
-uexp_signatures := "0d02 0d04 1606"
+unpack_paths := ["Everlasting_summer/Content/main/your/pak/path"]
+tojson_exclude := ["*LipSyncSequence.uasset"]
+uexp_signatures := ["0d02", "0d04", "1606"]
 ```
 
 3. Locale config — `mods/my_mod/zh_cn/justfile`:
@@ -102,11 +102,9 @@ locale_dir := justfile_directory()
 ```powershell
 . .\.venv\Scripts\Activate.ps1
 
-just mod my_mod unpack
-just mod my_mod tojson
 just mod-locale my_mod zh_cn extract-csv
 # edit build/my_mod/zh_cn/locale.csv
-just mod-locale my_mod zh_cn all
+just mod-locale my_mod zh_cn build-pak
 ```
 
 When translations are ready, freeze: copy `build/.../locale.csv` → `mods/.../locale.csv`.
@@ -128,9 +126,9 @@ When translations are ready, freeze: copy `build/.../locale.csv` → `mods/.../l
 |------|---------|
 | Prepare CSV | `seed-locale` or `extract-csv` |
 | Compare CSVs | `diff-locale` |
-| Apply → pack | `all` (or step through apply / fromjson / strip / pack) |
+| Apply → pack | `build-pak` (or step through apply / fromjson / strip / pack) |
 
-Locale steps need `build/<mod>/json/` only — they do not re-run `tojson` unless you ask.
+Locale recipes that need JSON (`extract-csv`, `apply`, `build-pak`, …) auto-run `just mod NAME tojson` when `build/<mod>/json/` is missing (includes unpack). If you install a **new game version or patch** (new `Everlasting_summer-Windows.pak`), delete `build/<mod>/` or run `just mod NAME tojson` yourself so strings match the current game.
 
 **Locale CSV**
 
@@ -152,11 +150,13 @@ Archived Chinese translations (`mods/*/zh_cn/locale.csv`) are derived from the [
 
 | Mod | PAK path |
 |-----|----------|
+| `dialogs` | `DialogSystem/`, `main/bp`, `main/models/руф/skel/` |
 | `voice_prolog` | `main/звуки/пролог` |
 | `voice_day_1` | `main/звуки/озвучка_1_день` |
 | `voice_day_2` | `main/звуки/озвучка_2_день` |
 | `voice_day_3` | `main/звуки/озвучка_3_день` |
 | `voice_day_4` | `main/звуки/озвучка_4_день` |
+| `voice_day_5` | `main/звуки/озвучка_5_день` |
 
 ---
 

@@ -1,6 +1,6 @@
 # Locale build layout and recipes.
 # Import after mods/<name>/justfile; set locale, locale_dir in child.
-# Optional on mod justfile: uexp_signatures (space-separated hex)
+# Optional on mod justfile: uexp_signatures (list of hex uexp headers)
 
 locale_build := mod_build + "/" + locale
 locale_translated := locale_build + "/translated"
@@ -27,7 +27,7 @@ _extract-csv:
     }
 
 [doc("Extract strings from json to build/MOD/LOCALE/locale.csv")]
-extract-csv: _require-json _extract-csv
+extract-csv: _ensure-json _extract-csv
 
 [doc("Copy frozen mods/.../locale.csv archive to build/.../locale.csv")]
 [script("powershell", "-NoProfile", "-ExecutionPolicy", "Bypass")]
@@ -87,24 +87,53 @@ _apply:
     }
 
 [doc("Apply build CSV translations to json in build/.../translated/")]
-apply: _require-json _apply
+apply: _ensure-json _apply
+
+[script("powershell", "-NoProfile", "-ExecutionPolicy", "Bypass")]
+_merge-extracted:
+    $ErrorActionPreference = 'Stop'
+    if ('{{merge_extracted}}' -ne 'true') { return }
+    $tag = '{{mod}}:{{locale}}'
+    $extracted = '{{mod_extracted}}'
+    $translated = '{{locale_translated}}'
+    $out = '{{locale_translated_uasset}}'
+    if (-not (Test-Path -LiteralPath $extracted)) {
+        throw "Extracted dir missing: $extracted. Run: just mod {{mod}} unpack"
+    }
+    Write-Host "[${tag}:merge-extracted] copy extracted -> $out"
+    if (Test-Path -LiteralPath $out) {
+        Remove-Item -LiteralPath $out -Recurse -Force
+    }
+    Copy-Item -LiteralPath $extracted -Destination $out -Recurse -Force
+    if (Test-Path -LiteralPath $translated) {
+        Write-Host "[${tag}:merge-extracted] overlay translated json"
+        Copy-Item -Path (Join-Path $translated '*') -Destination $out -Recurse -Force
+    } else {
+        throw "Translated dir missing: $translated. Run apply first."
+    }
 
 [script("powershell", "-NoProfile", "-ExecutionPolicy", "Bypass")]
 _fromjson:
     $ErrorActionPreference = 'Stop'
     $tag = '{{mod}}:{{locale}}'
     Write-Host "[${tag}:fromjson] starting..."
+    $inputDir = if ('{{fromjson_inplace}}' -eq 'true') { '{{locale_translated_uasset}}' } else { '{{locale_translated}}' }
+    $workers = '{{fromjson_workers}}'.Trim()
+    if (-not $workers) { $workers = '{{workers}}' }
+    $maxRetries = '{{fromjson_max_retries}}'.Trim()
     Push-Location '{{root}}'
     try {
         $args = @(
             'run', 'python', 'scripts/convert.py', 'fromjson',
-            '{{locale_translated}}', '{{locale_translated_uasset}}',
+            $inputDir, '{{locale_translated_uasset}}',
             '--uassetgui', '{{uassetgui}}',
             '--version', '{{ue_version}}',
             '--usmap', '{{usmap}}',
-            '-w', '{{workers}}'
+            '-w', $workers
         )
-        foreach ($sig in '{{uexp_signatures}}'.Trim() -split '\s+') {
+        if ($maxRetries) { $args += @('--max-retries', $maxRetries) }
+        $signatures = @('{{ join_list(uexp_signatures) }}'.Split(' ', [System.StringSplitOptions]::RemoveEmptyEntries))
+        foreach ($sig in $signatures) {
             if ($sig) { $args += @('--uexp-signature', $sig) }
         }
         & '{{uv}}' @args
@@ -114,7 +143,11 @@ _fromjson:
     }
 
 [doc("Convert translated json back to uasset/uexp in build/.../translated_uasset/")]
-fromjson: apply extract-usmap fetch-uassetgui _fromjson
+fromjson: apply extract-usmap fetch-uassetgui _merge-extracted _fromjson
+
+[script("powershell", "-NoProfile", "-ExecutionPolicy", "Bypass")]
+_ensure-assets:
+    # Override in mods/.../LOCALE/justfile to fetch files into mods/.../assets/ before strip.
 
 [script("powershell", "-NoProfile", "-ExecutionPolicy", "Bypass")]
 _strip:
@@ -140,7 +173,7 @@ _strip:
     }
 
 [doc("Copy sidecar assets; overlay mods/.../assets/ into build/.../stripped_uasset/")]
-strip: fromjson _strip
+strip: fromjson _ensure-assets _strip
 
 [script("powershell", "-NoProfile", "-ExecutionPolicy", "Bypass")]
 _pack:
@@ -155,5 +188,5 @@ _pack:
 [doc("repak pack to dist/mod_MOD_LOCALE_P.pak")]
 pack: strip fetch-repak _pack
 
-[doc("Full locale pipeline: apply, fromjson, strip, pack")]
-all: pack
+[doc("Apply translations and pack dist/mod_MOD_LOCALE_P.pak")]
+build-pak: pack

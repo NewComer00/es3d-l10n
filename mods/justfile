@@ -1,26 +1,37 @@
 # Shared mod build layout and recipes (mod-level).
-# Child mods/<name>/justfile must set: mod, unpack_include
-# Optional: tojson_exclude (empty string if unused)
+# Child mods/<name>/justfile must set: mod, unpack_paths (list of PAK paths)
+# Optional: tojson_exclude, uexp_signatures (lists), merge_extracted, fromjson_inplace, fromjson_workers, fromjson_max_retries
 
 import '../justfile'
+
+merge_extracted := "false"
+fromjson_inplace := "false"
+fromjson_workers := ""
+fromjson_max_retries := ""
 
 mod_build := build_dir + "/" + mod
 mod_extracted := mod_build + "/extracted"
 mod_json := mod_build + "/json"
 
 [script("powershell", "-NoProfile", "-ExecutionPolicy", "Bypass")]
-_require-json:
+_ensure-json:
     $ErrorActionPreference = 'Stop'
     $tag = '{{mod}}'
     $json = '{{mod_json}}'
-    if (-not (Test-Path -LiteralPath $json)) {
-        throw "JSON dir missing: $json. Run: just mod {{mod}} tojson"
+    $count = 0
+    if (Test-Path -LiteralPath $json) {
+        $count = @(Get-ChildItem -Path $json -Filter '*.json' -Recurse -File -ErrorAction SilentlyContinue).Count
     }
+    if ($count -gt 0) {
+        Write-Host "[${tag}:ensure-json] ok ($count files in $json)"
+        return
+    }
+    Write-Host "[${tag}:ensure-json] missing — running: just mod $tag tojson"
+    & '{{just_exe}}' mod $tag tojson
+    if ($LASTEXITCODE -ne 0) { throw "just mod $tag tojson failed with exit code $LASTEXITCODE" }
     $count = @(Get-ChildItem -Path $json -Filter '*.json' -Recurse -File -ErrorAction SilentlyContinue).Count
-    if ($count -eq 0) {
-        throw "No JSON in $json. Run: just mod {{mod}} tojson"
-    }
-    Write-Host "[${tag}:require-json] ok ($count files in $json)"
+    if ($count -eq 0) { throw "No JSON in $json after tojson" }
+    Write-Host "[${tag}:ensure-json] ok ($count files in $json)"
 
 [doc("repak unpack mod paths to build/MOD/extracted/")]
 [script("powershell", "-NoProfile", "-ExecutionPolicy", "Bypass")]
@@ -32,7 +43,6 @@ unpack: fetch-repak extract-aes-key
     $pakPath = '{{game_pak}}'
     $aesKey = '{{aes_key}}'
     $outDir = '{{mod_extracted}}'
-    $include = '{{unpack_include}}'
     if (-not (Test-Path -LiteralPath $pakPath)) {
         throw "PAK not found: $pakPath"
     }
@@ -41,8 +51,17 @@ unpack: fetch-repak extract-aes-key
         Remove-Item -LiteralPath $outDir -Recurse -Force
     }
     New-Item -ItemType Directory -Force -Path $outDir | Out-Null
-    Write-Host "[${tag}:unpack] include=$include"
-    & $repakExe --aes-key $aesKey unpack --include $include --output $outDir $pakPath
+    $includes = @('{{ join_list(unpack_paths) }}'.Split(' ', [System.StringSplitOptions]::RemoveEmptyEntries))
+    if (-not $includes.Count) {
+        throw "No unpack paths configured (set unpack_paths in mods/{{mod}}/justfile)"
+    }
+    Write-Host "[${tag}:unpack] includes=$($includes -join ', ')"
+    $repakArgs = @('--aes-key', $aesKey, 'unpack', '--output', $outDir)
+    foreach ($inc in $includes) {
+        $repakArgs += @('--include', $inc)
+    }
+    $repakArgs += $pakPath
+    & $repakExe @repakArgs
     if ($LASTEXITCODE -ne 0) { throw "repak unpack failed with exit code $LASTEXITCODE" }
     Write-Host "[${tag}:unpack] wrote $outDir"
 
@@ -61,11 +80,9 @@ _tojson:
             '--usmap', '{{usmap}}',
             '--skip-existing', '-w', '{{workers}}'
         )
-        $exclude = '{{tojson_exclude}}'.Trim()
-        if ($exclude) {
-            foreach ($pattern in $exclude -split '\s+') {
-                if ($pattern) { $args += @('--exclude', $pattern) }
-            }
+        $exclude = @('{{ join_list(tojson_exclude) }}'.Split(' ', [System.StringSplitOptions]::RemoveEmptyEntries))
+        foreach ($pattern in $exclude) {
+            if ($pattern) { $args += @('--exclude', $pattern) }
         }
         & '{{uv}}' @args
         if ($LASTEXITCODE -ne 0) { throw "convert.py tojson failed with exit code $LASTEXITCODE" }
