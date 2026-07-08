@@ -1,0 +1,7 @@
+# voice_day_3 / zh_cn
+
+import '../justfile'
+import '../../locale.just'
+
+locale := "zh_cn"
+locale_dir := justfile_directory()

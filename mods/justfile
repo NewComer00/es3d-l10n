@@ -1,0 +1,77 @@
+# Shared mod build layout and recipes (mod-level).
+# Child mods/<name>/justfile must set: mod, unpack_include
+# Optional: tojson_exclude (empty string if unused)
+
+import '../justfile'
+
+mod_build := build_dir + "/" + mod
+mod_extracted := mod_build + "/extracted"
+mod_json := mod_build + "/json"
+
+[script("powershell", "-NoProfile", "-ExecutionPolicy", "Bypass")]
+_require-json:
+    $ErrorActionPreference = 'Stop'
+    $tag = '{{mod}}'
+    $json = '{{mod_json}}'
+    if (-not (Test-Path -LiteralPath $json)) {
+        throw "JSON dir missing: $json. Run: just mod {{mod}} tojson"
+    }
+    $count = @(Get-ChildItem -Path $json -Filter '*.json' -Recurse -File -ErrorAction SilentlyContinue).Count
+    if ($count -eq 0) {
+        throw "No JSON in $json. Run: just mod {{mod}} tojson"
+    }
+    Write-Host "[${tag}:require-json] ok ($count files in $json)"
+
+[doc("repak unpack mod paths to build/MOD/extracted/")]
+[script("powershell", "-NoProfile", "-ExecutionPolicy", "Bypass")]
+unpack: fetch-repak extract-aes-key
+    $ErrorActionPreference = 'Stop'
+    $tag = '{{mod}}'
+    Write-Host "[${tag}:unpack] starting..."
+    $repakExe = '{{repak}}'
+    $pakPath = '{{game_pak}}'
+    $aesKey = '{{aes_key}}'
+    $outDir = '{{mod_extracted}}'
+    $include = '{{unpack_include}}'
+    if (-not (Test-Path -LiteralPath $pakPath)) {
+        throw "PAK not found: $pakPath"
+    }
+    if (Test-Path -LiteralPath $outDir) {
+        Write-Host "[${tag}:unpack] removing existing $outDir"
+        Remove-Item -LiteralPath $outDir -Recurse -Force
+    }
+    New-Item -ItemType Directory -Force -Path $outDir | Out-Null
+    Write-Host "[${tag}:unpack] include=$include"
+    & $repakExe --aes-key $aesKey unpack --include $include --output $outDir $pakPath
+    if ($LASTEXITCODE -ne 0) { throw "repak unpack failed with exit code $LASTEXITCODE" }
+    Write-Host "[${tag}:unpack] wrote $outDir"
+
+[script("powershell", "-NoProfile", "-ExecutionPolicy", "Bypass")]
+_tojson:
+    $ErrorActionPreference = 'Stop'
+    $tag = '{{mod}}'
+    Write-Host "[${tag}:tojson] starting..."
+    Push-Location '{{root}}'
+    try {
+        $args = @(
+            'run', 'python', 'scripts/convert.py', 'tojson',
+            '{{mod_extracted}}', '{{mod_json}}',
+            '--uassetgui', '{{uassetgui}}',
+            '--version', '{{ue_version}}',
+            '--usmap', '{{usmap}}',
+            '--skip-existing', '-w', '{{workers}}'
+        )
+        $exclude = '{{tojson_exclude}}'.Trim()
+        if ($exclude) {
+            foreach ($pattern in $exclude -split '\s+') {
+                if ($pattern) { $args += @('--exclude', $pattern) }
+            }
+        }
+        & '{{uv}}' @args
+        if ($LASTEXITCODE -ne 0) { throw "convert.py tojson failed with exit code $LASTEXITCODE" }
+    } finally {
+        Pop-Location
+    }
+
+[doc("UAssetGUI convert uassets to build/MOD/json/ (needs extract-usmap once)")]
+tojson: unpack extract-usmap fetch-uassetgui _tojson

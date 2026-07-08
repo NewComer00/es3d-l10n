@@ -1,0 +1,12 @@
+Third-Party Notices
+===================
+
+Archived Chinese translations
+-----------------------------
+
+The archived locale CSV files under `mods/*/zh_cn/locale.csv` contain
+Chinese translations derived from Everlasting Summer (Ren'Py VN):
+https://soviet.games/everlasting-summer/
+
+These translation files are not covered by the MIT License that applies
+to the es3d-l10n toolchain. See README.md for details.

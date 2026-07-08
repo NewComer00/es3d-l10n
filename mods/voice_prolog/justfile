@@ -1,0 +1,8 @@
+# voice_prolog — shared extract + tojson (locale-agnostic)
+
+import '../justfile'
+
+mod := "voice_prolog"
+unpack_include := "Everlasting_summer/Content/main/звуки/пролог"
+tojson_exclude := "*LipSyncSequence.uasset"
+uexp_signatures := "0d02 0d04 1606"

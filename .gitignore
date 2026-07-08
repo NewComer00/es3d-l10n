@@ -1,0 +1,8 @@
+Бесконечное лето 3D*/
+.es3d/
+.justcache/
+build/
+dist/
+tools/**
+!tools/.gitkeep
+.venv/

@@ -1,0 +1,11 @@
+[project]
+name = "es3d-l10n"
+version = "0.1.0"
+description = "Бесконечное лето 3D localization toolchain."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.12"
+dependencies = [
+    "rust-just>=1.55",
+    "psutil>=6.0",
+]
