@@ -12,3 +12,23 @@ tojson_exclude := ["**/main/*"]
 uexp_signatures := ["0004", "0003"]
 merge_extracted := "true"
 fromjson_inplace := "true"
+# UAssetGUI EnumProperty Write NRE under parallel fromjson — keep serial (see finished_paks/dialogs.md)
+fromjson_workers := "1"
+
+_mod_dir := justfile_directory()
+
+# Generated fonts under zh_cn/assets/ (keep .gitignore)
+[script("powershell", "-NoProfile", "-ExecutionPolicy", "Bypass")]
+_clean-extra:
+    $ErrorActionPreference = 'Stop'
+    $assets = Join-Path '{{_mod_dir}}' 'zh_cn\assets'
+    if (-not (Test-Path -LiteralPath $assets)) {
+        Write-Host "[dialogs:clean] no assets dir"
+        return
+    }
+    $n = 0
+    Get-ChildItem -LiteralPath $assets -Force | Where-Object { $_.Name -ne '.gitignore' } | ForEach-Object {
+        Remove-Item -LiteralPath $_.FullName -Recurse -Force
+        $n++
+    }
+    Write-Host "[dialogs:clean] cleared $n item(s) under $assets"

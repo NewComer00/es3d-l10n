@@ -112,3 +112,21 @@ uexp_signatures := [
 ]
 merge_extracted := "true"
 fromjson_inplace := "true"
+
+_mod_dir := justfile_directory()
+
+# Generated fonts + injected textures under zh_cn/assets/ (keep .gitignore; textures/ DDS stay)
+[script("powershell", "-NoProfile", "-ExecutionPolicy", "Bypass")]
+_clean-extra:
+    $ErrorActionPreference = 'Stop'
+    $assets = Join-Path '{{_mod_dir}}' 'zh_cn\assets'
+    if (-not (Test-Path -LiteralPath $assets)) {
+        Write-Host "[ui:clean] no assets dir"
+        return
+    }
+    $n = 0
+    Get-ChildItem -LiteralPath $assets -Force | Where-Object { $_.Name -ne '.gitignore' } | ForEach-Object {
+        Remove-Item -LiteralPath $_.FullName -Recurse -Force
+        $n++
+    }
+    Write-Host "[ui:clean] cleared $n item(s) under $assets"

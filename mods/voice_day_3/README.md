@@ -2,7 +2,7 @@
 
 Day 3 voiced-line subtitles.
 
-Output: `dist/mod_voice_day_3_zh_cn_P.pak`
+Output: `dist/zh_cn/Everlasting_summer/Content/Paks/mod_voice_day_3_zh_cn_P.pak`
 
 ## Build
 

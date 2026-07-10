@@ -2,7 +2,7 @@
 
 HUD / menus / widgets Chinese localization: **strings** + **fonts** + **translated textures**.
 
-Output: `dist/mod_ui_zh_cn_P.pak`
+Output: `dist/zh_cn/Everlasting_summer/Content/Paks/mod_ui_zh_cn_P.pak`
 
 ## Build
 

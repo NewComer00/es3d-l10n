@@ -92,3 +92,21 @@ _tojson:
 
 [doc("UAssetGUI convert uassets to build/MOD/json/ (needs extract-usmap once)")]
 tojson: unpack extract-usmap fetch-uassetgui _tojson
+
+# Override `_clean-extra` in mods/<name>/justfile for generated assets, caches, etc.
+[private]
+_clean-extra:
+    @exit 0
+
+[doc("Remove build/MOD/ and run mod-specific _clean-extra")]
+[script("powershell", "-NoProfile", "-ExecutionPolicy", "Bypass")]
+clean: _clean-extra
+    $ErrorActionPreference = 'Stop'
+    $tag = '{{mod}}'
+    $dir = '{{mod_build}}'
+    if (Test-Path -LiteralPath $dir) {
+        Remove-Item -LiteralPath $dir -Recurse -Force
+        Write-Host "[${tag}:clean] removed $dir"
+    } else {
+        Write-Host "[${tag}:clean] no build dir: $dir"
+    }

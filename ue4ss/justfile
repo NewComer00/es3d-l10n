@@ -1,0 +1,35 @@
+# ue4ss — stage custom Lua mods + framework into dist/<locale>/
+
+import '../justfile'
+
+ue4ss_src := justfile_directory()
+
+[doc("Stage dwmapi.dll + ue4ss/ into dist/LOCALE/.../Binaries/Win64/")]
+[script("powershell", "-NoProfile", "-ExecutionPolicy", "Bypass")]
+stage LOCALE: fetch-ue4ss
+    $ErrorActionPreference = 'Stop'
+    $locale = '{{LOCALE}}'.Trim()
+    if (-not $locale) { throw "Usage: just ue4ss stage <locale>   e.g. just ue4ss stage zh_cn" }
+    $tools = '{{ue4ss_tools}}'
+    $overlay = Join-Path '{{ue4ss_src}}' "$locale\Mods"
+    $win64 = Join-Path '{{dist_dir}}' "$locale\Everlasting_summer\Binaries\Win64"
+    $destUe4ss = Join-Path $win64 'ue4ss'
+    $dwmapiSrc = Join-Path $tools 'dwmapi.dll'
+    $ue4ssSrc = Join-Path $tools 'ue4ss'
+    if (-not (Test-Path -LiteralPath $dwmapiSrc)) { throw "Missing $dwmapiSrc — run: just fetch-ue4ss" }
+    if (-not (Test-Path -LiteralPath (Join-Path $ue4ssSrc 'UE4SS.dll'))) { throw "Missing UE4SS.dll under $ue4ssSrc" }
+    if (-not (Test-Path -LiteralPath $overlay)) {
+        throw "Missing overlay Mods for locale '$locale': $overlay`nAdd Lua under ue4ss/$locale/Mods/"
+    }
+
+    Write-Host "[ue4ss:stage] preparing $win64 (overlay $overlay)"
+    New-Item -ItemType Directory -Force -Path $win64 | Out-Null
+    if (Test-Path -LiteralPath $destUe4ss) { Remove-Item -LiteralPath $destUe4ss -Recurse -Force }
+    Copy-Item -LiteralPath $dwmapiSrc -Destination (Join-Path $win64 'dwmapi.dll') -Force
+    Copy-Item -LiteralPath $ue4ssSrc -Destination $destUe4ss -Recurse -Force
+    Copy-Item -Path (Join-Path $overlay '*') -Destination (Join-Path $destUe4ss 'Mods') -Recurse -Force
+    Write-Host "[ue4ss:stage] wrote $win64\dwmapi.dll + ue4ss\ (overlay applied)"
+
+[doc("No local caches; framework lives under tools/ (just clean-tools)")]
+clean:
+    @Write-Host "[ue4ss:clean] nothing to remove (Lua sources kept; use clean-tools for framework)"

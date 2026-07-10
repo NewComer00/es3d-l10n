@@ -19,6 +19,9 @@ aes_key_finder_commit := "00a5278c325e6ba70a3067d1f81f29e5583d5cf1"
 ue4_dds_tools_url := "https://github.com/NewComer00/UE4-DDS-Tools/archive/refs/heads/5.5.zip"
 ue4_dds_tools_gui_url := "https://github.com/NewComer00/UE4-DDS-Tools/releases/download/untagged-cde1f87a711e5fb4dc4e/UE4-DDS-Tools-edd6c5f-GUI.zip"
 ue4_dds_tools_tag := "5.5-src"
+# UE4SS — runtime Lua host; zip resolved from GitHub release (not a pinned filename)
+ue4ss_release := "experimental-latest"
+ue4ss_release_api := "https://api.github.com/repos/UE4SS-RE/RE-UE4SS/releases/tags/" + ue4ss_release
 
 # --- paths ---
 # Repo root: walk up from entry justfile to pyproject.toml (works for nested mods/* justfiles).
@@ -36,6 +39,7 @@ ue4_dds_tools := tool_dir + "/ue4-dds-tools"
 # Embedded python from GUI zip if present; else empty (inject uses uv run python).
 ue4_dds_tools_py := ue4_dds_tools + "/python/python.exe"
 ue4_dds_tools_main := ue4_dds_tools + "/src/main.py"
+ue4ss_tools := tool_dir + "/ue4ss"
 
 game_dir := env_var_or_default("GAME_DIR", shell('[Console]::OutputEncoding = [System.Text.UTF8Encoding]::new($false); $OutputEncoding = [Console]::OutputEncoding; Set-Location -LiteralPath "' + root + '"; $glob = "Бесконечное лето 3D*"; $matches = @(Get-ChildItem -Directory -Path $glob -ErrorAction SilentlyContinue | Where-Object { Test-Path -LiteralPath (Join-Path $_.FullName "Everlasting_summer.exe") }); if ($matches.Count -eq 0) { throw "Game not found under ' + root + '. Install game or set GAME_DIR / just --set game_dir." }; if ($matches.Count -gt 1) { throw ("Multiple game installs: " + ($matches.Name -join ", ") + ". Set GAME_DIR or just --set game_dir.") }; $matches[0].Name'))
 game_root := root + "/" + game_dir
@@ -43,6 +47,7 @@ game_pak := game_root + "/Everlasting_summer/Content/Paks/Everlasting_summer-Win
 game_paks_dir := game_root + "/Everlasting_summer/Content/Paks"
 game_exe := game_root + "/Everlasting_summer.exe"
 game_shipping_exe := game_root + "/Everlasting_summer/Binaries/Win64/Everlasting_summer-Win64-Shipping.exe"
+game_win64_dir := game_root + "/Everlasting_summer/Binaries/Win64"
 
 ue_version := shell('$vi = (Get-Item -LiteralPath "' + game_shipping_exe + '").VersionInfo; "VER_UE$($vi.FileMajorPart)_$($vi.FileMinorPart)"')
 
@@ -52,6 +57,7 @@ es3d_dir := es3d_cache_root + "/" + game_cache_id
 mods_dir := root + "/mods"
 build_dir := root + "/build"
 dist_dir := root + "/dist"
+# dist/<locale>/ mirrors game root — copy dist/<locale>/* into the game folder
 
 usmap := es3d_dir + "/output.usmap"
 aes_key_file := es3d_dir + "/aes.key"
@@ -109,6 +115,14 @@ _help-intro:
     Write-Note '      seed-locale, apply, build-pak, ...  (default: help)'
     Write-Cmd '  just mod-locale NAME LOCALE RECIPE'
     Write-Note '      run a locale recipe'
+    Write-Cmd '  just ue4ss stage LOCALE'
+    Write-Note '      UE4SS + Lua → dist/LOCALE/.../Binaries/Win64/'
+    Write-Cmd '  just build-dist LOCALE'
+    Write-Note '      pak mods + ue4ss → dist/LOCALE/ (or all)'
+    Write-Cmd '  just install-dist LOCALE'
+    Write-Note '      copy dist/LOCALE/Everlasting_summer → game'
+    Write-Cmd '  just clean / clean-all'
+    Write-Note '      build + dist + tools + per-mod extras'
     Write-Host ''
 
     Write-Section 'Quick example — voice_prolog / zh_cn'
@@ -116,6 +130,7 @@ _help-intro:
     Write-Note '      optional; tojson (auto from locale recipes) runs unpack'
     Write-Cmd '  just mod-locale voice_prolog zh_cn seed-locale'
     Write-Cmd '  just mod-locale voice_prolog zh_cn build-pak'
+    Write-Note '      → dist/zh_cn/Everlasting_summer/Content/Paks/'
     Write-Host ''
 
     Write-Section 'Locale CSV'
@@ -138,6 +153,7 @@ _help-intro:
         Write-Host ']' -ForegroundColor DarkGray
     }
     if (-not $found) { Write-Note '  (none yet — add under mods/)' }
+    Write-Note '  ue4ss/                 runtime Lua (just ue4ss stage)'
 
 # --- setup ---
 
@@ -231,6 +247,241 @@ fetch-dds-tools:
         throw "Failed to install UE4-DDS-Tools. Set ES3D_UE4_DDS_TOOLS to a local checkout/GUI folder, or check network access to GitHub."
     }
     Write-Host "[fetch-dds-tools] installed $dest"
+
+[doc("Download UE4SS from experimental-latest release (resolves zip via GitHub API)")]
+[script("powershell", "-NoProfile", "-ExecutionPolicy", "Bypass")]
+fetch-ue4ss:
+    $ErrorActionPreference = 'Stop'
+    $dest = '{{ue4ss_tools}}'
+    $marker = Join-Path $dest '.es3d-version'
+    $dll = Join-Path $dest 'ue4ss\UE4SS.dll'
+    $dwmapi = Join-Path $dest 'dwmapi.dll'
+    [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+
+    # Resolve download URL: ES3D_UE4SS_URL override, else GitHub API → UE4SS_v*.zip (not zDEV-)
+    $url = $env:ES3D_UE4SS_URL
+    $version = $null
+    if ($url) {
+        $version = [System.IO.Path]::GetFileName($url.Split('?')[0])
+        Write-Host "[fetch-ue4ss] using ES3D_UE4SS_URL ($version)"
+    } else {
+        Write-Host "[fetch-ue4ss] resolving {{ue4ss_release}} via GitHub API..."
+        $headers = @{ 'User-Agent' = 'es3d-l10n'; 'Accept' = 'application/vnd.github+json' }
+        $token = $env:GITHUB_TOKEN; if (-not $token) { $token = $env:GH_TOKEN }
+        if ($token) { $headers['Authorization'] = "Bearer $token" }
+        try {
+            $rel = Invoke-RestMethod -Uri '{{ue4ss_release_api}}' -Headers $headers
+        } catch {
+            if ((Test-Path -LiteralPath $dll) -and (Test-Path -LiteralPath $dwmapi)) {
+                $have = if (Test-Path -LiteralPath $marker) { (Get-Content -LiteralPath $marker -Raw).Trim() } else { 'unknown' }
+                Write-Host "[fetch-ue4ss] API failed ($($_.Exception.Message)); keeping cached install ($have)"
+                Write-Host "[fetch-ue4ss] tip: set GITHUB_TOKEN / GH_TOKEN, or ES3D_UE4SS_URL to a direct zip URL"
+                exit 0
+            }
+            throw "GitHub API failed and no cached UE4SS under $dest. Set ES3D_UE4SS_URL or GITHUB_TOKEN. $($_.Exception.Message)"
+        }
+        $asset = @($rel.assets) | Where-Object {
+            $_.name -match '^UE4SS_v.*\.zip$' -and $_.name -notmatch '^zDEV-'
+        } | Select-Object -First 1
+        if (-not $asset) {
+            $names = (@($rel.assets) | ForEach-Object { $_.name }) -join ', '
+            throw "No UE4SS_v*.zip on release {{ue4ss_release}}. Assets: $names"
+        }
+        $url = $asset.browser_download_url
+        $version = $asset.name
+        Write-Host "[fetch-ue4ss] latest asset: $version"
+    }
+
+    if ((Test-Path -LiteralPath $dll) -and (Test-Path -LiteralPath $dwmapi) -and (Test-Path -LiteralPath $marker)) {
+        $have = (Get-Content -LiteralPath $marker -Raw).Trim()
+        if ($have -eq $version) {
+            Write-Host "[fetch-ue4ss] already installed: $dest ($have)"
+            exit 0
+        }
+        Write-Host "[fetch-ue4ss] outdated ($have -> $version), re-downloading..."
+    }
+
+    Write-Host "[fetch-ue4ss] downloading $version..."
+    $zip = Join-Path $env:TEMP 'ue4ss-experimental.zip'
+    $extract = Join-Path $env:TEMP 'ue4ss-experimental-extract'
+    Invoke-WebRequest -Uri $url -OutFile $zip -UseBasicParsing
+    if (Test-Path -LiteralPath $extract) { Remove-Item -LiteralPath $extract -Recurse -Force }
+    Expand-Archive -Path $zip -DestinationPath $extract -Force
+    Remove-Item -LiteralPath $zip -Force
+    # Zip root is dwmapi.dll + ue4ss/ (no extra top folder)
+    $dwmapiSrc = Join-Path $extract 'dwmapi.dll'
+    $ue4ssSrc = Join-Path $extract 'ue4ss'
+    if (-not (Test-Path -LiteralPath $dwmapiSrc) -or -not (Test-Path -LiteralPath $ue4ssSrc)) {
+        $inner = Get-ChildItem -LiteralPath $extract -Directory | Select-Object -First 1
+        if ($inner) {
+            $dwmapiSrc = Join-Path $inner.FullName 'dwmapi.dll'
+            $ue4ssSrc = Join-Path $inner.FullName 'ue4ss'
+        }
+    }
+    if (-not (Test-Path -LiteralPath $dwmapiSrc)) { throw "dwmapi.dll not found in UE4SS zip" }
+    if (-not (Test-Path -LiteralPath (Join-Path $ue4ssSrc 'UE4SS.dll'))) { throw "ue4ss/UE4SS.dll not found in UE4SS zip" }
+    if (Test-Path -LiteralPath $dest) { Remove-Item -LiteralPath $dest -Recurse -Force }
+    New-Item -ItemType Directory -Force -Path $dest | Out-Null
+    Copy-Item -LiteralPath $dwmapiSrc -Destination (Join-Path $dest 'dwmapi.dll') -Force
+    Copy-Item -LiteralPath $ue4ssSrc -Destination (Join-Path $dest 'ue4ss') -Recurse -Force
+    Remove-Item -LiteralPath $extract -Recurse -Force -ErrorAction SilentlyContinue
+    Set-Content -LiteralPath $marker -Value $version -NoNewline
+    Write-Host "[fetch-ue4ss] installed $dest ($version)"
+
+[doc("Copy dist/LOCALE into the game; builds that locale if dist is empty")]
+[script("powershell", "-NoProfile", "-ExecutionPolicy", "Bypass")]
+install-dist LOCALE:
+    $ErrorActionPreference = 'Stop'
+    $locale = '{{LOCALE}}'.Trim()
+    if (-not $locale) { throw "Usage: just install-dist <locale>   e.g. just install-dist zh_cn" }
+    $src = Join-Path '{{dist_dir}}' "$locale\Everlasting_summer"
+    $dst = Join-Path '{{game_root}}' 'Everlasting_summer'
+    if (-not (Test-Path -LiteralPath $src)) {
+        Write-Host "[install-dist] dist/$locale empty — running: just build-dist $locale"
+        & '{{just_exe}}' build-dist $locale
+        if ($LASTEXITCODE -ne 0) { throw "build-dist failed with exit code $LASTEXITCODE" }
+    }
+    if (-not (Test-Path -LiteralPath $src)) {
+        throw "Still nothing in dist/$locale after build-dist"
+    }
+    Write-Host "[install-dist] $src -> $dst"
+    New-Item -ItemType Directory -Force -Path $dst | Out-Null
+    Copy-Item -Path (Join-Path $src '*') -Destination $dst -Recurse -Force
+    Write-Host "[install-dist] done"
+
+[doc("Build pak mods + UE4SS into dist/LOCALE/; seed archive only if no active CSV")]
+[script("powershell", "-NoProfile", "-ExecutionPolicy", "Bypass")]
+build-dist LOCALE:
+    $ErrorActionPreference = 'Stop'
+    $want = '{{LOCALE}}'.Trim()
+    if (-not $want) { throw "Usage: just build-dist <locale|all>   e.g. just build-dist zh_cn" }
+    $modsRoot = '{{mods_dir}}'
+    $just = '{{just_exe}}'
+    $built = 0
+    $locales = [System.Collections.Generic.HashSet[string]]::new()
+    Get-ChildItem -LiteralPath $modsRoot -Directory | Sort-Object Name | ForEach-Object {
+        $modName = $_.Name
+        if (-not (Test-Path -LiteralPath (Join-Path $_.FullName 'justfile'))) { return }
+        Get-ChildItem -LiteralPath $_.FullName -Directory | Sort-Object Name | ForEach-Object {
+            $locale = $_.Name
+            if ($want -ne 'all' -and $locale -ne $want) { return }
+            $localeJf = Join-Path $_.FullName 'justfile'
+            $archive = Join-Path $_.FullName 'locale.csv'
+            if (-not (Test-Path -LiteralPath $localeJf)) { return }
+            if (-not (Test-Path -LiteralPath $archive)) {
+                Write-Host "[build-dist] skip $modName/$locale (no locale.csv archive)"
+                return
+            }
+            Write-Host "[build-dist] === $modName / $locale ==="
+            $active = Join-Path '{{build_dir}}' "$modName\$locale\locale.csv"
+            if (Test-Path -LiteralPath $active) {
+                Write-Host "[build-dist] using active CSV: $active"
+            } else {
+                Write-Host "[build-dist] no active CSV — seeding from archive"
+                & $just mod-locale $modName $locale seed-locale
+                if ($LASTEXITCODE -ne 0) { throw "seed-locale failed: $modName/$locale (exit $LASTEXITCODE)" }
+            }
+            & $just mod-locale $modName $locale build-pak
+            if ($LASTEXITCODE -ne 0) { throw "build-pak failed: $modName/$locale (exit $LASTEXITCODE)" }
+            [void]$locales.Add($locale)
+            $built++
+        }
+    }
+    if ($built -eq 0) {
+        throw "[build-dist] no pak mods built for locale='$want' (need mods/<name>/<locale>/locale.csv)"
+    }
+    foreach ($locale in ($locales | Sort-Object)) {
+        Write-Host "[build-dist] staging UE4SS → dist/$locale/..."
+        & $just ue4ss stage $locale
+        if ($LASTEXITCODE -ne 0) { throw "ue4ss stage $locale failed (exit $LASTEXITCODE)" }
+    }
+    Write-Host "[build-dist] done: $built pak(s) + ue4ss → dist/($(($locales | Sort-Object) -join ', '))"
+    if ($want -eq 'all') {
+        Write-Host "[build-dist] install with: just install-dist <locale>"
+    } else {
+        Write-Host "[build-dist] install with: just install-dist $want"
+    }
+
+[doc("Remove build/")]
+[script("powershell", "-NoProfile", "-ExecutionPolicy", "Bypass")]
+clean-build:
+    $ErrorActionPreference = 'Stop'
+    $dir = '{{build_dir}}'
+    if (Test-Path -LiteralPath $dir) {
+        Remove-Item -LiteralPath $dir -Recurse -Force
+        Write-Host "[clean-build] removed $dir"
+    } else {
+        Write-Host "[clean-build] nothing to remove"
+    }
+
+[doc("Remove dist/")]
+[script("powershell", "-NoProfile", "-ExecutionPolicy", "Bypass")]
+clean-dist:
+    $ErrorActionPreference = 'Stop'
+    $dir = '{{dist_dir}}'
+    if (Test-Path -LiteralPath $dir) {
+        Remove-Item -LiteralPath $dir -Recurse -Force
+        Write-Host "[clean-dist] removed $dir"
+    } else {
+        Write-Host "[clean-dist] nothing to remove"
+    }
+
+[doc("Remove tools/ downloads (keeps tools/.gitkeep)")]
+[script("powershell", "-NoProfile", "-ExecutionPolicy", "Bypass")]
+clean-tools:
+    $ErrorActionPreference = 'Stop'
+    $dir = '{{tool_dir}}'
+    if (-not (Test-Path -LiteralPath $dir)) {
+        Write-Host "[clean-tools] nothing to remove"
+        exit 0
+    }
+    $n = 0
+    Get-ChildItem -LiteralPath $dir -Force | Where-Object { $_.Name -ne '.gitkeep' } | ForEach-Object {
+        Remove-Item -LiteralPath $_.FullName -Recurse -Force
+        $n++
+    }
+    Write-Host "[clean-tools] removed $n item(s) under $dir"
+
+[doc("Per-mod clean (build/MOD + _clean-extra) and ue4ss clean")]
+[script("powershell", "-NoProfile", "-ExecutionPolicy", "Bypass")]
+_clean-mods:
+    $ErrorActionPreference = 'Stop'
+    $just = '{{just_exe}}'
+    $modsRoot = '{{mods_dir}}'
+    Get-ChildItem -LiteralPath $modsRoot -Directory | Sort-Object Name | ForEach-Object {
+        if (-not (Test-Path -LiteralPath (Join-Path $_.FullName 'justfile'))) { return }
+        Write-Host "[clean] mod $($_.Name)"
+        & $just mod $_.Name clean
+        if ($LASTEXITCODE -ne 0) { throw "just mod $($_.Name) clean failed (exit $LASTEXITCODE)" }
+    }
+    $ue4ssJf = Join-Path '{{root}}' 'ue4ss\justfile'
+    if (Test-Path -LiteralPath $ue4ssJf) {
+        Write-Host "[clean] ue4ss"
+        & $just ue4ss clean
+        if ($LASTEXITCODE -ne 0) { throw "just ue4ss clean failed (exit $LASTEXITCODE)" }
+    }
+
+[doc("Clean build + dist + tools + per-mod extras")]
+clean-all: _clean-mods clean-build clean-dist clean-tools
+    @Write-Host "[clean-all] done"
+
+[doc("Same as clean-all")]
+clean: clean-all
+
+[doc("UE4SS recipes: just ue4ss stage LOCALE | just ue4ss clean")]
+[script("powershell", "-NoProfile", "-ExecutionPolicy", "Bypass")]
+ue4ss *ARGS:
+    $ErrorActionPreference = 'Stop'
+    $jf = Join-Path '{{root}}' 'ue4ss\justfile'
+    if (-not (Test-Path -LiteralPath $jf)) { throw "Missing $jf" }
+    $extra = '{{ARGS}}'.Trim()
+    if (-not $extra) {
+        throw "Usage: just ue4ss stage <locale> | just ue4ss clean"
+    }
+    $argList = @('-f', $jf)
+    $argList += $extra -split '\s+'
+    & '{{just_exe}}' @argList
+    exit $LASTEXITCODE
 
 [script("powershell", "-NoProfile", "-ExecutionPolicy", "Bypass")]
 _fetch-repak:
@@ -516,6 +767,7 @@ _help-mod name='':
     Write-Section 'Pipeline'
     Write-Note '  unpack     repak extract → build/MOD/extracted/'
     Write-Note '  tojson     UAssetGUI → build/MOD/json/ (needs extract-usmap once)'
+    Write-Note '  clean      build/MOD + optional _clean-extra'
     Write-Host ''
 
     if ($name) {
@@ -523,7 +775,7 @@ _help-mod name='':
         if (-not (Test-Path -LiteralPath $jf)) { throw "Mod not found: $name (expected $jf)" }
         Write-Section "Mod: $name"
         Write-Host ''
-        Show-RecipeList $jf @('unpack', 'tojson')
+        Show-RecipeList $jf @('unpack', 'tojson', 'clean')
     } else {
         Write-Section 'Available mods'
         $found = $false

@@ -9,7 +9,9 @@ locale_stripped := locale_build + "/stripped_uasset"
 locale_csv_mod := locale_dir + "/locale.csv"
 locale_csv_build := locale_build + "/locale.csv"
 locale_assets := locale_dir + "/assets"
-dist_pak := dist_dir + "/mod_" + mod + "_" + locale + "_P.pak"
+dist_locale_dir := dist_dir + "/" + locale
+dist_paks_dir := dist_locale_dir + "/Everlasting_summer/Content/Paks"
+dist_pak := dist_paks_dir + "/mod_" + mod + "_" + locale + "_P.pak"
 
 [script("powershell", "-NoProfile", "-ExecutionPolicy", "Bypass")]
 _extract-csv:
@@ -180,13 +182,13 @@ _pack:
     $ErrorActionPreference = 'Stop'
     $tag = '{{mod}}:{{locale}}'
     Write-Host "[${tag}:pack] starting..."
-    New-Item -ItemType Directory -Force -Path '{{dist_dir}}' | Out-Null
+    New-Item -ItemType Directory -Force -Path '{{dist_paks_dir}}' | Out-Null
     & '{{repak}}' pack '{{locale_stripped}}' '{{dist_pak}}'
     if ($LASTEXITCODE -ne 0) { throw "repak pack failed with exit code $LASTEXITCODE" }
     Write-Host "[${tag}:pack] wrote {{dist_pak}}"
 
-[doc("repak pack to dist/mod_MOD_LOCALE_P.pak")]
+[doc("repak pack to dist/LOCALE/.../Content/Paks/mod_MOD_LOCALE_P.pak")]
 pack: strip fetch-repak _pack
 
-[doc("Apply translations and pack dist/mod_MOD_LOCALE_P.pak")]
+[doc("Apply translations and pack into dist/<locale>/ (game-tree layout)")]
 build-pak: pack
