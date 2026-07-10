@@ -17,19 +17,17 @@ Localization toolchain for [**Бесконечное лето 3D**](https://boos
 ### Clone
 
 ```powershell
-git lfs install                # once per machine
+git lfs install
 git clone https://github.com/NewComer00/es3d-l10n.git
 cd es3d-l10n
-git lfs pull                   # if clone was without LFS smudge
+git lfs pull
 ```
 
 Then place the game under the repo directory:
 
 ```
 es3d-l10n/                              ← toolchain (this repo)
-└── Бесконечное лето 3D.v0.5.0/         ← game (gitignored, auto-detected)
-    └── Everlasting_summer.exe
-        └── Everlasting_summer/Content/Paks/
+└── Бесконечное лето 3D.v0.5.0/         ← game
 ```
 
 ### Setup
