@@ -580,11 +580,11 @@ def cmd_convert(args):
         valid, corrupt = validate_outputs(processed_dst_paths, mode, cfg['signatures'], cfg['json_signatures'])
         if corrupt > 0:
             if mode == "tojson":
-                print(f"⚠️  Found {corrupt} file(s) missing any of {cfg['json_signatures']} in output. Consider re-running with --workers 1")
+                print(f"WARNING: Found {corrupt} file(s) missing any of {cfg['json_signatures']} in output. Consider re-running with --workers 1")
             else:
-                print(f"⚠️  Found {corrupt} corrupt file(s) in output. Consider re-running with --workers 1")
+                print(f"WARNING: Found {corrupt} corrupt file(s) in output. Consider re-running with --workers 1")
         else:
-            print(f"✅ All {valid} file(s) validated successfully")
+            print(f"OK: All {valid} file(s) validated successfully")
 
 
 # ─────────────────────────────────────────────

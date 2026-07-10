@@ -1,0 +1,32 @@
+[
+  {
+    "name": "85__1_",
+    "dds": "85__1_/85__1_.dds",
+    "game_uasset": "Everlasting_summer/Content/main/hud/меню/85__1_.uasset"
+  },
+  {
+    "name": "852__1_",
+    "dds": "852__1_/852__1_.dds",
+    "game_uasset": "Everlasting_summer/Content/main/hud/меню/852__1_.uasset"
+  },
+  {
+    "name": "ScreenShot00075",
+    "dds": "ScreenShot00075/ScreenShot00075.dds",
+    "game_uasset": "Everlasting_summer/Content/main/hud/меню/ScreenShot00075.uasset"
+  },
+  {
+    "name": "ScreenShot000752",
+    "dds": "ScreenShot000752/ScreenShot000752.dds",
+    "game_uasset": "Everlasting_summer/Content/main/hud/меню/ScreenShot000752.uasset"
+  },
+  {
+    "name": "nazhmite_lyubuyu_knopku_chtoby_prodolzhit",
+    "dds": "nazhmite_lyubuyu_knopku_chtoby_prodolzhit/nazhmite_lyubuyu_knopku_chtoby_prodolzhit.dds",
+    "game_uasset": "Everlasting_summer/Content/LSS_LoadingScreenSystem/Textures/nazhmite_lyubuyu_knopku_chtoby_prodolzhit.uasset"
+  },
+  {
+    "name": "Stand_INST_basecolor1",
+    "dds": "Stand_INST_basecolor1/Stand_INST_basecolor1.dds",
+    "game_uasset": "Everlasting_summer/Content/Main_Menu/Stand/Stand_Mat/Stand_INST_basecolor1.uasset"
+  }
+]

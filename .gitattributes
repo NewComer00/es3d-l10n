@@ -1,0 +1,2 @@
+# Binary assets under mods/ (DDS today; other types may follow)
+*.dds filter=lfs diff=lfs merge=lfs -text

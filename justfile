@@ -14,6 +14,11 @@ jmap_version := "0.1.1"
 uassetgui_version := "1.1.0"
 oodle_version := "v0.2.3-files"
 aes_key_finder_commit := "00a5278c325e6ba70a3067d1f81f29e5583d5cf1"
+# UE4-DDS-Tools (UE 5.5 fork) — inject translated DDS into stock uassets
+# Prefer branch zip (stable). Optional GUI zip / local copy via ES3D_UE4_DDS_TOOLS.
+ue4_dds_tools_url := "https://github.com/NewComer00/UE4-DDS-Tools/archive/refs/heads/5.5.zip"
+ue4_dds_tools_gui_url := "https://github.com/NewComer00/UE4-DDS-Tools/releases/download/untagged-cde1f87a711e5fb4dc4e/UE4-DDS-Tools-edd6c5f-GUI.zip"
+ue4_dds_tools_tag := "5.5-src"
 
 # --- paths ---
 # Repo root: walk up from entry justfile to pyproject.toml (works for nested mods/* justfiles).
@@ -27,6 +32,10 @@ jmap := tool_dir + "/jmap/jmap_dumper.exe"
 uassetgui := tool_dir + "/UAssetGUI/UAssetGUI.exe"
 oodle_dll := tool_dir + "/repak/oo2core_9_win64.dll"
 aes_key_finder := tool_dir + "/aes-key-finder/Find_AES_Key.bat"
+ue4_dds_tools := tool_dir + "/ue4-dds-tools"
+# Embedded python from GUI zip if present; else empty (inject uses uv run python).
+ue4_dds_tools_py := ue4_dds_tools + "/python/python.exe"
+ue4_dds_tools_main := ue4_dds_tools + "/src/main.py"
 
 game_dir := env_var_or_default("GAME_DIR", shell('[Console]::OutputEncoding = [System.Text.UTF8Encoding]::new($false); $OutputEncoding = [Console]::OutputEncoding; Set-Location -LiteralPath "' + root + '"; $glob = "Бесконечное лето 3D*"; $matches = @(Get-ChildItem -Directory -Path $glob -ErrorAction SilentlyContinue | Where-Object { Test-Path -LiteralPath (Join-Path $_.FullName "Everlasting_summer.exe") }); if ($matches.Count -eq 0) { throw "Game not found under ' + root + '. Install game or set GAME_DIR / just --set game_dir." }; if ($matches.Count -gt 1) { throw ("Multiple game installs: " + ($matches.Name -join ", ") + ". Set GAME_DIR or just --set game_dir.") }; $matches[0].Name'))
 game_root := root + "/" + game_dir
@@ -132,11 +141,96 @@ _help-intro:
 
 # --- setup ---
 
-[doc("Download all pinned tools (repak, jmap, UAssetGUI, aes-key-finder)")]
+[doc("Download all pinned tools (repak, jmap, UAssetGUI, aes-key-finder, UE4-DDS-Tools)")]
 fetch-tools:
     @Write-Host "[fetch-tools] installing pinned tools..."
-    @just fetch-repak fetch-jmap fetch-uassetgui fetch-aes-key-finder
+    @just fetch-repak fetch-jmap fetch-uassetgui fetch-aes-key-finder fetch-dds-tools
     @Write-Host "[fetch-tools] done"
+
+[doc("Download UE4-DDS-Tools (5.5) to tools/ue4-dds-tools/ for DDS inject/export")]
+[script("powershell", "-NoProfile", "-ExecutionPolicy", "Bypass")]
+fetch-dds-tools:
+    $ErrorActionPreference = 'Stop'
+    $dest = '{{ue4_dds_tools}}'
+    $marker = Join-Path $dest '.es3d-version'
+    $main = '{{ue4_dds_tools_main}}'
+    if ((Test-Path -LiteralPath $main) -and (Test-Path -LiteralPath $marker)) {
+        $have = (Get-Content -LiteralPath $marker -Raw).Trim()
+        if ($have -eq '{{ue4_dds_tools_tag}}') {
+            Write-Host "[fetch-dds-tools] already installed: $dest ($have)"
+            exit 0
+        }
+    }
+    [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+    $installed = $false
+
+    # 1) Local package via ES3D_UE4_DDS_TOOLS (optional)
+    $local = $env:ES3D_UE4_DDS_TOOLS
+    if ($local -and (Test-Path -LiteralPath (Join-Path $local 'src\main.py'))) {
+        Write-Host "[fetch-dds-tools] copying ES3D_UE4_DDS_TOOLS -> $dest"
+        if (Test-Path -LiteralPath $dest) { Remove-Item -LiteralPath $dest -Recurse -Force }
+        New-Item -ItemType Directory -Force -Path (Split-Path -Parent $dest) | Out-Null
+        Copy-Item -LiteralPath $local -Destination $dest -Recurse -Force
+        Set-Content -LiteralPath $marker -Value '{{ue4_dds_tools_tag}}' -NoNewline
+        $installed = $true
+    }
+
+    # 2) Branch source zip (no embedded python — inject uses uv run python)
+    if (-not $installed) {
+        Write-Host "[fetch-dds-tools] downloading {{ue4_dds_tools_tag}}..."
+        $zip = Join-Path $env:TEMP 'ue4-dds-tools.zip'
+        $extract = Join-Path $env:TEMP 'ue4-dds-tools-extract'
+        try {
+            Invoke-WebRequest -Uri '{{ue4_dds_tools_url}}' -OutFile $zip -UseBasicParsing
+            if (Test-Path -LiteralPath $extract) { Remove-Item -LiteralPath $extract -Recurse -Force }
+            Expand-Archive -Path $zip -DestinationPath $extract -Force
+            Remove-Item -LiteralPath $zip -Force
+            $inner = Get-ChildItem -LiteralPath $extract -Directory | Select-Object -First 1
+            if (-not $inner) { throw "zip had no top-level folder" }
+            if (Test-Path -LiteralPath $dest) { Remove-Item -LiteralPath $dest -Recurse -Force }
+            New-Item -ItemType Directory -Force -Path (Split-Path -Parent $dest) | Out-Null
+            Move-Item -LiteralPath $inner.FullName -Destination $dest
+            Remove-Item -LiteralPath $extract -Recurse -Force -ErrorAction SilentlyContinue
+            Set-Content -LiteralPath $marker -Value '{{ue4_dds_tools_tag}}' -NoNewline
+            $installed = $true
+        } catch {
+            Write-Host "[fetch-dds-tools] branch zip failed: $($_.Exception.Message)"
+        }
+    }
+
+    # 3) Optional GUI release zip (may 404)
+    if (-not $installed) {
+        Write-Host "[fetch-dds-tools] trying GUI release zip..."
+        $zip = Join-Path $env:TEMP 'ue4-dds-tools-gui.zip'
+        $extract = Join-Path $env:TEMP 'ue4-dds-tools-gui-extract'
+        try {
+            Invoke-WebRequest -Uri '{{ue4_dds_tools_gui_url}}' -OutFile $zip -UseBasicParsing
+            if (Test-Path -LiteralPath $extract) { Remove-Item -LiteralPath $extract -Recurse -Force }
+            Expand-Archive -Path $zip -DestinationPath $extract -Force
+            Remove-Item -LiteralPath $zip -Force
+            $inner = Get-ChildItem -LiteralPath $extract -Directory | Select-Object -First 1
+            if (-not $inner) { $inner = Get-Item -LiteralPath $extract }
+            if (Test-Path -LiteralPath $dest) { Remove-Item -LiteralPath $dest -Recurse -Force }
+            New-Item -ItemType Directory -Force -Path (Split-Path -Parent $dest) | Out-Null
+            if (Test-Path -LiteralPath (Join-Path $inner.FullName 'src\main.py')) {
+                Move-Item -LiteralPath $inner.FullName -Destination $dest
+            } else {
+                # zip root IS the tool
+                New-Item -ItemType Directory -Force -Path $dest | Out-Null
+                Copy-Item -Path (Join-Path $extract '*') -Destination $dest -Recurse -Force
+            }
+            Remove-Item -LiteralPath $extract -Recurse -Force -ErrorAction SilentlyContinue
+            Set-Content -LiteralPath $marker -Value '{{ue4_dds_tools_tag}}' -NoNewline
+            $installed = $true
+        } catch {
+            Write-Host "[fetch-dds-tools] GUI zip failed: $($_.Exception.Message)"
+        }
+    }
+
+    if (-not $installed -or -not (Test-Path -LiteralPath $main)) {
+        throw "Failed to install UE4-DDS-Tools. Set ES3D_UE4_DDS_TOOLS to a local checkout/GUI folder, or check network access to GitHub."
+    }
+    Write-Host "[fetch-dds-tools] installed $dest"
 
 [script("powershell", "-NoProfile", "-ExecutionPolicy", "Bypass")]
 _fetch-repak:

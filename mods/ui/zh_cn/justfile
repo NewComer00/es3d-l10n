@@ -1,0 +1,167 @@
+# ui / zh_cn — UI strings + Chinese fonts + translated DDS overlays
+
+import '../justfile'
+import '../../locale.just'
+
+locale := "zh_cn"
+locale_dir := justfile_directory()
+
+# Pixel HUD font: replace Press Start 2P with Zpix (keep original asset path/name).
+zpix_url := "https://github.com/SolidZORO/zpix-pixel-font/releases/latest/download/zpix.ttf"
+zpix_asset := locale_assets + "/Everlasting_summer/Content/main/hud/ihban/PressStart2P-Regular.ufont"
+
+# Menu font: 12507 (Cyrillic/Latin) + ZhiMangXing (CJK), same path as stock 12507.ufont.
+# Prefer jsDelivr / mirrors — raw.githubusercontent.com often drops TLS mid-transfer in CN.
+zhimangxing_urls := "https://cdn.jsdelivr.net/gh/google/fonts@main/ofl/zhimangxing/ZhiMangXing-Regular.ttf https://raw.githubusercontent.com/google/fonts/main/ofl/zhimangxing/ZhiMangXing-Regular.ttf https://raw.githubusercontent.com/m4rc1e/zhimangxing/master/fonts/ZhiMangXing-Regular.ttf"
+menu_font_asset := locale_assets + "/Everlasting_summer/Content/main/hud/меню/12507.ufont"
+menu_font_src := mod_extracted + "/Everlasting_summer/Content/main/hud/меню/12507.ufont"
+
+# Translated DDS live in textures/ (Git LFS). See manifest.json.
+textures_dir := locale_dir + "/textures"
+textures_manifest := textures_dir + "/manifest.json"
+
+[script("powershell", "-NoProfile", "-ExecutionPolicy", "Bypass")]
+_ensure-fonts:
+    $ErrorActionPreference = 'Stop'
+    $tag = '{{mod}}:{{locale}}'
+    $zpix = '{{zpix_asset}}'
+    $menu = '{{menu_font_asset}}'
+    $src = '{{menu_font_src}}'
+
+    if (-not (Test-Path -LiteralPath $zpix)) {
+        $dir = Split-Path -Parent $zpix
+        New-Item -ItemType Directory -Force -Path $dir | Out-Null
+        Write-Host "[${tag}:ensure-fonts] downloading Zpix -> $zpix"
+        Invoke-WebRequest -Uri '{{zpix_url}}' -OutFile $zpix -UseBasicParsing
+    } else {
+        Write-Host "[${tag}:ensure-fonts] Zpix cached: $zpix"
+    }
+
+    if (Test-Path -LiteralPath $menu) {
+        Write-Host "[${tag}:ensure-fonts] menu font cached: $menu"
+        return
+    }
+
+    if (-not (Test-Path -LiteralPath $src)) {
+        Write-Host "[${tag}:ensure-fonts] stock 12507 missing — running: just mod {{mod}} unpack"
+        & '{{just_exe}}' mod '{{mod}}' unpack
+        if ($LASTEXITCODE -ne 0) { throw "just mod {{mod}} unpack failed with exit code $LASTEXITCODE" }
+    }
+    if (-not (Test-Path -LiteralPath $src)) {
+        throw "Stock menu font still missing after unpack: $src"
+    }
+
+    $work = Join-Path $env:TEMP 'es3d-ui-font'
+    if (Test-Path -LiteralPath $work) { Remove-Item -LiteralPath $work -Recurse -Force }
+    New-Item -ItemType Directory -Force -Path $work | Out-Null
+    $baseTtf = Join-Path $work '12507.ttf'
+    $zhimang = Join-Path $work 'ZhiMangXing-Regular.ttf'
+    $zhimang1400 = Join-Path $work 'ZhiMangXing-1400.ttf'
+    $merged = Join-Path $work '12507_ZhiMangXing.ttf'
+    Copy-Item -LiteralPath $src -Destination $baseTtf -Force
+    Write-Host "[${tag}:ensure-fonts] downloading ZhiMangXing..."
+    [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+    $downloaded = $false
+    foreach ($url in '{{zhimangxing_urls}}'.Split(' ', [System.StringSplitOptions]::RemoveEmptyEntries)) {
+        try {
+            Write-Host "[${tag}:ensure-fonts]   try $url"
+            Invoke-WebRequest -Uri $url -OutFile $zhimang -UseBasicParsing -TimeoutSec 120
+            if ((Get-Item -LiteralPath $zhimang).Length -gt 100000) {
+                $downloaded = $true
+                break
+            }
+        } catch {
+            Write-Host "[${tag}:ensure-fonts]   fail: $($_.Exception.Message)"
+        }
+    }
+    if (-not $downloaded) {
+        throw "Failed to download ZhiMangXing from all mirrors"
+    }
+    Write-Host "[${tag}:ensure-fonts] scaling + merging menu font..."
+    Push-Location '{{root}}'
+    try {
+        & '{{uv}}' run python scripts/scale_font_upem.py $zhimang $zhimang1400 --scale 1.4 --upem 1400
+        if ($LASTEXITCODE -ne 0) { throw "scale_font_upem failed" }
+        & '{{uv}}' run pyftmerge --output-file=$merged --drop-tables=GSUB,GPOS,GDEF $baseTtf $zhimang1400
+        if ($LASTEXITCODE -ne 0) { throw "pyftmerge failed" }
+    } finally {
+        Pop-Location
+    }
+    $dir = Split-Path -Parent $menu
+    New-Item -ItemType Directory -Force -Path $dir | Out-Null
+    Copy-Item -LiteralPath $merged -Destination $menu -Force
+    Write-Host "[${tag}:ensure-fonts] wrote $menu"
+
+[doc("Inject translated DDS into stock uassets from the current game → mods/ui/zh_cn/assets/")]
+[script("powershell", "-NoProfile", "-ExecutionPolicy", "Bypass")]
+inject-textures: fetch-dds-tools fetch-repak extract-aes-key
+    $ErrorActionPreference = 'Stop'
+    $tag = '{{mod}}:{{locale}}'
+    $manifest = '{{textures_manifest}}'
+    $textures = '{{textures_dir}}'
+    $entries = Get-Content -LiteralPath $manifest -Raw -Encoding UTF8 | ConvertFrom-Json
+    $missing = @()
+    foreach ($e in $entries) {
+        $dds = Join-Path $textures (($e.dds -replace '/', '\'))
+        if (-not (Test-Path -LiteralPath $dds)) { $missing += $e.name }
+    }
+    if ($missing.Count -gt 0) {
+        throw "DDS missing under textures/: $($missing -join ', ')`nRun: git lfs pull`n(see mods/ui/README.md)."
+    }
+    $force = @()
+    if ($env:ES3D_FORCE_INJECT -eq '1') { $force = @('--force') }
+    Push-Location '{{root}}'
+    try {
+        & '{{uv}}' run python scripts/inject_ui_textures.py `
+            --manifest $manifest `
+            --textures-dir $textures `
+            --extracted '{{mod_extracted}}' `
+            --assets '{{locale_assets}}' `
+            --tool-root '{{ue4_dds_tools}}' `
+            --python '{{ue4_dds_tools_py}}' `
+            --uv '{{uv}}' `
+            --main '{{ue4_dds_tools_main}}' `
+            --ue-version 5.5 `
+            --repak '{{repak}}' `
+            --aes-key '{{aes_key}}' `
+            --game-pak '{{game_pak}}' `
+            @force
+        if ($LASTEXITCODE -ne 0) { throw "inject_ui_textures.py failed with exit code $LASTEXITCODE" }
+    } finally {
+        Pop-Location
+    }
+
+[script("powershell", "-NoProfile", "-ExecutionPolicy", "Bypass")]
+_ensure-assets:
+    $ErrorActionPreference = 'Stop'
+    $tag = '{{mod}}:{{locale}}'
+    & '{{just_exe}}' '-f' '{{locale_dir}}/justfile' '_ensure-fonts'
+    if ($LASTEXITCODE -ne 0) { throw "_ensure-fonts failed with exit code $LASTEXITCODE" }
+    & '{{just_exe}}' '-f' '{{locale_dir}}/justfile' 'inject-textures'
+    if ($LASTEXITCODE -ne 0) { throw "inject-textures failed with exit code $LASTEXITCODE" }
+    Write-Host "[${tag}:ensure-assets] fonts + textures ready"
+
+[doc("Re-download Zpix + rebuild 12507+ZhiMangXing into mods/ui/zh_cn/assets/")]
+[script("powershell", "-NoProfile", "-ExecutionPolicy", "Bypass")]
+fetch-fonts:
+    $ErrorActionPreference = 'Stop'
+    $tag = '{{mod}}:{{locale}}'
+    foreach ($p in @('{{zpix_asset}}', '{{menu_font_asset}}')) {
+        if (Test-Path -LiteralPath $p) {
+            Remove-Item -LiteralPath $p -Force
+            Write-Host "[${tag}:fetch-fonts] removed $p"
+        }
+    }
+    & '{{just_exe}}' '-f' '{{locale_dir}}/justfile' '_ensure-fonts'
+    if ($LASTEXITCODE -ne 0) { throw "_ensure-fonts failed with exit code $LASTEXITCODE" }
+    Write-Host "[${tag}:fetch-fonts] done"
+
+[doc("Force re-inject DDS from textures/ into assets/ (sets ES3D_FORCE_INJECT=1)")]
+[script("powershell", "-NoProfile", "-ExecutionPolicy", "Bypass")]
+fetch-textures:
+    $ErrorActionPreference = 'Stop'
+    $tag = '{{mod}}:{{locale}}'
+    $env:ES3D_FORCE_INJECT = '1'
+    & '{{just_exe}}' '-f' '{{locale_dir}}/justfile' 'inject-textures'
+    if ($LASTEXITCODE -ne 0) { throw "inject-textures failed" }
+    Write-Host "[${tag}:fetch-textures] done"

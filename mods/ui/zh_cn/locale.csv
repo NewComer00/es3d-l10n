@@ -1,0 +1,1418 @@
+﻿File,Key,CultureInvariantString,Translation
+Everlasting_summer\Content\ColorPicker\UI\WBP_ColorPicker.json,EEAC844B47F280444012EC82A428269F,Click to restore old color,
+Everlasting_summer\Content\ColorPicker\UI\WBP_ColorPicker.json,F24C16FB4EB5F285D633B38CB9CCB666,Hexadecimal Value,
+Everlasting_summer\Content\ColorPicker\UI\WBP_ColorPicker.json,83636CCF4E05558A237D2BA2FC0BEE55,Saturation,
+Everlasting_summer\Content\ColorPicker\UI\WBP_ColorPicker.json,14F8E1624BA490CDDE757AAA7230E6B8,Value,
+Everlasting_summer\Content\ColorPicker\UI\WBP_ColorPicker.json,82F4BF9A4CB7F37F2A17CDAEE7CC7ABD,Alpha Channel,
+Everlasting_summer\Content\ColorPicker\UI\WBP_ColorPicker.json,D31316F4471BCF33F8D98B87DA283197,Hue,
+Everlasting_summer\Content\ColorPicker\UI\WBP_ColorPicker.json,81B31DD048DBB90F1557668E4C26A4AF,Blue Channel,
+Everlasting_summer\Content\ColorPicker\UI\WBP_ColorPicker.json,9CA8A3724249076156EB3DB56CB38C9D,Green Channel,
+Everlasting_summer\Content\ColorPicker\UI\WBP_ColorPicker.json,2E7D8F6F428D77729385F3880102F600,Red Channel,
+Everlasting_summer\Content\ColorPicker\UI\WBP_ColorPicker.json,522C803B47606031ED616297BC6FC4F5,Saturation,
+Everlasting_summer\Content\ColorPicker\UI\WBP_ColorPicker.json,837FE6F447200D9A168E898752247120,Value,
+Everlasting_summer\Content\ColorPicker\UI\WBP_ColorPicker.json,5860BDA24161813E034F8BA72A194512,Аниме шейдер,动漫着色器
+Everlasting_summer\Content\ColorPicker\UI\WBP_ColorPicker.json,2A9A916C457E0E8DAA46B3911DD68A89,New,
+Everlasting_summer\Content\ColorPicker\UI\WBP_ColorPicker.json,9A63DA5448910C22A768349669AC980B,Old,
+Everlasting_summer\Content\ColorPicker\UI\WBP_ColorPicker.json,912B52D94614452B5D8E08BBEF1F5E52,V:,
+Everlasting_summer\Content\ColorPicker\UI\WBP_ColorPicker.json,CA47313F44D79F7EC65CB2A3A0DD400A,R:,
+Everlasting_summer\Content\ColorPicker\UI\WBP_ColorPicker.json,B8BCF13849206F3C01F8198945417533,частицы,粒子效果
+Everlasting_summer\Content\ColorPicker\UI\WBP_ColorPicker.json,6EEA0A8F4F56C60AAD33D78B07C4227A,Выберите цвет,选择颜色
+Everlasting_summer\Content\ColorPicker\UI\WBP_ColorPicker.json,415DF4D444A431FC87E06FB929800159,Применить,应用
+Everlasting_summer\Content\ColorPicker\UI\WBP_ColorPicker.json,F508B3F5421A561852E6F0AF1EB5463B,Отмена,取消
+Everlasting_summer\Content\ColorPicker\UI\WBP_ColorPicker.json,CE6F89B440E530C59D3C2AA3483E6869,Яркость,亮度
+Everlasting_summer\Content\ColorPicker\UI\WBP_ColorPicker.json,9EC3B94B471C27AEFE5072BE6CA5E84A,G:,
+Everlasting_summer\Content\ColorPicker\UI\WBP_ColorPicker.json,C3F3035E403352CF71431292C75F2638,Облака,云朵
+Everlasting_summer\Content\ColorPicker\UI\WBP_ColorPicker.json,DCD96D054A407BA24906F18D137A9AEE,Скорость облаков,云速
+Everlasting_summer\Content\ColorPicker\UI\WBP_ColorPicker.json,B4459DFD4BB0D1F7A2E8C285E843EB24,Высокие облака,高空云
+Everlasting_summer\Content\ColorPicker\UI\WBP_ColorPicker.json,1C9B5BF74695FC52B947B0A862644767,H:,
+Everlasting_summer\Content\ColorPicker\UI\WBP_ColorPicker.json,E3CC49AB4D286904356668B3F8A4E5F9,B:,
+Everlasting_summer\Content\ColorPicker\UI\WBP_ColorPicker.json,E13763E047303EE7BD8BAAA61F555B21,Настройка лагеря под себя,自定义营地
+Everlasting_summer\Content\ColorPicker\UI\WBP_ColorPicker.json,02D1851B49BC6A6AE52C04A60301FCE5,Гамма,伽马值
+Everlasting_summer\Content\ColorPicker\UI\WBP_ColorPicker.json,606FE29D4D99ABE6F4FA168290264B6A,S:,
+Everlasting_summer\Content\ColorPicker\UI\WBP_ColorPicker.json,52AFE2574F522FD354341B824E4CFCCC,A:,
+Everlasting_summer\Content\ColorPicker\UI\WBP_ColorPicker.json,71E1F75D41363826AEE078A154CA3EF5,Hex:,
+Everlasting_summer\Content\ColorPicker\UI\WBP_ColorPicker.json,73AAA57140C47DAD4C19DE89838BE659,Микрофон по касанию,按键通话
+Everlasting_summer\Content\ColorPicker\UI\WBP_ColorPicker.json,B1D5BB2B4687809B61D08B95515E701A,Выберите цвет,选择颜色
+Everlasting_summer\Content\InteractionWidgets\Blueprints\Enums\E_WidgetTypes.json,8E12E3B34AA6F7B99D372F9107AA7AAA,Full Widget,
+Everlasting_summer\Content\InteractionWidgets\Blueprints\Enums\E_WidgetTypes.json,9F235E644857BD871276A09120ED2641,Basic Widget,
+Everlasting_summer\Content\InteractionWidgets\Blueprints\Enums\E_WidgetTypes.json,26411421484F5DBB46AF0189ADEAFD76,Key Bind Widget,
+Everlasting_summer\Content\InteractionWidgets\Blueprints\Widgets\BP_KeyBindingWidget.json,5F51997145F5633682CC00A274F219AE,Открыть,打开
+Everlasting_summer\Content\InteractionWidgets\Blueprints\Widgets\BP_KeyBindingWidget.json,3FFD97CC4EC0E9A205D564965465CED9,поднять,拾取
+Everlasting_summer\Content\InteractionWidgets\Blueprints\Widgets\BP_KeyBindingWidget.json,CB4CC7AC491BB86C671EAA8B910CCAA8,E,
+Everlasting_summer\Content\InteractionWidgets\Blueprints\Widgets\Кнопки.json,6466184740DE968B6100BF9332E43ACA,поднять,拾取
+Everlasting_summer\Content\InteractionWidgets\Blueprints\Widgets\Кнопки.json,25B57ABF4E5ECCB153573EBC349789FD,E,
+Everlasting_summer\Content\InteractionWidgets\Blueprints\Widgets\Кнопки.json,ECB0B8DA4B261672FE7A93A342E35E97,Осмотреть,查看
+Everlasting_summer\Content\LSS_LoadingScreenSystem\Blueprints\DemoContent\DT_LSS_RandomGameHints.json,05A397134DF8718A0F02548E95303439,"Вы можете находить и собирать жетоны, которые затем использовать в игровом автомате.",您可以收集代币，在游戏机中使用。
+Everlasting_summer\Content\LSS_LoadingScreenSystem\Blueprints\DemoContent\DT_LSS_RandomGameHints.json,C6CCAF7A4EAABE382F3382B45BD77B61,"В вашем инвентаре есть вещи, которые можно применить.",您的物品栏中存放着可使用的物品。
+Everlasting_summer\Content\LSS_LoadingScreenSystem\Blueprints\DemoContent\DT_LSS_RandomGameHints.json,51A8D1F74F266ADE00210080E7BF31C3,Некоторые предметы интерьера можно открывать.,有些室内物品可以被打开。
+Everlasting_summer\Content\LSS_LoadingScreenSystem\Blueprints\DemoContent\DT_LSS_RandomGameHints.json,F457EACC4F031EEA7FC684BBD63B7D7B,В шкафу вы можете переодеться.,您可以在衣柜里更换服装。
+Everlasting_summer\Content\LSS_LoadingScreenSystem\Blueprints\DemoContent\DT_LSS_RandomGameHints.json,B1EF1BD842AEBFA333C2B788AC2214B8,В игре присутствует автосохранение.,游戏具有自动保存功能。
+Everlasting_summer\Content\LSS_LoadingScreenSystem\Blueprints\DemoContent\DT_LSS_RandomGameHints.json,E9CED8E249B3FBAF45FAC08D10104CA5,"В мире скрыто множество секретов и загадок, решив которые, можно получить награду.",世界里隐藏着诸多秘密与谜题，解开它们可以获得奖励。
+Everlasting_summer\Content\LSS_LoadingScreenSystem\UI\ExampleWidgets\UI_LSS_Example_ProgressBar.json,C660047642BBD78A5CF6799397CDE7FA,0%,0%
+Everlasting_summer\Content\LSS_LoadingScreenSystem\UI\ExampleWidgets\UI_LSS_PressAnyKeyToContinue_Complex.json,5DCEEE5A42B7B374273C35BDC4108B56,загрузка...,加载中...
+Everlasting_summer\Content\LSS_LoadingScreenSystem\UI\ExampleWidgets\UI_LSS_Tips.json,8055B74B48215E236F9A1EA98C012C91,[ Нажмите любую кнопку для продолжения ],[ 按任意键继续 ]
+Everlasting_summer\Content\LSS_LoadingScreenSystem\UI\ExampleWidgets\UI_LSS_Tips.json,29BC44084423D6D4690B839D100CA250,ЗАГРУЗКА,加载中
+Everlasting_summer\Content\LSS_LoadingScreenSystem\UI\ExampleWidgets\UI_LSS_Tips.json,D7B4E35C4D6DBD617A06C08A921F53E6,"Lorem ipsum dolor sit amet, quot virtute in mel, ius te probo oporteat. Qui commune lucilius in, id omnis inani eripuit usu. Civibus contentiones cu duo. Ut iriure civibus ius.",
+Everlasting_summer\Content\main\hud\3d\какой_день_уд.json,8CD7A50646FF3EA3F710529910A84B12,День 2,第 2 天
+Everlasting_summer\Content\main\hud\3d\какой_день_уд.json,F3E609964A3A8F9E0386A88CE389C251,День 2,第 2 天
+Everlasting_summer\Content\main\hud\3день\уборка5.json,78F0BF2A47AD93E5F2014D9DBD993BCA,Вроде все убрал.,好像都收拾干净了。
+Everlasting_summer\Content\main\hud\hp\fps.json,TextBlockDefaultValue,Text Block,Text Block
+Everlasting_summer\Content\main\hud\hp\mygameinstans.json,F1E2634544C6A098B35A11B8F9F49E07,Summer,
+Everlasting_summer\Content\main\hud\hp\настройки_гемплея.json,22EAF9A6471647A80DC222AFF7B80B28,Аудио и видео материалы,音频和视频内容
+Everlasting_summer\Content\main\hud\hp\настройки_гемплея.json,8009027C47D7967C8E64DBAC8A0AD615,Чуствительность мыши,鼠标灵敏度
+Everlasting_summer\Content\main\hud\hp\настройки_гемплея.json,9602BE07426DFE79FDFC46983D57E917,1,
+Everlasting_summer\Content\main\hud\hp\настройки_гемплея.json,E43E1D13471946FB4D709BBADA9B3EB3,Показывать фпс,显示帧率
+Everlasting_summer\Content\main\hud\hp\настройки_гемплея.json,A367E61E479B09BC5445A392CB255571,Поданный сюжет,剧情呈现方式
+Everlasting_summer\Content\main\hud\hp\настройки_гемплея.json,449CFA664114AE1ECA3E848003CB8AA2,Тип освещения,光照类型
+Everlasting_summer\Content\main\hud\hp\настройки_гемплея.json,26E9DF58443E14B41753FBB6EAA0FC13,Оригинальный,原版
+Everlasting_summer\Content\main\hud\hp\настройки_гемплея.json,4EE7FD614375A83FE026D2BDEC9DEB3C,Включить,
+Everlasting_summer\Content\main\hud\hp\настройки_гемплея.json,25CA8A684144711F96E94BB660D3D5CC,Старый,
+Everlasting_summer\Content\main\hud\hp\славввв.json,FB0E9ADC4F2C57B1C491E4942650C27C,TexturePow,
+Everlasting_summer\Content\main\hud\hp\славввв.json,1877B1E34F3980D14663FA98D88C2A49,TextureSaturate,
+Everlasting_summer\Content\main\hud\hp\славввв.json,216C2EFC4AB732374B8B6F804C1E131D,1,
+Everlasting_summer\Content\main\hud\hp\славввв.json,B131FBBB48BB80EDDB61428158A9F029,NormalToLightMat,
+Everlasting_summer\Content\main\hud\hp\славввв.json,11B27E9841BE0924D4B00EA43D85256D,Ширина тела,体型宽度
+Everlasting_summer\Content\main\hud\hp\славввв.json,2D7200174755F6E98457B6AA2DADB7E6,По умолчанию,默认
+Everlasting_summer\Content\main\hud\hp\славввв.json,145354974E23BEE59F0AB18FB03534B5,mtoon_ShadeToony,
+Everlasting_summer\Content\main\hud\hp\славввв.json,E4815792479BBE8A1873079AE4BFEE14,Верхняя часть тела,上半身
+Everlasting_summer\Content\main\hud\hp\славввв.json,3755A37B4C4BA72758F29F8A1792AC67,mtoon_ShadeShift,
+Everlasting_summer\Content\main\hud\hp\славввв.json,9A0EA9134FC1F277038497AC1B97913E,Ширина ног,腿部宽度
+Everlasting_summer\Content\main\hud\hp\славввв.json,E85903844F42FE97B79D7090D9DFEA1E,Подтвердить,确认
+Everlasting_summer\Content\main\hud\hp\славввв.json,0679C1B6444FC23F93A75D864D631C6A,Назад,返回
+Everlasting_summer\Content\main\hud\hp\славввв.json,287F223A48D50F8634A65CBE1D816315,Отменить,取消
+Everlasting_summer\Content\main\hud\hp\славввв.json,C36AEE5340270F1BBE5D71BCB3E997AB,Вернуть значение для ,恢复设置：
+Everlasting_summer\Content\main\hud\hp\славввв.json,16ECFC1F492542023B5F33A7166DE65C,Грудь,胸部
+Everlasting_summer\Content\main\hud\hp\славввв.json,105A085E499D8656D54C46AFF9C9BC4D,Выбор персонажа,角色选择
+Everlasting_summer\Content\main\hud\hp\славввв.json,7A7821F342CF975002C3BC93DE132383,Выбор части тела,选择身体部位
+Everlasting_summer\Content\main\hud\hp\славввв.json,9A1996DA4C1306A0CBDDA397933383E8,персонажа по умолчанию?,恢复角色默认值？
+Everlasting_summer\Content\main\hud\interactive\button_pad.json,TextBlockDefaultValue,Text Block,Text Block
+Everlasting_summer\Content\main\hud\interactive\button_pad.json,19D8378045335D3844CDDB81091E935F,По умолчанию,默认
+Everlasting_summer\Content\main\hud\interface.json,4FF9D09C45815FA7691A30AE2F410048,Текст заданий,任务文本
+Everlasting_summer\Content\main\hud\interface.json,24E1366643B8516137407CBFE03ACC6E,Чтобы увидеть маркер задания нажмите Q,按 Q 查看任务标记
+Everlasting_summer\Content\main\hud\loadscreen\loadscreen.json,39AFB7494335B663E3D4B8B5E24891F2,Загрузка...,加载中...
+Everlasting_summer\Content\main\hud\options1.json,CC34996B4707B7DAD8B8C7B6CCCE5912,Передвижение,移动
+Everlasting_summer\Content\main\hud\options1.json,454E233348BF0D67B30C7BA4916E9958,Маркер задания,任务标记
+Everlasting_summer\Content\main\hud\options1.json,AF7C73794DD968EBFCD9949122C38D39,Кнопка взаимодействия,互动按钮
+Everlasting_summer\Content\main\hud\options1.json,D6A713904C98C818F02223BED305B003,Фонарик,手电筒
+Everlasting_summer\Content\main\hud\options1.json,8E0C87714B4F05AFF9DE4EB8C5024FF5,ВКЛ/ВЫКЛ показ ФПС,开/关帧率显示
+Everlasting_summer\Content\main\hud\options1.json,A67E3BF44674736939812586F7E38AFF,Пользовательский интерфейс,用户界面
+Everlasting_summer\Content\main\hud\options1.json,8A6A690E4D14900DE01C34A745D613CB,Подьем/Сброс предметов,拾取/丢弃物品
+Everlasting_summer\Content\main\hud\options1.json,E81C802F4C20EC5454ADCCBF7C7BB7AC,Чтение текста,阅读文本
+Everlasting_summer\Content\main\hud\options1.json,F23410684B6CB00AD88060A4630C7E5E,Прокручивание предмета в руке,旋转手持物品
+Everlasting_summer\Content\main\hud\options1.json,50D3577C49F9C1EA18CBB594021A85F8,Назад,返回
+Everlasting_summer\Content\main\hud\options7.json,33F846374B919995D819469776D1A052,Тени,
+Everlasting_summer\Content\main\hud\options7.json,49C468194C3C4C11F76C9B941DD0883F,Текстуры,
+Everlasting_summer\Content\main\hud\options7.json,9097ED7C4F27448E28EF3FB2AD3E62CB,Сглаживание,
+Everlasting_summer\Content\main\hud\options7.json,15FA70594781CA89575B30B60B0E8DD3,Полный экран,
+Everlasting_summer\Content\main\hud\options7.json,F4C6ABA84151CEBC2CD4A3A1AEF0005C,Постобработка,
+Everlasting_summer\Content\main\hud\options7.json,DACD65D140B25D2396F7E7B854DFC507,Прорисовка обьектов,
+Everlasting_summer\Content\main\hud\options7.json,1B6C48AD4F1E04A0D6596AB14115C76E,Ограничение FPS,
+Everlasting_summer\Content\main\hud\options7.json,FA6A102A46DDB4BE16D1F6A16BE712E2,Разрешение экрана,
+Everlasting_summer\Content\main\hud\options7.json,62C5BEA24EC5AE541FBE85A13E9F62B8,Вертикальная синхронизация,
+Everlasting_summer\Content\main\hud\options7.json,44246598409AFCB1FF2D6985320D29F2,Глобальное освещение,
+Everlasting_summer\Content\main\hud\options7.json,95DAFB6141322B16C05AB89312F630EE,Количество растительности,
+Everlasting_summer\Content\main\hud\options7.json,DA49DAB74868AC5C413D4BA459CDE7F3,Визульные эффекты,
+Everlasting_summer\Content\main\hud\options7.json,CD817257468B7144E5FE59B62C7D0B10,Качество шейдера,
+Everlasting_summer\Content\main\hud\options7.json,B55C4900424D00800A6FB3AC933A53AE,Размытие,
+Everlasting_summer\Content\main\hud\options7.json,5E5D5C704C7E55CFC4EB4E8458A14ED7,Тип сглаживания,
+Everlasting_summer\Content\main\hud\options7.json,F571072740BB7204B8B728A3E74234C7,Апскейл (upscale DLSS FSR),
+Everlasting_summer\Content\main\hud\options7.json,8091C1614E6A8762B0D3ADAECECFFE2B,Прорисовка травы,
+Everlasting_summer\Content\main\hud\options7.json,B816A0BA4981668D943E7DABFDE7D8E7,Visual Quality,
+Everlasting_summer\Content\main\hud\options7.json,CBE6DE594C0ECB30BAA88B8A41FEFC5D,FSR,
+Everlasting_summer\Content\main\hud\options7.json,7A71C09947C1B5E96AD44AB822025B03,Управление,
+Everlasting_summer\Content\main\hud\options7.json,50D3577C49F9C1EA18CBB594021A85F8,Назад,返回
+Everlasting_summer\Content\main\hud\options8.json,8D3C046949C9666122AD998B07090423,Вертикальная синхронизация,
+Everlasting_summer\Content\main\hud\options8.json,4D959FA34BE9733DB1E3FA900B41862A,Полный экран,
+Everlasting_summer\Content\main\hud\options8.json,3CDC1BE84850B361C6F601A91B6888A5,Прорисовка травы,
+Everlasting_summer\Content\main\hud\options8.json,9139B4B44D4AC2B3F4D58D9D3B3730CC,1,
+Everlasting_summer\Content\main\hud\options8.json,330C0F6C43BCD3019D6C74A22091EA27,2,
+Everlasting_summer\Content\main\hud\options8.json,504781354F17B72A714BA3824C66EBD8,3,
+Everlasting_summer\Content\main\hud\options8.json,E69A31C54B7F5F4418D9FA873E57DB18,4,
+Everlasting_summer\Content\main\hud\options8.json,5062450F4142BD3CEE605287BD7F041A,Управление,
+Everlasting_summer\Content\main\hud\options8.json,376A8C6D4D1ADD0914ABBA9796065A36,Ограничение ФПС,
+Everlasting_summer\Content\main\hud\options8.json,5157433240B11A8CCCC3439351DD8024,Громкость,
+Everlasting_summer\Content\main\hud\options8.json,D59FDF6E4A8C03DA36B108B38BE5A439,30,
+Everlasting_summer\Content\main\hud\options8.json,34551EEB426F7519B4262FA8003333BD,60,
+Everlasting_summer\Content\main\hud\options8.json,EB9F6DB6454D19AE7C1B269927131710,120,
+Everlasting_summer\Content\main\hud\options8.json,20D851AE438BA27B29CEBCA1D39D0E07,вык,
+Everlasting_summer\Content\main\hud\options8.json,50D3577C49F9C1EA18CBB594021A85F8,Назад,返回
+Everlasting_summer\Content\main\hud\options8.json,9BDEC1474D959D2F87278291EB0A0889,Разрешение экрана,
+Everlasting_summer\Content\main\hud\options8.json,72C650FF484CCD4CAF1B669D5A82A017,1,
+Everlasting_summer\Content\main\hud\options8.json,319CC5E34F77FC34EF690CB3AB2C090A,2,
+Everlasting_summer\Content\main\hud\options8.json,0B6D6EC84E6D76034D574EABB0460701,3,
+Everlasting_summer\Content\main\hud\options8.json,7006964E4C1B6C592714F4BC4FDBEB3C,Текстуры,
+Everlasting_summer\Content\main\hud\options8.json,C451AE0341E182A550E3C3A01AF91338,1,
+Everlasting_summer\Content\main\hud\options8.json,1CF869B242493D66AEC717A0E6CB22E9,2,
+Everlasting_summer\Content\main\hud\options8.json,B7FE38C04802D4CBCBD198BC86C0E81D,3,
+Everlasting_summer\Content\main\hud\options8.json,D30F03F74C946A9C23AC7E8E53FBF32D,4,
+Everlasting_summer\Content\main\hud\options8.json,37A9AFFA490100587308C785A8B038D6,Тени,
+Everlasting_summer\Content\main\hud\options8.json,3E6FE6B6454DFD602F87F18EE83094E0,Сглаживание,
+Everlasting_summer\Content\main\hud\options8.json,E9CDAF8C478BB72D05DA188FFB80F64D,1,
+Everlasting_summer\Content\main\hud\options8.json,1218A0E4407D9C487BE0FBBC397C7267,2,
+Everlasting_summer\Content\main\hud\options8.json,CEB774484A241AC00026588C3664249B,3,
+Everlasting_summer\Content\main\hud\options8.json,1CB4CAFD46E34F9E82217192D4466752,4,
+Everlasting_summer\Content\main\hud\qte_alice.json,0D35D8454F25C7E09D4ACBB89F05FDC8,Нажмите пробел,按空格键
+Everlasting_summer\Content\main\hud\QTE_BAR.json,C9DDA179431C0DFC9B00A787DBF359CA,Нажимайте Пробел,按下空格键
+Everlasting_summer\Content\main\hud\tekst\для_компа\подключене.json,BA5C130B4E5613F8061A6F91209890F0,Пароль,密码
+Everlasting_summer\Content\main\hud\tekst\для_компа\подключене.json,71DD806E471CE6ADB0D837BA6DD496F5,Адрес,地址
+Everlasting_summer\Content\main\hud\tekst\для_компа\подключене.json,8593F30C4C62AD495A0EDCAE8384B1B8,Неверно введен адрес или пароль,地址或密码输入错误
+Everlasting_summer\Content\main\hud\tekst\для_компа\подключене.json,8563B2884F7F3C4595F2559BA30C6643,Всегда готов,时刻准备着
+Everlasting_summer\Content\main\hud\tekst\для_компа\подключене.json,0DC4EFA84FE4F8E085C9B2AE8310CC8E,ком9823,
+Everlasting_summer\Content\main\hud\tekst\для_компа\подключене.json,54A9C8DE47B0CECDB8827F9F51AD9BB4,пин21,
+Everlasting_summer\Content\main\hud\tekst\загрузка_ос.json,FCC4ED83445599B7BE99A1B86AB20457,Загрузка коммунизма,共产主义加载中
+Everlasting_summer\Content\main\hud\tekst\игра.json,TextBlockDefaultValue,Text Block,Text Block
+Everlasting_summer\Content\main\hud\tekst\картинка.json,TextBlockDefaultValue,Text Block,Text Block
+Everlasting_summer\Content\main\hud\tekst\кодовый_чемоданчик.json,8A49226F4894ECA21E20E8B9B70B3476,Назад,返回
+Everlasting_summer\Content\main\hud\tekst\компьтер_ос.json,8BDF95EF4632CF02837C0AA7CAA2C495,this product is covered by one or more of the following patents ,
+Everlasting_summer\Content\main\hud\tekst\компьтер_ос.json,189B84E14D0F348A1CE6899A91DED696,Integrity check has failed. Please contact support.,
+Everlasting_summer\Content\main\hud\tekst\компьтер_ос.json,8EB2DB5A4D7A5C61940AB8B6F5B61FE2,"Hard Disk S.M.A.R.T. Bad, Backup and Replace",
+Everlasting_summer\Content\main\hud\tekst\компьтер_ос.json,841F425A4C52D93ADE4721BF04FC3C96,CPU Over Temperature      CPU Fan       PU Fan speed error detected              CPU uCode loading error,
+Everlasting_summer\Content\main\hud\tekst\компьтер_ос.json,B6D928DF41B7B55135A749B3868FCE8D,USB Device Over Current Status Detected,
+Everlasting_summer\Content\main\hud\tekst\компьтер_ос.json,14CED3D3400E78FFEE66CCA0F590DD5F,Power supply surges detected during the previous power on,
+Everlasting_summer\Content\main\hud\tekst\компьтер_ос.json,FBD16B774E9660C8ECD36CBAF7456005,ASUS Anti-Surge was triggered to protect system from unstable power,
+Everlasting_summer\Content\main\hud\tekst\компьтер_ос.json,5018EBB147BB0256D5F867B64598B711,CMOS checksum,
+Everlasting_summer\Content\main\hud\tekst\компьтер_ос.json,236AD70C426F30EA1699E9AA23044A19,CMOS Date/Time Not Set,
+Everlasting_summer\Content\main\hud\tekst\компьтер_ос.json,E1CC0D044B7089A8EEEA388CE286F296,CMOS Settings Wrong,
+Everlasting_summer\Content\main\hud\tekst\компьтер_ос.json,05337C374D64FA3A1C74989069B5791D,CMOS Date/Time Not Set,
+Everlasting_summer\Content\main\hud\tekst\компьтер_ос.json,F6E42DF944F4E61D23ACA7B8072BD203,USB Device Over Current Status Detected,
+Everlasting_summer\Content\main\hud\tekst\контакты.json,77AC290F40E22CBA2CF3328BA11F539F,89246665545,
+Everlasting_summer\Content\main\hud\tekst\контакты.json,3BC1C48D4BE830B8D6ADBF92B58712FF,Позвонить,拨打电话
+Everlasting_summer\Content\main\hud\tekst\надписи_компа.json,TextBlockDefaultValue,Text Block,Text Block
+Everlasting_summer\Content\main\hud\tekst\наш_компьютер.json,A439B609426B2E0091DC948E1BC63126,Общий компьютер,公共电脑
+Everlasting_summer\Content\main\hud\tekst\наш_компьютер.json,A2F7B5654EF3F13165FD85BBCC7C4E4B,Доступные игры,可用游戏
+Everlasting_summer\Content\main\hud\tekst\наш_компьютер.json,027E0BA14BEDA90168ABE09A3804B405,Эта папка пуста,此文件夹为空
+Everlasting_summer\Content\main\hud\tekst\наш_компьютер.json,ECF87AD347DF50DC5D978D839A7D09F0,doom,
+Everlasting_summer\Content\main\hud\tekst\наш_компьютер.json,F6CC90BD4484D74885584F9D756FD6FC,rrr,
+Everlasting_summer\Content\main\hud\tekst\папка.json,TextBlockDefaultValue,Text Block,Text Block
+Everlasting_summer\Content\main\hud\tekst\папка.json,B13E2DED47D3CF992738D584F36BCFBF,Эта папка пуста,此文件夹为空
+Everlasting_summer\Content\main\hud\tekst\пуск.json,FA5DBA3147A739C90350BCBA1671E9E7,Выключить компьютер,关闭电脑
+Everlasting_summer\Content\main\hud\tekst\пуск.json,FCEDB43041BBA4CF2A2B60A509EA02A2,Важные,重要
+Everlasting_summer\Content\main\hud\tekst\пуск.json,224A028E4B57EF6F2FFF43915CCD225B,Найти файл,查找文件
+Everlasting_summer\Content\main\hud\tekst\рабочий_стол.json,0070EE9B4E49837508D314A362110E16,Корзина,回收站
+Everlasting_summer\Content\main\hud\tekst\рабочий_стол.json,6683A5E849C50A41A1E097978D90752A,Наш ,我们的
+Everlasting_summer\Content\main\hud\tekst\рабочий_стол.json,93320B7A46B32FC452BFB18CF16D4FAE,компьютер,电脑
+Everlasting_summer\Content\main\hud\tekst\рабочий_стол.json,TextBlockDefaultValue,Text Block,Text Block
+Everlasting_summer\Content\main\hud\tekst\рабочий_стол.json,32D1247D41BBEEE8DB9F3A96B873E23B,Не входить,请勿进入
+Everlasting_summer\Content\main\hud\tekst\рабочий_стол.json,ED9144944C1645772DBFBE97B9E21A04,Картинки,图片
+Everlasting_summer\Content\main\hud\tekst\рабочий_стол.json,4195D37F4B2DAFA8E9BF7FB54996D1BB,Подготовка к завершению пятилетки,五年计划收尾准备
+Everlasting_summer\Content\main\hud\tekst\рабочий_стол.json,DAE5D8CE49D39E8AC91CDEAD4C189344,Введите пароль:,请输入密码：
+Everlasting_summer\Content\main\hud\tekst\рабочий_стол.json,890EE9B547DE4404271011ABBF286FEF,Всегда готов,时刻准备着
+Everlasting_summer\Content\main\hud\tekst\рабочий_стол.json,B5FD6E684B6E8C31D91C39A275390B62,Подключиться,连接
+Everlasting_summer\Content\main\hud\tekst\рабочий_стол.json,1BCDF0084424F6BF07D358B406490046,3333333333333333,
+Everlasting_summer\Content\main\hud\tekst\рабочий_стол.json,117C61494328875290885CB20FABEA7E,2322222222222,
+Everlasting_summer\Content\main\hud\tekst\рабочий_стол.json,ACB96FE548E0F94283EC24854B0B4422,3555555555555,
+Everlasting_summer\Content\main\hud\tekst\рабочий_стол.json,854919134B4BCE5F1271708B04ECE9FE,411111111111111111,
+Everlasting_summer\Content\main\hud\tekst\рабочий_стол.json,E78979F148C72C9BF71F36A11AF8C7C3,12345,
+Everlasting_summer\Content\main\hud\tekst\файл.json,TextBlockDefaultValue,Text Block,Text Block
+Everlasting_summer\Content\main\hud\tellmenuu.json,97497DDC46F239A01EDCE3B8CB34BEAC,Столкнулся с багом.,我遇到了 Bug
+Everlasting_summer\Content\main\hud\telmenu1.json,C80443E447D8F75EA9E8A18BBCB890F7,Опции,选项
+Everlasting_summer\Content\main\hud\telmenu1.json,3E03F485405A467ABCCB188D4D0489BA,Назад,返回
+Everlasting_summer\Content\main\hud\telmenu1.json,B8D6071A488BDCC9EB53DD86BD352957,1,
+Everlasting_summer\Content\main\hud\telmenu2.json,CDB8D9054DD29229AD0572B758FF0849,Отложить,稍后提醒
+Everlasting_summer\Content\main\hud\telmenu2.json,CEE8BC8F46E74A0C30467A910F798305,19:00,
+Everlasting_summer\Content\main\hud\telmenu2.json,9C894369407BF972EF9DAFBCC0ABE010,Отключить,关闭
+Everlasting_summer\Content\main\hud\telmenu2.json,09802B634ABD9F9644FA71A81B3B5E14,Опции,选项
+Everlasting_summer\Content\main\hud\telmenu2.json,526576594D5788572232348B01774662,Встреча,会议
+Everlasting_summer\Content\main\hud\telmenu2.json,2C4511024A53813B78C46E834F9DBACB,Назад,返回
+Everlasting_summer\Content\main\hud\telmenu3.json,6018374C453E3DD28E3F57BB3A2EC4E8,Нет связи,无信号
+Everlasting_summer\Content\main\hud\telmenu3.json,F0132C6A49B1273B6939D082FBE2A426,Звонки,通话
+Everlasting_summer\Content\main\hud\telmenu3.json,617010EA46841E245C98FFAB4266DE84,Назад,返回
+Everlasting_summer\Content\main\hud\telmenu3.json,173B469149BA86C35B645AB2E117F9A3,89444444444,
+Everlasting_summer\Content\main\hud\telmenu.json,A1BE40594A9CFF7C3FB313B9432C152F,Опции,选项
+Everlasting_summer\Content\main\hud\telmenu.json,710C98684E88D5E97705829E67F4F49E,Назад,返回
+Everlasting_summer\Content\main\hud\telmenu.json,A78F8545491F319975F8BFACF324478A,1,
+Everlasting_summer\Content\main\hud\telmenugoro.json,5732924241C5DA001448CD8FE94FD8F4,Выход в меню,返回菜单
+Everlasting_summer\Content\main\hud\telmenugoro.json,CD707D1147F0CAFD8991CFA419BA9C73,Опции,选项
+Everlasting_summer\Content\main\hud\telmenugoro.json,034AEBC94ABB62DBB4442293797AF477,Продолжить игру,继续游戏
+Everlasting_summer\Content\main\hud\telmenugoro.json,A15D2E7A488B13D8FD8A4DAECF075E42,1,
+Everlasting_summer\Content\main\hud\telmenugoro.json,0E3832F440AE581762C9F18BBF04D4A7,Выход из игры,退出游戏
+Everlasting_summer\Content\main\hud\алфа.json,E113EB4B4525920E455C61A48AF9F3DE,"В оригинальной игре, помимо диалогов, есть множество размышлений персонажа и 
+описаний ситуаций. Мы предлагаем вам на выбор два варианта подачи сюжета:","在原版游戏中，除对话外还有大量角色内心独白和
+情境描述。我们为您提供两种剧情呈现方式："
+Everlasting_summer\Content\main\hud\алфа.json,59D0D9CA4F69D2FE85DD4E9337AE2FAE,Что будет озвучиваться?,哪些内容会有配音？
+Everlasting_summer\Content\main\hud\алфа.json,E57080C743A300D0BF121B85CE5FB867,Озвучивать реплики персонажей,为角色台词配音
+Everlasting_summer\Content\main\hud\алфа.json,1855C60D47C25CC087B73F8074A66BBD,"В игре присутствуют аудио и видео и прочие материалы которые могут не понравиться известным видеохостингам. При отключении вы будете их собирать, как и включённой версии, но проигрываться они не будут пока вы снова не включите их в настройках. 
+","游戏中包含可能不符合主流视频平台规范的音视频及其他内容。关闭后，您仍可收集这些内容（与开启时相同），但不会播放，直到您在设置中重新开启。
+"
+Everlasting_summer\Content\main\hud\алфа.json,E53F678145EF95055BF1E8A5A2C7A148,Озвучивать реплики Семена,为谢苗的台词配音
+Everlasting_summer\Content\main\hud\алфа.json,34CD126F416567A68C34E8A02DEE398C,Озвучивать мысли Семена,为谢苗的心理活动配音
+Everlasting_summer\Content\main\hud\алфа.json,45712CE041A863DAFA276DB638C7A7A7,Принять,接受
+Everlasting_summer\Content\main\hud\алфа.json,56F2EB37482E382F505307947FE579C1,Назад,返回
+Everlasting_summer\Content\main\hud\алфа.json,C23FAAC247AB185ECB8E7BB2238BFEBB,Озвучивать действия,为行动描述配音
+Everlasting_summer\Content\main\hud\алфа.json,295C5919450A8DA0F8C00DA981073F95,"Краткий — основной упор сделан на диалоги, где изредка присутствуют 
+размышления главного героя там, где это необходимо сценарно и там,
+ где были заготовлены сцены под оригинальный сюжет.","简洁版 — 以对话为主，仅在剧情需要时
+加入主角内心独白，
+ 以及为原版剧情准备的场景。"
+Everlasting_summer\Content\main\hud\алфа.json,9EC20888478B53DEBE8C3F9793BACE3E,Альфа,Alpha 版
+Everlasting_summer\Content\main\hud\алфа.json,61C6208247A602BB64535DBE14243111,Оригинальный - Почти полностью повторяет оригинальный текст.,原版 — 几乎完整还原原版文本。
+Everlasting_summer\Content\main\hud\алфа.json,BAF3D9704D0EFA9C72A6748773957182,Вы всегда сможете изменить свое решение в настройках..,您随时可以在设置中更改您的选择。
+Everlasting_summer\Content\main\hud\алфа.json,00A7BA37497F1A84AC6BB1A4C2C48B00,"Обнулить прогресс по найденным
+коллекционным предметам?","重置已找到的
+收藏品进度？"
+Everlasting_summer\Content\main\hud\алфа.json,DB77B2D742D9A542C58A37930CEC1C10,V 0.5.0,
+Everlasting_summer\Content\main\hud\алфа.json,731F10754EEA968C4BAF6AAD17E64C34,Все материалы включены ,所有内容已启用
+Everlasting_summer\Content\main\hud\алфа.json,2F5420E3476A56BBB10746A91D891224,Краткий,简洁版
+Everlasting_summer\Content\main\hud\алфа.json,787964D043DEF5655DAFBEAD398A24B8,Оригинальный,原版
+Everlasting_summer\Content\main\hud\алфа.json,B5A687DE4F5C9EE7DEC26FAE93700075,1487,
+Everlasting_summer\Content\main\hud\апскелер.json,81B9281040850CB41F4CB58D102668FA,FSR 3.1,
+Everlasting_summer\Content\main\hud\апскелер.json,33C2FDD74C35F5308887A4AEA22FF058,Резкость FSR (0-1),FSR 锐化度（0-1）
+Everlasting_summer\Content\main\hud\апскелер.json,6881D983403F49CB0EEC2FB0AD519ABF,назад,返回
+Everlasting_summer\Content\main\hud\выуверены.json,8519AD5E4C270392C26E879963D92F68,Да,是
+Everlasting_summer\Content\main\hud\выуверены.json,B2BE427B44551900840469B7B971ED42,Нет,否
+Everlasting_summer\Content\main\hud\выуверены_меню.json,DDAD16434D6D7AA7CB55189991C18016,Да,是
+Everlasting_summer\Content\main\hud\выуверены_меню.json,6F70520C4BDB30B901872597642987DB,Нет,否
+Everlasting_summer\Content\main\hud\выход_из_зоны.json,87D52A604CC0FA187D3D1EA98A26A2F6,Вернуться,返回
+Everlasting_summer\Content\main\hud\выход_из_зоны.json,86B1CB71441F65080E82BD813E1898C8,Покинуть,离开
+Everlasting_summer\Content\main\hud\выход_из_зоны.json,F24C2DD0400408C8DDDC7384BCD6EBF3,Вы покидаете зону задания,您正在离开任务区域
+Everlasting_summer\Content\main\hud\выход_из_зоны.json,2960EFF34C857529495ACD88F7CBB6C7,"Если покинуть, то вы просто пропустите задание
+ и сможете продолжить сюжет.","如果离开，您将跳过该任务，
+但可以继续主线剧情。"
+Everlasting_summer\Content\main\hud\гемплей.json,B68801E54967B84D7752C7879A853C83,Реплики мыслей Семена,谢苗的心理独白
+Everlasting_summer\Content\main\hud\гемплей.json,90DE89A848DDFCEDC65509B09BECE8B0,Реплики всех персонажей,所有角色台词
+Everlasting_summer\Content\main\hud\гемплей.json,53F347B5415EEE473A19C4A7AE169FB2,Реплики проговаривание действий,行动描述台词
+Everlasting_summer\Content\main\hud\гемплей.json,CDFF001D47CF2FBEC3C6948EDC7D240B,Реплики фраз Семена,谢苗的对话台词
+Everlasting_summer\Content\main\hud\гемплей.json,52B7A00B4BB01DCC66015BBF587EC8BF,Озвучка,配音
+Everlasting_summer\Content\main\hud\гемплей.json,9C767CF649C522BBBDC4E0BAF2F6C472,Субтитры,字幕
+Everlasting_summer\Content\main\hud\города\выборГород.json,C8DBB41547FAF1015809CF8CC4A16DFB,Какой город?,哪座城市？
+Everlasting_summer\Content\main\hud\города\город.json,7A86CF7E415386342DFAE9AB4D3EC92A,Город,城市
+Everlasting_summer\Content\main\hud\демо.json,B0F50D544CBC69F201B097BE349A7595,"Вы нашли контент который еще не закончен,
+так как это еще демо версия мы постараемся
+ доделать в следущих обновлениях","您发现了尚未完成的内容，
+由于目前仍是 Demo 版本，
+我们将在后续更新中完善。"
+Everlasting_summer\Content\main\hud\демо.json,AC4B93694113A14C5DAD319F2134E897,Принять,接受
+Everlasting_summer\Content\main\hud\журнал_рыбалки\журнал_рыбака.json,467DF37E46B9CEFB303BA2826180E6B1,Назад,返回
+Everlasting_summer\Content\main\hud\загрузка.json,AF80AAB74369C61E69E900940F12946A,Пусто,空
+Everlasting_summer\Content\main\hud\загрузка.json,2D9A862F488545FBBC37C4994AE7D687,Пусто,空
+Everlasting_summer\Content\main\hud\загрузка.json,925540F941B79E0E7F30D592AB030748,Пусто,空
+Everlasting_summer\Content\main\hud\загрузка.json,TextBlockDefaultValue,Text Block,Text Block
+Everlasting_summer\Content\main\hud\загрузка.json,4615732F4DAEAD3218378A9D2AE45F5C,Пусто,空
+Everlasting_summer\Content\main\hud\загрузка.json,64CFD6934507415A9CC81585A58D95EA,Автосохранение,自动保存
+Everlasting_summer\Content\main\hud\загрузка.json,067C9CAB46FBD7323CAE79BBFAD75586,Пусто,空
+Everlasting_summer\Content\main\hud\загрузка.json,124F485040521A7EE46075A21A4265CD,Пусто,空
+Everlasting_summer\Content\main\hud\загрузка.json,FD2EF8BC4DA1888C0972449C954121B9,Пусто,空
+Everlasting_summer\Content\main\hud\загрузка.json,507FFFD648B67DF1066C39AB2C2ED2AB,Назад,返回
+Everlasting_summer\Content\main\hud\инвентарь\UI_FullscreenInventory.json,EBAE8FFE4D627F76725A8EA9AD4EF1A5,"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+Everlasting_summer\Content\main\hud\инвентарь\UI_FullscreenInventory.json,1474A860411BD748E341AFA923238073,Lorem Ipsum is simply dummy text of the printing and typesetting industry.,
+Everlasting_summer\Content\main\hud\инвентарь\UI_FullscreenInventory.json,FAEBFB4249C020F750EFACAB68CCC629,Object Name,
+Everlasting_summer\Content\main\hud\инвентарь\UI_FullscreenInventory.json,F254D40D429F152B89877EB587BEFB22,Чтобы выбрать,选择
+Everlasting_summer\Content\main\hud\инвентарь\UI_FullscreenInventory.json,DCDD882242272F184DEF309FF2CEDD16,Чтобы просматривать,浏览
+Everlasting_summer\Content\main\hud\инвентарь\UI_FullscreenInventory.json,39E2EFD942684858DAC23B8A95DB649A,Применить,应用
+Everlasting_summer\Content\main\hud\инвентарь\UI_FullscreenInventory.json,9201DCE24341784703AAE09B1562E4E8,Нет предметов в инвентаре.,背包中没有物品。
+Everlasting_summer\Content\main\hud\информация.json,0F1D8D834D7BF2AB8812A685FBA7671C,Титры,制作人员
+Everlasting_summer\Content\main\hud\информация.json,4363C2C344CA0F82460953AC5E0BE5A1,оригинала Бесконечного лета.,《永恒之夏》原版。
+Everlasting_summer\Content\main\hud\информация.json,AD55DE9B44754B80896B9FB217D55B73,Музыка взята из оригинальной игры Бесконечное лето - Between August and December,音乐来自原版游戏《永恒之夏》- Between August and December
+Everlasting_summer\Content\main\hud\информация.json,9094264B4E2CA7C87E5EE28F55C82FBB,Приветствую пионеры! Хочу представить свое творение созданное от фанатов и для фанатов ,欢迎，少先队员们！我想向你们介绍这个由粉丝为粉丝创作的作品。
+Everlasting_summer\Content\main\hud\информация.json,EDC440E646EBF6A4D6D40098BD63B1E1,Музыка взята из оригинальной игры Бесконечное лето - Сергей Ейбог    https://vk.com/serge_eybog,音乐来自原版游戏《永恒之夏》- 谢尔盖·叶伊博格    https://vk.com/serge_eybog
+Everlasting_summer\Content\main\hud\информация.json,92629D24432A92EECD313B833F3083D9,Ссылка на оригинальную игру    http://everlastingsummer.su/ru/,原版游戏链接    http://everlastingsummer.su/ru/
+Everlasting_summer\Content\main\hud\информация.json,E5DA1CA448D93193A35DD2B27B8E31FB,Следите за Обновлениями Бесконечное лето 3D (unreal engine 5) в вк    https://vk.com/everlastingsummer3d,关注 VK 上《永恒之夏 3D》(虚幻引擎 5) 的更新    https://vk.com/everlastingsummer3d
+Everlasting_summer\Content\main\hud\информация.json,1FD2986B4EBCEBAB477212BF96DC6259,V 1.1,
+Everlasting_summer\Content\main\hud\информация.json,ACA2FBC34D073327C215ECAB0C77C525,Назад,返回
+Everlasting_summer\Content\main\hud\кнопка_Y.json,9BD8F58948B1C8972820FE94FDA4299A,Нажмите Y чтобы играть,按 Y 开始演奏
+Everlasting_summer\Content\main\hud\кнопка_Y.json,CE9737034541366C7BF7B4AB38EA8542,Нажмите E чтобы выбросить гитару,按 E 放下吉他
+Everlasting_summer\Content\main\hud\конец5дня.json,9FC19A684985BC8B0FD31EB0B338FDFE,"Поздравляем вы прошли Бесконечное лето 3D,
+ в котором доступно пока 5 дней,
+ ждите продолжения и следите за 
+ новостями в наших группах.
+Сейчас доступна свободная игра,
+ для исследования лагеря без влияния на сюжет.","恭喜您通关了《永恒之夏 3D》，
+ 目前仅开放前 5 天剧情，
+ 请关注我们群组的
+ 后续消息。
+现在您可以进入自由模式，
+ 探索营地而不影响主线剧情。"
+Everlasting_summer\Content\main\hud\конец5дня.json,0CD845424A42DB4934F86487A82BAC9B,Продолжить,继续
+Everlasting_summer\Content\main\hud\костюм\добавлены_костюмы.json,F54661D54B1BA390B95631932477B95F,Добавлена новая одежда,新增服装
+Everlasting_summer\Content\main\hud\кто_играет.json,11FC3D01459494642838F4856206579A,Dryante - Everlasting Summer Main Theme (Sergey Eybog Cover),
+Everlasting_summer\Content\main\hud\моргание.json,08439F334EF8CF2F7FC5F0AD5F78096C,Нажмите чтобы двигаться,按键以移动
+Everlasting_summer\Content\main\hud\моргание.json,C0E6B8034CDE2CCFBE492FAAF14DC2A1,Нажмите Space чтобы встать,按空格键起身
+Everlasting_summer\Content\main\hud\моргание.json,2ACDDA7E45970AFCD8845BB48E39AA68,Попадите в мысли,进入思绪
+Everlasting_summer\Content\main\hud\моргание.json,39F2AA044AB41112A447B3B4A5BEDAA6,"Удерживайте, чтобы увидеть метку.",长按以查看标记。
+Everlasting_summer\Content\main\hud\мусор.json,TextBlockDefaultValue,Text Block,Text Block
+Everlasting_summer\Content\main\hud\нет_метса1.json,1ED6A0184C5E1F5E31310E82E5F4F233,Сумка заполнена.,背包已满。
+Everlasting_summer\Content\main\hud\нет_метса.json,4CB7AD294CA8562FD0D741B78B869986,Нет места в карманах. Нужно найти сумку.,口袋没有空间了，需要找一个背包。
+Everlasting_summer\Content\main\hud\обратный_таймер.json,TextBlockDefaultValue,Text Block,Text Block
+Everlasting_summer\Content\main\hud\пианино\hp_досто.json,8CDDA92A4FA43917714143B57A588123,Семена,谢苗
+Everlasting_summer\Content\main\hud\пианино\hp_досто.json,605982164C443B17B30735951B6C8BB4,Достоинство:,优点：
+Everlasting_summer\Content\main\hud\пианино\очки_пиан.json,5368912343B1FB698ED99BAC8DFFFFB1,Очки,积分
+Everlasting_summer\Content\main\hud\пианино\очки_пиан.json,TextBlockDefaultValue,Text Block,Text Block
+Everlasting_summer\Content\main\hud\пианино\очки_пиан.json,4EAE893B49431EE17824098D8BC6ED08,X,
+Everlasting_summer\Content\main\hud\пианино\статистика_гитара.json,371D9493453546E4507A15925D2DE786,Играть заново,重新开始
+Everlasting_summer\Content\main\hud\пианино\статистика_гитара.json,5E6F2F204425E2051E286096D388EA3E,Ваши очки,您的得分
+Everlasting_summer\Content\main\hud\пианино\статистика_гитара.json,TextBlockDefaultValue,Text Block,Text Block
+Everlasting_summer\Content\main\hud\пианино\статистика_гитара.json,B996DF264BF0CE766E2AFBA416377492,Максимальное число очков:,最高分：
+Everlasting_summer\Content\main\hud\пианино\статистика_гитара.json,598FB9474F1AFB820A44FB88D5886A29,Ошибок:,错误次数：
+Everlasting_summer\Content\main\hud\пианино\статистика_гитара.json,756CED9B42ECF0408CDC6EAFF903A400,признать поражение,认输
+Everlasting_summer\Content\main\hud\пианино\статистика_пиано.json,344B3A054064E9A2DBE13FB2112EF83C,Играть заново,重新开始
+Everlasting_summer\Content\main\hud\пианино\статистика_пиано.json,TextBlockDefaultValue,Text Block,Text Block
+Everlasting_summer\Content\main\hud\пианино\статистика_пиано.json,96789BAC4B0DDAAEB030A5AAC6B64FA1,Ваши очки,您的得分
+Everlasting_summer\Content\main\hud\пианино\статистика_пиано.json,457E9DC7444C841F8C3840959536B086,Максимальное число очков:,最高分：
+Everlasting_summer\Content\main\hud\пианино\статистика_пиано.json,DEEE96274835E6514691C9BDEDDD033B,Ошибок:,错误次数：
+Everlasting_summer\Content\main\hud\пианино\статистика_пиано.json,9541DAB148CF360CC5C0BF88F2CD3A02,Закрыть,关闭
+Everlasting_summer\Content\main\hud\пианино_игра.json,846FBF874DFDB3080A58A9B84AC36540,Ваши очки,您的得分
+Everlasting_summer\Content\main\hud\пианино_игра.json,A4F409514981356D3CCC48A03584785C,Очки,积分
+Everlasting_summer\Content\main\hud\пианино_игра.json,E3ACE65C4738F61B4592C1803FA8BA54,0,
+Everlasting_summer\Content\main\hud\пианино_игра.json,8DF6DE5A412C5F72A2CD16873032046F,0,
+Everlasting_summer\Content\main\hud\пианино_игра.json,617D377446EA4856B2599E8B357AA23C,+1,
+Everlasting_summer\Content\main\hud\пианино_игра.json,AAA48DED4135C47485E47F836C29A3E8,Q,
+Everlasting_summer\Content\main\hud\пианино_игра.json,95BC3E124835F3BEDBF4FE861F8453BB,W,
+Everlasting_summer\Content\main\hud\пианино_игра.json,51F0EB0A40248639A76BDF8E7C4445B7,E,
+Everlasting_summer\Content\main\hud\пианино_игра.json,947575A549D35155ADDB4288330D2355,7,
+Everlasting_summer\Content\main\hud\пианино_игра.json,9BB7C3664B9D0153860F789B00812152,8,
+Everlasting_summer\Content\main\hud\пианино_игра.json,DFA5427148CDEB3B8D56F283BC031712,9,
+Everlasting_summer\Content\main\hud\плашка_предупреждашка.json,0601301E4941080C1C9F79A52D10F692,"Дорогой товарищ! Мы — команда Summer's Builders, рады 
+приветствовать тебя на бета-тестировании нашей
+ игры ""Бесконечное Лето 3D"" версия 2026 года, по мотивам 
+визуальной новеллы ""Бесконечное лето""!
+Эта версия игры нестабильна и предназначена для тестирования, 
+выявления багов для последующего их исправления разработчиками.
+В текущей сборке доступны 5 сюжетных дней, различные активности. 
+Некоторые фичи отключены до следующего обновления.
+ Красивые интерфейсы, звукорежиссура, дальнейший сюжет 
+и многое другое появятся уже в финальной стадии разработки.
+
+Рассчитываем на обратную связь. Так же мы будем рады услышать
+ пожелания.
+Сообщить о багах и игровом опыте, впечатлениях, вы можете в
+ наших соцсетях:
+тгк @everlastingsummer3d
+вк @everlastingsummer3d
+Мы так же высоко ценим фан-творчество и видео-обзоры. 
+Присылайте, лучшее опубликуем!
+
+Надеемся, что проект порадует вас!
+Желаем приятной игры!","亲爱的同志！我们是 Summer's Builders 团队，
+很高兴欢迎您参加我们游戏
+《永恒之夏3D》2026年版本测试，
+本作改编自视觉小说《永恒之夏》！
+该版本游戏不稳定，仅用于测试
+和发现 Bug 以便开发者修复。
+当前版本开放 5 天主线剧情及多种活动。
+部分功能已暂时禁用，将在下次更新中恢复。
+ 精美界面、音效、后续剧情
+等内容将在最终开发阶段亮相。
+
+我们期待您的反馈，也欢迎
+ 提出建议。
+您可以在我们的社交媒体上
+ 报告Bug、分享游戏体验和感受：
+TG @everlastingsummer3d
+VK @everlastingsummer3d
+我们同样高度赞赏粉丝创作和视频评测。
+ 欢迎投稿，最优秀的作品将被发布！
+
+希望本项目能给您带来快乐！
+祝您游戏愉快！"
+Everlasting_summer\Content\main\hud\плашка_предупреждашка.json,F444E4B44C9F16389FE688B3A62D4720,Принять,接受
+Everlasting_summer\Content\main\hud\подсказки\выбор_убигать.json,E7DCFA1D4860FF7C37702AA424926581,Сбежать или остаться,逃跑还是留下
+Everlasting_summer\Content\main\hud\подсказки\выборы_сюжета.json,TextBlockDefaultValue,Text Block,Text Block
+Everlasting_summer\Content\main\hud\подсказки\диалоги_СНпс.json,TextBlockDefaultValue,Text Block,Text Block
+Everlasting_summer\Content\main\hud\подсказки\инвентарь_город_подск.json,E5328555423EFFA32728B0B2B844B56F,Продолжить,继续
+Everlasting_summer\Content\main\hud\подсказки\инвентарь_город_подск.json,24906131489CD66E97B86487949BB206,Найдите ключ в квартире.,在公寓里找到钥匙。
+Everlasting_summer\Content\main\hud\подсказки\инвентарь_город_подск.json,88FFC6684CB74E9CB089D9B7ADCD234E,"Нажмите I, чтобы открыть инвентарь,
+ выберите ключ и нажмите применить
+ возле двери.","按 I 打开背包，
+ 选择钥匙并按下 E 键使用，
+ 请紧贴着门使用。"
+Everlasting_summer\Content\main\hud\подсказки\нажмите1.json,001CB7674C6F98F33F77FE9871A01503,Переодеться,换衣服
+Everlasting_summer\Content\main\hud\подсказки\нажмите1.json,11AD13F14A33749C29AC80A5EBED2B75,Нажмите T чтобы использовать фотоаппарат,按 T 使用相机
+Everlasting_summer\Content\main\hud\подсказки\нажмите1.json,2225C32A474CB2C02543539C119BC934,Меню задания,任务菜单
+Everlasting_summer\Content\main\hud\подсказки\нажмите1.json,3D0CD4B343771F248771A3B5B64B8E6E,demo,
+Everlasting_summer\Content\main\hud\подсказки\нажмите1.json,35AACB6A43B6AC48112C738E7CD19125,Space пропустить,空格键跳过
+Everlasting_summer\Content\main\hud\подсказки\нажмите1.json,1AC989FF46B60FDBC8AB109C0E464802,Найти ключ,寻找钥匙
+Everlasting_summer\Content\main\hud\подсказки\нажмите1.json,DC9C515D4C7E06BFC1C673AF1B5F7AA2,Маркер задания,任务标记
+Everlasting_summer\Content\main\hud\подсказки\нажмите1.json,TextBlockDefaultValue,Text Block,Text Block
+Everlasting_summer\Content\main\hud\подсказки\нажмите1.json,0DD480B04EB63390F77F7B8508EBF356,Задание обновлено,任务已更新
+Everlasting_summer\Content\main\hud\подсказки\нажмите1.json,4B97EB6245FECC4FABFDFE847CFF0605,Прячься!,躲起来！
+Everlasting_summer\Content\main\hud\подсказки\нажмите1.json,50D056CF4721CA914094E9999E0A1394,Ваша колекция обновлена ,您的收藏已更新
+Everlasting_summer\Content\main\hud\подсказки\нажмите1.json,F584BB4E4010B6C92C65378235E2008F,"Чтобы включить фонарик, нажмите F",按 F 开启手电筒
+Everlasting_summer\Content\main\hud\подсказки\нажмите1.json,767ED89D444F5C142F0AD3A0CB2ED789,Для просмотра нажмите H,按 H 查看
+Everlasting_summer\Content\main\hud\подсказки\нажмите1.json,153AC885486B0C4F18E1A0B622C6226D,Доступно в свободной игре,在自由模式中可用
+Everlasting_summer\Content\main\hud\подсказки\нажмите1.json,CA6315184397B0036927F2BF1A69FF60,Нажмите Q чтобы позвать шурика,按 Q 呼叫舒里克
+Everlasting_summer\Content\main\hud\подсказки\нажмите1.json,AC21AE114DBE545B8C387CB3A5B41A71,+,
+Everlasting_summer\Content\main\hud\подсказки\нажмите1.json,9B7D6C5E41652173A6766CB8B9C921DF,I - инвентарть,I - 背包
+Everlasting_summer\Content\main\hud\подсказки\настройки.json,7BA07BB4435D665A1D38F799159EC1A5,Высокие,高
+Everlasting_summer\Content\main\hud\подсказки\настройки.json,6EBF590F4855D594A5EFC6897D8729E5,Настройки,设置
+Everlasting_summer\Content\main\hud\подсказки\настройки_окно.json,A215F9A9475FA01E935135BBEBB63E79,Настройки,设置
+Everlasting_summer\Content\main\hud\подсказки\настройки_полоска.json,FADEFA364074FC2BF850619020EF4DAE,Настройки,设置
+Everlasting_summer\Content\main\hud\подсказки\руты_выбераем.json,68A23316444ABFF301C6AAA96BE5A374,побежать за ним,追他
+Everlasting_summer\Content\main\hud\подсказки\руты_выбераем.json,8A044E174EC2D4998F2320BDD0D3A7B4,фон,背景
+Everlasting_summer\Content\main\hud\подсказки\руты_выбераем.json,41F7BF2D41A7C83ABDD7FD969528C3F6,похвалить книгу,称赞这本书
+Everlasting_summer\Content\main\hud\подсказки\руты_выбераем.json,9B54BD4745D64D6DC0AC0FA72A36027F,спорить и проиграл,打赌并输了
+Everlasting_summer\Content\main\hud\подсказки\руты_выбераем.json,ED4F203C4DA8CDE868645A9426934AAE,спорить и выйграл,打赌并赢了
+Everlasting_summer\Content\main\hud\подсказки\руты_выбераем.json,64DF20F84307CB86F909C084DB5EA932,1 день,第 1 天
+Everlasting_summer\Content\main\hud\подсказки\руты_выбераем.json,3496BC3447FD966DA4C08ABA525A10ED,пройиграл ульяне 1,输给乌里扬娜 1
+Everlasting_summer\Content\main\hud\подсказки\руты_выбераем.json,34396B5644F83C164CB88CA373490C20,ответить славе ?,回答斯拉维娅？
+Everlasting_summer\Content\main\hud\подсказки\руты_выбераем.json,6D58C55547BE1DF8FDCF4A954ADAAF10,попытаться отнять?,试图拿走？
+Everlasting_summer\Content\main\hud\подсказки\руты_выбераем.json,D63652C24859D670E0067FB43BFB0590,пройиграл ульяне 2,输给乌里扬娜 2
+Everlasting_summer\Content\main\hud\подсказки\руты_выбераем.json,65EB53CF42C28CB2B2B19F998D627326,проиграл алис,输给阿丽夏
+Everlasting_summer\Content\main\hud\подсказки\руты_выбераем.json,83C3817C4FC0B3FC05B48AA203501232,выйграл всех,赢了所有人
+Everlasting_summer\Content\main\hud\подсказки\руты_выбераем.json,ECF801CD442F7CE0C352658DC017113D,пошел с Алисой,和阿丽夏一起去
+Everlasting_summer\Content\main\hud\подсказки\руты_выбераем.json,D9C2D6B74F6E6EB4217EB291AA418B07,проиграл лена,输给列娜
+Everlasting_summer\Content\main\hud\подсказки\руты_выбераем.json,F50165AF4772292641289A8F2F39ED87,3 день,第 3 天
+Everlasting_summer\Content\main\hud\подсказки\руты_выбераем.json,065B41104F9486A3A379DEAF70AC6089,сесть с леной,和列娜坐在一起
+Everlasting_summer\Content\main\hud\подсказки\руты_выбераем.json,03E7B05B42CA5E753FFF8CBA46BCB1CC,я пойду с тобой,我跟你走
+Everlasting_summer\Content\main\hud\подсказки\руты_выбераем.json,CC95F19D43E4904E182FED83B0BCEA58,я приду лена,我会来，列娜
+Everlasting_summer\Content\main\hud\подсказки\руты_выбераем.json,3B914BB14B31C490DF5E099BFF51D636,стоит пойти посмо,应该去看看
+Everlasting_summer\Content\main\hud\подсказки\руты_выбераем.json,639E79C7475121BDD985338D7CE56423,я приду алиса,我会来，阿丽夏
+Everlasting_summer\Content\main\hud\подсказки\руты_выбераем.json,8F6262224E9D29AFB78575B78731E8E3,сказать был с алис,说和阿丽夏在一起
+Everlasting_summer\Content\main\hud\подсказки\руты_выбераем.json,4A56C9104D7CC9205B32FBBAF93A8FC1,пойти к алисе,去找阿丽夏
+Everlasting_summer\Content\main\hud\подсказки\руты_выбераем.json,A5A1FE7B4C4B55FB1BA8FF9B409A1E2E,был у кибер,去过赛博
+Everlasting_summer\Content\main\hud\подсказки\руты_выбераем.json,87A2AADE4A4B5960AB6E3FBBBF00A159,был 1 ,去过 1
+Everlasting_summer\Content\main\hud\подсказки\руты_выбераем.json,16C9FA4E4BFEF80C962C108B84591C0B,обещ лен и не пришел,答应了列娜但没来
+Everlasting_summer\Content\main\hud\подсказки\руты_выбераем.json,594DA3A74F502366103E1BBEA49F9170,спортивка помог,帮了体育社团
+Everlasting_summer\Content\main\hud\подсказки\руты_выбераем.json,FCDA7E984A41BCE615938AB2196EB977,уборка славя,和斯拉维娅打扫
+Everlasting_summer\Content\main\hud\подсказки\руты_выбераем.json,D75C59FD42F7BD375D45FCB958EA4D48,2 день,第 2 天
+Everlasting_summer\Content\main\hud\подсказки\руты_выбераем.json,DEC7998B45857BD7A9B13B9B972DA26D,помог библ,帮了图书馆
+Everlasting_summer\Content\main\hud\подсказки\руты_выбераем.json,7EFF1821494DF5D6A2B1ECA291C09295,остать и помочь,留下来帮忙
+Everlasting_summer\Content\main\hud\подсказки\руты_выбераем.json,30E6B46A45C19EE2CA0646BE9D8937E7,4 день,第 4 天
+Everlasting_summer\Content\main\hud\подсказки\руты_выбераем.json,675753234865CAA06C37DB8609592FA2,пойти с мику,和未来一起
+Everlasting_summer\Content\main\hud\подсказки\руты_выбераем.json,E4166D844E11007A3C7044B4EC0E4CE2,на тебе бы это смотр,你穿这个应该很好看
+Everlasting_summer\Content\main\hud\подсказки\руты_выбераем.json,49A0FDE149248CE9E9933CBCEF8B15D5,воровраных конф,偷来的糖果
+Everlasting_summer\Content\main\hud\подсказки\руты_выбераем.json,A367D38940AD79172EE68094C3C88787,спросить что это,问问这是什么
+Everlasting_summer\Content\main\hud\подсказки\руты_выбераем.json,D27570CF40577D09537CB3AD51BF03DE,дать алисе уголь,给阿丽夏活性炭
+Everlasting_summer\Content\main\hud\подсказки\руты_выбераем.json,238DFB714E06697B2C9778AE01C34486,сьесть яблоко,吃掉苹果
+Everlasting_summer\Content\main\hud\подсказки\руты_выбераем.json,DE7A874F49130392E2CECCBECD14055F,искал у лод,在船边找过
+Everlasting_summer\Content\main\hud\подсказки\руты_выбераем.json,258E7DA0427F081557FB3182095B9514,подпись мед,医务室签名
+Everlasting_summer\Content\main\hud\подсказки\руты_выбераем.json,D25786DF4433741AC2E6A4A6C46F72EA,искал в лесу,在森林里找过
+Everlasting_summer\Content\main\hud\подсказки\руты_выбераем.json,8CA2EB654DF0C8566079D397BB3F8341,искал в домике,在小屋里找过
+Everlasting_summer\Content\main\hud\подсказки\руты_выбераем.json,47CF1ED646EA65C06068AE81ABCA27DD,пошел один,自己一个人去
+Everlasting_summer\Content\main\hud\подсказки\руты_выбераем.json,CFF651004588DAFD18A27CB862B9DAE3,пошел со Славей,和斯拉维娅一起去
+Everlasting_summer\Content\main\hud\подсказки\руты_выбераем.json,441BF6B84DB485BA3DE471A0D194D5E6,искал остановк,找过车站
+Everlasting_summer\Content\main\hud\подсказки\руты_выбераем.json,95857D4F43D0FA110F5AD6AF4E29461A,озвучить все,全部配音
+Everlasting_summer\Content\main\hud\подсказки\руты_выбераем.json,565F69404C5EFD413F852CAB38CB922A,пошел с Леной,和列娜一起去
+Everlasting_summer\Content\main\hud\подсказки\руты_выбераем.json,DBF5A79A4AF69C54EECD40A652CA8A02,фот,照片
+Everlasting_summer\Content\main\hud\подсказки\руты_выбераем.json,6FB44BD24C105D1DEF9F4EA7C1D815BF,12,
+Everlasting_summer\Content\main\hud\подсказки\руты_выбераем.json,F65CC82D40311FB82E7C69B7DDFA53BA,22,
+Everlasting_summer\Content\main\hud\подсказки\руты_выбераем.json,779A03B34259863F1239D0819CD18C88,подпись библ,图书馆签名
+Everlasting_summer\Content\main\hud\подсказки\руты_выбераем.json,2D4B9D4942559415A2DC8C8341200AB3,ст,
+Everlasting_summer\Content\main\hud\подсказки\руты_выбераем.json,323F3D5D4A0B0B302DC27492171B5C6A,Би,
+Everlasting_summer\Content\main\hud\подсказки\руты_выбераем.json,296F111B4E87497CF1F37D912263F814,сц,
+Everlasting_summer\Content\main\hud\подсказки\руты_выбераем.json,F3307F3C41E752424E24C5AF11EAA53D,Од,
+Everlasting_summer\Content\main\hud\подсказки\руты_выбераем.json,2E07F32441EDB97BAFF76897414E3690,Ки,
+Everlasting_summer\Content\main\hud\подсказки\руты_выбераем.json,568DBD544E59786849CC9B85A686B5ED,Пр,
+Everlasting_summer\Content\main\hud\подсказки\руты_выбераем.json,53FD718F468D92F5B4AF8B87C6CCF5D0,Пл,
+Everlasting_summer\Content\main\hud\подсказки\руты_выбераем.json,E69A47314ECB79E993A809881B4E4CD3,Мз,
+Everlasting_summer\Content\main\hud\подсказки\руты_выбераем.json,01C03EB04964C683779E8AB2B7639758,Карта,地图
+Everlasting_summer\Content\main\hud\подсказки\руты_выбераем.json,9F8312764EF401CD0AB39C9A339EDF85,озв офф,配音：关
+Everlasting_summer\Content\main\hud\подсказки\руты_выбераем.json,3A99442B4FA30B8057E327B5CBF49482,подпись муз,音乐室签名
+Everlasting_summer\Content\main\hud\подсказки\руты_выбераем.json,1A29D81F4398B70BF2739AB7423CDC08,пионерс,少先队
+Everlasting_summer\Content\main\hud\подсказки\руты_выбераем.json,1D3E5B1144E2144BCE95649F0B933B63,Пляжны,沙滩
+Everlasting_summer\Content\main\hud\подсказки\руты_выбераем.json,0881FF8D4D6DA7C193A874AA56BE9C10,подпись клуб,俱乐部签名
+Everlasting_summer\Content\main\hud\подсказки\руты_выбераем.json,115B6F9247DB623A66EFDCA9828D953C,спорить с алисой,和阿丽夏打赌
+Everlasting_summer\Content\main\hud\подсказки\руты_выбераем.json,A0F8C2DC418E2D8CC7730DAE29651D16,пойти со славей за к,和斯拉维娅去拿纸牌
+Everlasting_summer\Content\main\hud\подсказки\руты_выбераем.json,242C0ECF4422606B6BEFE089197AF4ED,Оригинальный,原版
+Everlasting_summer\Content\main\hud\подсказки\текстовое_окно.json,D7EEAA844377AC8A6B5D4A973E7CB0FC,Имя,姓名
+Everlasting_summer\Content\main\hud\поймала.json,4B83A3A243DE2EE1D3963B978131CC7B,Проснуться,醒来
+Everlasting_summer\Content\main\hud\поймала.json,A591A3F844EFF2483FA8C78C87D36312,Повторить,重试
+Everlasting_summer\Content\main\hud\поймала.json,51BA04364AE696E87F01028E4DC614FB,Вас поймали,你被抓住了
+Everlasting_summer\Content\main\hud\радио\видео_приемн.json,3E654E014C7F42A32FC94CAF1FDF8352,Выберите фильм и нажмите «Play».,选择影片并按下「播放」。
+Everlasting_summer\Content\main\hud\радио\видео_приемн.json,57E090F8493D11C430AA71AE4EC9EF35,Найденые видео касеты,已找到的录像带
+Everlasting_summer\Content\main\hud\радио\видео_приемн.json,2438949A46484C3CBC405BB541B50866,Идет обработка кассеты,正在处理录像带
+Everlasting_summer\Content\main\hud\радио\видео_приемн.json,D319DFDD418D1CF72F14EBB6318C272C,назад,返回
+Everlasting_summer\Content\main\hud\радио\деталь_выбор.json,TextBlockDefaultValue,Text Block,Text Block
+Everlasting_summer\Content\main\hud\радио\деталь_выбор.json,A785AEDC4C44A1B2582AC0ACE7B7A131,0,
+Everlasting_summer\Content\main\hud\радио\инстру_выбор.json,511C7A654A3043239D957BA519D06017,0,
+Everlasting_summer\Content\main\hud\радио\инстру_выбор.json,TextBlockDefaultValue,Text Block,Text Block
+Everlasting_summer\Content\main\hud\радио\какая_касета.json,3F191E3345789BC1A6205F9D148481AE,Название:,标题：
+Everlasting_summer\Content\main\hud\радио\какая_касета.json,BDF0468A4FE8941767990BBCFE7B0C71,Продолжительность:,时长：
+Everlasting_summer\Content\main\hud\радио\какая_касета.json,TextBlockDefaultValue,Text Block,Text Block
+Everlasting_summer\Content\main\hud\радио\песня.json,TextBlockDefaultValue,Text Block,Text Block
+Everlasting_summer\Content\main\hud\радио\песня_пиан.json,TextBlockDefaultValue,Text Block,Text Block
+Everlasting_summer\Content\main\hud\радио\пиано_выбор_песен.json,A1D459744DE0B98AA7312AA7CB854A63,Очки,积分
+Everlasting_summer\Content\main\hud\радио\пиано_выбор_песен.json,A14278574BDAE8CD4D0EC19BDBBCC24E,0/0,
+Everlasting_summer\Content\main\hud\радио\пиано_выбор_песен.json,AD1863954D5059B75AE0FEAFA521899A,Продолжительность:,时长：
+Everlasting_summer\Content\main\hud\радио\пиано_выбор_песен.json,TextBlockDefaultValue,Text Block,Text Block
+Everlasting_summer\Content\main\hud\радио\пиано_выбор_песен.json,DEB2421B4429CF0D462835905E06EE79,Выберите что будете играть,选择您要游玩的内容
+Everlasting_summer\Content\main\hud\радио\пиано_выбор_песен.json,E2AE939B460EA7D81B95BFA345FFF67E,Играть,游玩
+Everlasting_summer\Content\main\hud\радио\пиано_выбор_песен.json,BB62DD344095421120E4B6BC8C701615,Назад,返回
+Everlasting_summer\Content\main\hud\радио\пиано_выбор_песен.json,CD666FE742EA2AB2E565EE86C83D8F31,Название:,标题：
+Everlasting_summer\Content\main\hud\радио\пиано_выбор_песен.json,AC3159B544BDF7377F65AC857A0C2E38,205 сек,205 秒
+Everlasting_summer\Content\main\hud\радио\пиано_выбор_песен.json,6510A72E4F1972B589899381392BEC90,123 сек,123 秒
+Everlasting_summer\Content\main\hud\радио\пиано_выбор_песен.json,D6457B294618F4A7765D0986F7BB199A,96 сек,96 秒
+Everlasting_summer\Content\main\hud\радио\пиано_выбор_песен.json,661AF6504AF1B09AE2EF43B446A52D43,169 сек,169 秒
+Everlasting_summer\Content\main\hud\радио\пиано_выбор_песен.json,B3A5EADA458A7CDBEE24A49A79B922DC,112 сек,112 秒
+Everlasting_summer\Content\main\hud\радио\радио.json,95749BF942824F1EA313BBA28CC055DA,назад,返回
+Everlasting_summer\Content\main\hud\радио\радио.json,93B7FB694E292E7485C8A680803FFFCB,Найденные кассеты,已找到的录像带
+Everlasting_summer\Content\main\hud\радио\радио.json,E91337A74B7878B86273D2837563E33B,A-Ha - Take On Me,
+Everlasting_summer\Content\main\hud\радио\радио.json,E7FE4B06421A8705B3266F817A78F9A9,Ac-Dc - Highway To Hell ,
+Everlasting_summer\Content\main\hud\радио\радио.json,89A4EF9D42B6EDC248A70582EECA85CF,Alphaville - Big In Japan,
+Everlasting_summer\Content\main\hud\радио\радио.json,7423AC9F4941AE61F654959C63F7CBEA,Bad Boys Blue - You re A Woman,
+Everlasting_summer\Content\main\hud\радио\радио.json,E11BBCC04F604E3E3985C09677CDFDEE,The Ecstasy of Gold - Ennio Morricone,
+Everlasting_summer\Content\main\hud\радио\радио.json,64B25FEB43D8ED61DF314EABE5755FF5,bisquit - zoo zoo,
+Everlasting_summer\Content\main\hud\радио\радио.json,C011D5D44FEDCC69F73EDF824D25C045,Boney M - Rasputin,
+Everlasting_summer\Content\main\hud\радио\радио.json,E83B3C1F40380CC26759BE9197FE7759,bonnie tyler-holding out for a hero,
+Everlasting_summer\Content\main\hud\радио\радио.json,C882BC4448DDF79E8CA332803EE778E1,C C Catch - Strangers By Night,
+Everlasting_summer\Content\main\hud\радио\радио.json,A5667A374A57698660B4718A42801BDD,Dschinghis Khan - Moscow,
+Everlasting_summer\Content\main\hud\радио\радио.json,D2C3E21044343C415F748BA5D4C54288,F R David - Words,
+Everlasting_summer\Content\main\hud\радио\радио.json,5CC5A87C41F7FA045D781399451F7E93,Gloria Gaynor - I Will Survice,
+Everlasting_summer\Content\main\hud\радио\радио.json,9A2A0C3849316A2124943CA29EBC97A9,Kiss -  Was Made for Lovin You Single Edit,
+Everlasting_summer\Content\main\hud\радио\радио.json,7E5BCED545D2C8E1C33004B8A42C091B,Laura Branigan - Self Control,
+Everlasting_summer\Content\main\hud\радио\радио.json,B9D02C104C23A4BEBCD1E69D62390ACA,Michael Jackson - Billy Jean,
+Everlasting_summer\Content\main\hud\радио\радио.json,F6FD126442AB9DECE48ECF98F16B6D9E,Michael Sembello - Maniac,
+Everlasting_summer\Content\main\hud\радио\радио.json,35A679EE4582AEB8242E7E86E1E206ED,Modern Talking - Cheri Cheri Lady,
+Everlasting_summer\Content\main\hud\радио\радио.json,7179AB964D4DB15F8E823A828CB12D25,Mr President - Co Co Jambo,
+Everlasting_summer\Content\main\hud\радио\радио.json,E4DD6B724B4FC7943564979BDF055F98,Paul Engemann - push it to the limit,
+Everlasting_summer\Content\main\hud\радио\радио.json,8B17AF3C42ABE5D2BB71649F4FD7323C,Ray Parker Jr - Ghostbusters,
+Everlasting_summer\Content\main\hud\радио\радио.json,A1ECEF394C38ACFD9E6F3BA9A4A64178,Rick Astley - Never Gonna Give You Up,
+Everlasting_summer\Content\main\hud\радио\радио.json,F5F5839B44B3AF952E4E7D90BFF29F64,Roxette - Listen To Your Heart,
+Everlasting_summer\Content\main\hud\радио\радио.json,2DFAA0E24B36735546D569B289CAE2D0,Roxette - The Look,
+Everlasting_summer\Content\main\hud\радио\радио.json,77792B854D3D2AD2EC84A9B04609C71C,Santa Esmeralda dont let me be misunderstood,
+Everlasting_summer\Content\main\hud\радио\радио.json,3D0B5D5747A762FD3782FC9917B5384C,Silent Circle - Touch In The Night,
+Everlasting_summer\Content\main\hud\радио\радио.json,9559406A4B17E2B600856F8736C59263,The Bee Gees - Stayin Alive,
+Everlasting_summer\Content\main\hud\радио\радио.json,8DD5174A4AFCDF16CFFA868BBD0F8D9D,The Weather Girls - Its Raining Men,
+Everlasting_summer\Content\main\hud\радио\радио.json,C7D2F0284530A535C37449821BA28F33,Van Halen - Jump,
+Everlasting_summer\Content\main\hud\радио\радио.json,5055FDAF4D477E4ED412CBB0E5494DD7,"Мэ́ри По́ппинс, до свида́ния -Ветер Перемен",
+Everlasting_summer\Content\main\hud\радио\радио.json,83C659604C86E40517F24D8B10E746A7,форум-белая-ночь,
+Everlasting_summer\Content\main\hud\радио\радио.json,4793F61A428A94881FE5CA955AFF0CC6,A-Ha_-_Take_On_Me20,
+Everlasting_summer\Content\main\hud\радио\радио.json,E4BE3B5945B4F6863182AD92BB415987,форум-белая ночь,
+Everlasting_summer\Content\main\hud\радио\радио.json,451D4F97432CB20C8DD59D91AD5CBC2C,A-Ha - Take On Me,
+Everlasting_summer\Content\main\hud\радио\радио.json,E3AB192D409B37BAA10452B627FC392A,Ac-Dc - Highway To Hell ,
+Everlasting_summer\Content\main\hud\радио\радио.json,7081B67B4824CBD7F29AA9A9A5224CDE,Alphaville - Big In Japan,
+Everlasting_summer\Content\main\hud\радио\радио.json,CCAA4D4047B0A88733451E8A4CB2465E,Bad Boys Blue - You re A Woman,
+Everlasting_summer\Content\main\hud\радио\радио.json,1451524B42D283B528890A9CDA6A99C8,The Ecstasy of Gold - Ennio Morricone,
+Everlasting_summer\Content\main\hud\радио\радио.json,C08155A04DE5B1A354FA61845A3F8B1E,bisquit - zoo zoo,
+Everlasting_summer\Content\main\hud\радио\радио.json,F950699D40F51BCFAD7F2F91AFC41C37,Boney M - Rasputin,
+Everlasting_summer\Content\main\hud\радио\радио.json,C1B01B9049AEFC9CDADED2B5E348C954,bonnie tyler-holding out for a hero,
+Everlasting_summer\Content\main\hud\радио\радио.json,039EDEB6459C87A45AC32F96A0FC0754,C C Catch - Strangers By Night,
+Everlasting_summer\Content\main\hud\радио\радио.json,EFDE4D2B409B9E57BCF260BA581135BC,Dschinghis Khan - Moscow,
+Everlasting_summer\Content\main\hud\радио\радио.json,D017001B4B8ED42F5043EF88EAFBCBC9,F R David - Words,
+Everlasting_summer\Content\main\hud\радио\радио.json,4390DFAF45A148A523B75184A756141A,Gloria Gaynor - I Will Survice,
+Everlasting_summer\Content\main\hud\радио\радио.json,F82404F24CB76A4FD65CE9B25E737AAB,Kiss -  Was Made for Lovin You Single Edit,
+Everlasting_summer\Content\main\hud\радио\радио.json,24378A444A32FD3F8F442BAC249127CD,Laura Branigan - Self Control,
+Everlasting_summer\Content\main\hud\радио\радио.json,019DDF1042C578E6577DA2AD658306E1,Michael Jackson - Billy Jean,
+Everlasting_summer\Content\main\hud\радио\радио.json,593AE0F54D032DACA906FAA85A353CBF,Michael Sembello - Maniac,
+Everlasting_summer\Content\main\hud\радио\радио.json,EFA2A5B74A25F805116AA8B9E4ADCE26,Modern Talking - Cheri Cheri Lady,
+Everlasting_summer\Content\main\hud\радио\радио.json,A342B9D84B4F8B35A1734CB1631FB66D,Mr President - Co Co Jambo,
+Everlasting_summer\Content\main\hud\радио\радио.json,170B7C964B7CE0F2184AD3A9A91D775B,Paul Engemann - push it to the limit,
+Everlasting_summer\Content\main\hud\радио\радио.json,6AD01FC044F3298247B199A7778B958A,Ray Parker Jr - Ghostbusters,
+Everlasting_summer\Content\main\hud\радио\радио.json,10A9C75A43B3E1DA224AD99F69629199,Rick Astley - Never Gonna Give You Up,
+Everlasting_summer\Content\main\hud\радио\радио.json,26EB74E7405A90B4BE62488B2AC0CAF5,Roxette - Listen To Your Heart,
+Everlasting_summer\Content\main\hud\радио\радио.json,DFBEA9F44A64FECFBFFA31ADAEA66E5E,Roxette - The Look,
+Everlasting_summer\Content\main\hud\радио\радио.json,6F179F8A4BD174EBD17DCCA4463C17B6,Santa Esmeralda dont let me be misunderstood,
+Everlasting_summer\Content\main\hud\радио\радио.json,8CCC79FC409997098B85E8B4AE5EE892,Silent Circle - Touch In The Night,
+Everlasting_summer\Content\main\hud\радио\радио.json,2199FB264644B2611ACFBEA6A6B0AB3A,The Bee Gees - Stayin Alive,
+Everlasting_summer\Content\main\hud\радио\радио.json,1131E9E144217E8EF2FFA0AB3011C091,The Weather Girls - Its Raining Men,
+Everlasting_summer\Content\main\hud\радио\радио.json,196DAD774CFD3242584D048FF8D9B4C3,Van Halen - Jump,
+Everlasting_summer\Content\main\hud\радио\радио.json,8DC3D11740763F14CE67509E722B5EDC,"Мэ́ри По́ппинс, до свида́ния -Ветер Перемен",
+Everlasting_summer\Content\main\hud\радио\радио.json,4556DA1C48EF96EBBA5BDFA01FC90FDF,форум-белая-ночь,
+Everlasting_summer\Content\main\hud\разговоры_нпс.json,4E658D9F4D9777E5C5976E83938DE306,вы видели как вчреа простошо столько времени аа?,你们注意到昨天时间过得多快了吗？
+Everlasting_summer\Content\main\hud\разговоры_нпс.json,332B362B4C7487197A4D0CB879B01379,вы видели как вчреа простошо столько времени аа?,你们注意到昨天时间过得多快了吗？
+Everlasting_summer\Content\main\hud\рука.json,56BE5ABB4E69F7E76FC610BBFAECB055,Переодеться,换衣服
+Everlasting_summer\Content\main\hud\рука.json,8F2BB58C466FB60CE3E9159818207DF0,Найти ключ,寻找钥匙
+Everlasting_summer\Content\main\hud\рыбалка\рыба_един.json,TextBlockDefaultValue,Text Block,Text Block
+Everlasting_summer\Content\main\hud\рыбка.json,8DB87AE64BF0AD1738CB4E83D380CFAC,Масса:,重量：
+Everlasting_summer\Content\main\hud\рыбка.json,FF2C564A498A35920F606BAA8135216C,Время поимки:,捕捉时间：
+Everlasting_summer\Content\main\hud\рыбка.json,44FC41BE40D807988995F9B817EA78AD,Название:,标题：
+Everlasting_summer\Content\main\hud\рыбка.json,C4CFB5174625C32DD4B7D5A1ED4737FE,Закрыть,关闭
+Everlasting_summer\Content\main\hud\рыбка.json,TextBlockDefaultValue,Text Block,Text Block
+Everlasting_summer\Content\main\hud\сохран2.json,168027BB45ADE4B303ABF6800677AF26,Пусто,空
+Everlasting_summer\Content\main\hud\сохран2.json,6E502BE5464A20302140F581E62B6CB6,Пусто,空
+Everlasting_summer\Content\main\hud\сохран2.json,6032AB2B4512A4DDF1CDD78658618CC0,Пусто,空
+Everlasting_summer\Content\main\hud\сохран2.json,E48D19A140ECAB1F4A5344AED51CD9EC,Сохранено...,存档中...
+Everlasting_summer\Content\main\hud\сохран2.json,TextBlockDefaultValue,Text Block,Text Block
+Everlasting_summer\Content\main\hud\сохран2.json,2E2094FF49536DB30AD8BD8C653C3080,Пусто,空
+Everlasting_summer\Content\main\hud\сохран2.json,1D3D3FA546E0F25534CCD6A7BAAD8A88,Автосохранение,自动保存
+Everlasting_summer\Content\main\hud\сохран2.json,1E5E4A494C42EF974A31099518742E28,Пусто,空
+Everlasting_summer\Content\main\hud\сохран2.json,F0B6C2D34520AD966C4615AD52BFC67C,Пусто,空
+Everlasting_summer\Content\main\hud\сохран2.json,296D78F9402476EE8E3BE6B324ACAB25,Назад,返回
+Everlasting_summer\Content\main\hud\сохран2.json,A4B0F9C742EFBC8CBE6C71BD20C6AC83,Пусто,空
+Everlasting_summer\Content\main\hud\сохран2.json,923007034B6A7A823B221A99DD531579,2,
+Everlasting_summer\Content\main\hud\таймер.json,TextBlockDefaultValue,Text Block,Text Block
+Everlasting_summer\Content\main\hud\титры.json,3F7C3D164AFEC12BF63C79810511214D,"
+Sergey Illusive
+Даниил Исаев
+Никита Мурлав
+Виктор Клишин
+Владимир Гринчук
+Glorreihe Gattung
+Лена Тихонова
+Богдан Кирика
+Мирт Сахарский
+Сергей Кузьмин
+Маньшин Дима
+Максим Иванов
+Рома Ветчинников
+Тимофей Масло
+Дмитрий Термитов
+Роман Гигола
+Колыхалин Илья
+Александр Гусев
+Матвей Федоров
+Вадим Миронский
+Кирилл Морозов
+Роман Романенко
+Mark Brown
+Серёжа Зайцев
+Никита Коточиков
+Александр Карамашев
+Дмитрий Зотов
+Дмитрий Бобылёв
+Дмитрий Выгловский
+Евгений Каблуков
+Данил Метелкин
+Александр Шахворостов
+Эмиль Хуснутдинов
+Максим Привет
+Алексей Петров
+Данияр Абжанов
+Никита Ларин
+Владимир Еремеев
+Саша Галиакберов
+Юрий Бекин
+Danil Myrza
+Андрей Карманов
+Денис Черных
+Владимир Емельянов
+Александр Матусевич
+Евгений Яковлев
+Михаил Лаврентьев
+Данил Новиков
+Артём Осокин
+Zakhar Martinez
+Вадим Абашин
+Дмитрий Анненков
+Александр Налётов
+Максим Лунфитов
+Фёдор Спиглазов
+Роман Куприянов
+Юрий Марченков
+Егор Гужов
+Максим Горюнович
+Алексей Игнатьев
+Никита Цуканов
+Григорий Кузнецов
+Никита Мельников
+Косяк Евгенич
+Даня Чистяков
+Александр Панкратов
+Дмитрий Вольский
+Виталий Малахов
+Дмитрий Горланкин
+Родион Филинов
+Макс Колесов
+Данил Кульминский
+Максим Шишов
+Egor Letov
+Илья Иванов
+Андрей Шагалов
+Арсений Батаев
+Oasis Yt
+Лёша Сапухин
+Alexander Portnyagin
+Игорь Бакаев
+Ярослав Машенский
+Сергей Родников
+Никита Фёдоров
+Александр Мачай
+Кирилл Худов
+Влад Кондратьев
+Александр Монастырев
+Григорий Норский
+Кира Ёшекаге
+アルチョム ・エノトフ
+Даня Новиков
+Искандер Насыров
+Григорий Дубровский
+Владислав Савчук
+Maxondo Dominges
+Илья Голубчиков
+Никита Лыткин
+Егор Письменников
+Tomoko Gatari
+Арсений Ильенко
+Семен Кораблев
+Олег Кучумов
+Сергей Анушев
+Данил Барабанов
+Саша Вольков
+Роман Федоров
+Даниил Землянский
+Глеб Летов
+Денис Стороженко
+Александр Андрианов
+Павел Ожиганов
+Кирилл Ерёмин
+Ярик Рофл
+Константин Борняков
+Антон Золотарев
+Дима Митрофанов
+Андрей Захаров
+Данил Сокол
+Евгений Панин
+Сергей Беклемышев
+Захар Суханов
+Даниил Вуймин
+Антон Филиппович
+Play Boychik
+Эдуард Зайдуллин
+Илюша Шадоуфинд
+Даниил Вандышев
+Санечка Киргет
+Ярослав Семакин
+Андрей Климов
+Георгий Радыгин
+Максим Румянцев
+Timofey Sobyanin
+Battle Fox
+Дмитрий Накиев
+Дима Крейзин
+Денис Сухоносов
+Николай Яковлев
+Андрей Сырокваша
+Vlad Talaev
+Глеб Иванов
+Артур Шевцов
+Никита Работягов
+Никита Персунов
+Султан Султанов
+Denis Storozhenko
+Володька Кравцов
+Артём Волкотруб
+Александр Новиченко
+Спектр Грёз
+Виктор Дипов
+Nikita Shulga
+Паша Рукосуев
+Николай Воробьев
+Рафаэль Приссмингов
+Андрей Карамзин
+Игорь Волков
+Александр Мальцев
+Никита Семёнов
+Роман Серебряков
+Гоша Болтик
+Сергей Сурков
+Денис Аряев
+Никита Джилавдаров
+Павел Планкин
+Михаил Беляев
+Захар Горбунов
+Андрей Дунаев
+Антон Губенко
+Андрей Логинов
+Константин Что
+Дмитрий Деревенских
+Матвей Суворков
+No Name
+Никита Новак
+Максим Новиков
+Roman Povar
+Vladimir Lazhin
+Влад Давлетшин
+Вячеслав Руга
+Алина Волкова
+Алексей Мараев
+Андрей Гурин
+Егор Соколов
+myzikant113
+Detronir
+DGR
+eugene_lychany
+mr_hocku_artem
+nephilimzse
+Believe
+Алексей Рябоконь
+Антоха
+webterror
+Hustle_116
+Семён
+Factor_2D
+Saguaro
+Барабуль Генадьевич
+grimraher
+Богдан Лунёв
+Константин Прокофьев
+misnichek
+Владосик Одмэнчик
+Майский жук Костян
+kekus
+Волейбольная сетка
+Manyachelo
+denamit17
+Killa1975
+Владимир Якут
+Евгений Лисов
+Baton_ 40
+RAud
+dimaNke4
+Краб Петрович
+Rain
+DEM0N
+BOJI4OHOK
+ShinksProduction
+QeO
+Даня RAud
+Scourge Channel (Андрей)
+radbul23
+WhatTher
+Тимур Бан
+Таракан Валера
+Dade Dade
+Dinar
+Гейб
+Morand666
+Lord Kunzite
+",
+Everlasting_summer\Content\main\hud\титры.json,CD9357DA439A270819CB288E53BC22D8,Спасибо за прохождение!,感谢您的游玩！
+Everlasting_summer\Content\main\hud\титры.json,3A023C7A407BF8BDD2797A81E1F6DE03,Виола                           Skiey Wayfarer,维奥拉                           Skiey Wayfarer
+Everlasting_summer\Content\main\hud\титры.json,AE0E18C345A258C2AA4A2A9A3AE2BFD2,"Так же в разработке игры принимали участие
+
+Алексей Скребнев
+Роман Сорокин
+Артем Лисовский
+Александр Шурочкин
+Виктор Алёхин
+Родион Филинов
+Валерий Руденок 
+Димон Губский
+Егор Патраков 
+Александр Пилигримов
+Авраам Линкольн
+Евгений Малышев
+Николай Ивахнов
+Владислав Суп
+Максим Михайлов
+Александр Клименков
+Сергей Корженко
+Никита Клиновский
+Юлия Кель
+Аркадий Астанин
+Валерий Панасенко
+Вильдан Султанов
+Error Macro
+Ира Третьяк
+Sasha Aseew
+Степан Соколов
+Иван Галкин
+Евгений Селивёрстов
+Егор Сударкин 
+Никита Фадеев
+Тимофей Рисовач
+Noname Uchiha
+Денис Кравченко
+Titan Titanium
+Макс Панов
+Максим Куракин
+Иван Персунов
+Виталий Данилин
+Людмила Хигерович
+Саша Шагаев
+Артем Баженов
+Даниил Щербаков
+Павел Усцелемов
+Юра Величко
+Василий Иванов
+Егор Бобков
+Евгений Лычаный
+Камнезвёзд Кот
+Георгий Шведов
+Сергей Яшин
+Chris Peskov
+Паша Седлекс
+Алиса Шутова
+Юлия Ткаченко
+Никита Завалишин
+Ян Овчинников
+Антон Толокань
+Никита Вагин
+Мирослав Калинич
+Константин Чеховер
+Дмитрий Дёмин 
+Саша Верещагин
+Леонид Муромцев
+Максим Болгов
+Артем Музяков
+Олег Шевчук
+Румыния Цветкова
+Иван Сава
+Максимилиан Космодемьяновский
+Виктор Алёхин
+Родион Филинов
+Антон Чехов
+Никита Неонов
+Богдан Гетьман
+Михаил Мартынов
+Yamato Tenzõ
+Александр Иванов
+Юра Горсков
+Алексей Ступин
+Артем Головчанский
+Сергей Круглов
+Михаил Рязанцев
+Денис Дручевский
+Иван Рыцарев
+~LazyPlayer~
+
+В игре использовались работы ИИ мастеров:
+deeppurplecat
+abstractsummer
+summsoul
+zonadejavu","以下人员也参与了游戏开发
+
+Алексей Скребнев
+Роман Сорокин
+Артем Лисовский
+Александр Шурочкин
+Виктор Алёхин
+Родион Филинов
+Валерий Руденок 
+Димон Губский
+Егор Патраков 
+Александр Пилигримов
+Авраам Линкольн
+Евгений Малышев
+Николай Ивахнов
+Владислав Суп
+Максим Михайлов
+Александр Клименков
+Сергей Корженко
+Никита Клиновский
+Юлия Кель
+Аркадий Астанин
+Валерий Панасенко
+Вильдан Султанов
+Error Macro
+Ира Третьяк
+Sasha Aseew
+Степан Соколов
+Иван Галкин
+Евгений Селивёрстов
+Егор Сударкин 
+Никита Фадеев
+Тимофей Рисовач
+Noname Uchiha
+Денис Кравченко
+Titan Titanium
+Макс Панов
+Максим Куракин
+Иван Персунов
+Виталий Данилин
+Людмила Хигерович
+Саша Шагаев
+Артем Баженов
+Даниил Щербаков
+Павел Усцелемов
+Юра Величко
+Василий Иванов
+Егор Бобков
+Евгений Лычаный
+Камнезвёзд Кот
+Георгий Шведов
+Сергей Яшин
+Chris Peskov
+Паша Седлекс
+Алиса Шутова
+Юлия Ткаченко
+Никита Завалишин
+Ян Овчинников
+Антон Толокань
+Никита Вагин
+Мирослав Калинич
+Константин Чеховер
+Дмитрий Дёмин 
+Саша Верещагин
+Леонид Муромцев
+Максим Болгов
+Артем Музяков
+Олег Шевчук
+Румыния Цветкова
+Иван Сава
+Максимилиан Космодемьяновский
+Виктор Алёхин
+Родион Филинов
+Антон Чехов
+Никита Неонов
+Богдан Гетьман
+Михаил Мартынов
+Yamato Tenzõ
+Александр Иванов
+Юра Горсков
+Алексей Ступин
+Артем Головчанский
+Сергей Круглов
+Михаил Рязанцев
+Денис Дручевский
+Иван Рыцарев
+~LazyPlayer~
+
+游戏中使用了 AI 创作者的作品：
+deeppurplecat
+abstractsummer
+summsoul
+zonadejavu"
+Everlasting_summer\Content\main\hud\титры.json,38A062704A72B94326E172BE6585972B,Игра создана по мотивам визуальной новеллы,本游戏改编自视觉小说
+Everlasting_summer\Content\main\hud\титры.json,5CE491C7489153A076B317AAAF1B7DC5,Команда Soviet Games (Lichan Eroge Team),制作团队：Soviet Games (Lichan Eroge Team)
+Everlasting_summer\Content\main\hud\титры.json,0DCAE7AD420543CEEDFC27A95659CABB,Разработчики оригинальной игры,原版游戏开发者
+Everlasting_summer\Content\main\hud\титры.json,724938154F991B914B293C97AB031F57,"Музыка: Сергей Ейбог, Between August And December",音乐：Sergey Eibog，Between August And December
+Everlasting_summer\Content\main\hud\титры.json,11FBDEEF41B84F080631D8A34EDD8749,Звук: Сергей Ейбог,音效：Sergey Eibog
+Everlasting_summer\Content\main\hud\титры.json,5A3A0829493E410057D63ABD332D7A0C,И отдельное спасибо тебе,以及，特别感谢你
+Everlasting_summer\Content\main\hud\титры.json,69F75DFB4F186FB5FE3376A76D18694A,"                                                                                                                                                           Скажем спасибо за поддержку
+Дмитрий Олейников
+Руслан Сабиров
+Данила Загайнов
+Святослав Морозов
+Nikolai Eremenko
+Даниил Матюнин
+Павел Сальников
+Nicolai Pavlov
+Данил Шкляев
+August Chetvertiy
+Никита Пономарёв
+Арсений Лебедев
+Кирилл Бебко
+Данил Аваперский
+Вильдан Саитов
+Joe Morgan
+Никита Новиков
+Глеб Орлов
+Илья Шершнёв
+Матвей Ломакин
+是的 我是一个头骨
+Серёга Никишин
+Rahmonali Jalilov
+Никита Мацевич
+Иван Михайлов
+Игорь Тихонов
+Георгий Сидоров
+Артём Базаров
+Василий Ракитин
+Виталий Судзуки
+Роман Золотарёв
+Костя Савицкий
+Lord Dark
+Сергей Аспер
+Никита Зомбаков
+Фёдор Танков
+Xsu Друидочка
+Дима Земляков
+Вячеслав Пятков
+Олег Андрианов
+Roman Puzevich
+Владислав Подборонов
+Николай Асташкин
+Даниэл Кюри
+Александр Богданов
+Настя Пельменева
+Максим Гельштейн
+Asahi Itsuki
+Максим Строителев
+Андрей Янченков
+Виталий Авдеев
+Никита Малый
+Ваня Зайкачишко
+Егор Романов
+Гоша Лесной
+Николай Викторович
+Валентина Новикова
+Серж Григорьев
+Николай Чернышёв
+Rin Kai
+Иван Дорогин
+Sasha Naumov
+Danil Duble
+Роман Бабкин
+Эльдар Гафуров
+Максим Шаталов
+Araka
+Mark Zaiko
+Артём Каллаур
+Mor0v4ik
+sonae flexx
+senka
+Maus
+Саша Балицкий
+iKaRchik
+Юра Горсков
+Stil Stec
+Ejenkou
+HellGrey
+BYLOVA
+Иван Демьянов
+milkdaynsfw
+Рустам Каримов
+ThreeSixAifun9er
+Никита Курец
+Александр Пугачёв
+This_Is_Vovka
+GaN7TeR Eze
+Aleksei Jolondz
+Михаил Стеблевец
+Тоша Тотоща
+Никита Калачев
+Mr_Andzo
+nofade_
+SaRed2020
+Роман Артёмов
+PANDORUS
+ADuverGS
+Данила Матюшонок
+Даниил Горобец
+kiborg kvadratni
+Тимофей Новиков
+Vlad
+Ильгиз Саитов
+cheersoff
+Пионер
+Игорь Серый
+高尚エブゲー二ー
+Андрей Дельник
+Евгений Шатунов
+Max Prost
+Семпай Бордюров
+Sanchast'
+Никита Анисимов
+Матвей Коверзанов
+Коммунистический Ковбой К.К
+Валентин Скотопульта
+Владимир Егоров
+Anton Sablin
+Simulyasion
+Матвей Шаталин
+Edik Minor
+AmurPiranha
+IzreaL
+Oksigen Channel
+BlackLua
+Wiss Bri
+Семён Семёнович
+Regven
+ZAKAGAME
+VANISH
+Эрик Шнайдер
+Tuk
+Darth Slender
+Олег Персунов
+RED
+はつねみく
+Dima Ikko
+Тихоня Lenofagov
+МУЗИНДР БЛАБЛА
+Даниил Григорьев
+Alex Bodrug
+mobaet
+Данил Каверзин
+Сергей
+Goper226
+Илья Рейзов
+danyamihalych
+Чумовой Докторец
+Verty g
+Алексей Иванов
+Михаил Б
+Mr Cola
+tuxiel
+меня нет
+Киропир
+Леонид Мерков
+Maks Mednikov
+Вячеслав Фатыхов
+Гоша Семенов
+Александр Цилибин
+Данил Глотов
+Renald Blackwood
+Слава Базаров
+Phil Byazrov
+Сергей Недовесов
+Денис Махнёв
+Дмитрий Спицын
+Александр Мунякин
+Stella Ibaradzaki
+Дмитрий Нагорнов
+Виктор Алёхин
+Серёга Березин
+Арсений Телесницкий
+Георгий Ледчак
+Dio Halibel
+Артем Антонов
+Владимир Балакирев
+Виктор Бурчин
+Drop Dead
+Katya Antxchrxst
+Виталий Мандрыка
+Гоша Замлелов
+Денис Батулин
+Βυαχεσλαυ Γολοβκο
+Sovenkofag
+Tarakanator
+eldercs
+iakella59i
+деграммы
+фулишка
+oleg_65
+Папа Падаконик
+Виталий Антропов
+Сергей Круглов
+Андрей
+КиберЁж
+martinbirn
+Арсений
+Рак Феофан
+Артем Алфёров
+zxc
+Влад Пискарев
+tobias_worsnop
+Руслан Семёнов
+Краб Васян
+Savva Jysmä
+Shinks Production
+fo1how
+younglovell
+Дмитрий Артемьев
+Алексей Капец
+Letchik
+Quaternik
+Сергей Манохин
+Павел
+Артем Головчанский
+Hrunj
+Leukhin85
+BOG_MIWA
+Adm178
+MyNameIsLegend
+FallLiant
+ВладOSS гачи босс
+Pop
+Леха
+sergeq229
+Овалынн
+Обнова
+Мангал
+Маляр
+Фули
+",
+Everlasting_summer\Content\main\hud\титры.json,6B3659E442D1D1ABB5596C9318BD06F2,Бесконечное лето 3D,永恒之夏 3D
+Everlasting_summer\Content\main\hud\титры.json,6F1E86AB4FD3272475BE4E9A2173D186,Роли озвучивали: ,配音演员：
+Everlasting_summer\Content\main\hud\титры.json,8940C212442316622A9D7283642C06AC,Озвучка АниЛибрия | AniLibria,配音 AniLibria | AniLibria
+Everlasting_summer\Content\main\hud\титры.json,C3D6095D42110961D858F2BE00EBA7C9,"Семён, автор -                                                                                                 
+Алиса -                                                  
+Ольга Дмитриевна, Юля -                                                   
+Электроник -                                                                            
+Славя -                                                                                          
+Ульянка -                                                                          
+Лена -                                                                        
+Шурик -                                                                                       
+Мику, Женя -                                                                       ","谢苗，作者 -                                                                                                 
+阿丽夏 -                                                  
+奥尔加·德米特里耶夫娜，尤利娅 -                                                   
+电子小子 -                                                                          
+斯拉维娅 -                                                                                          
+乌里扬卡 -                                                                          
+列娜 -                                                                        
+舒里克 -                                                                                       
+未来，热尼娅 -                                                                       "
+Everlasting_summer\Content\main\hud\титры.json,35653F53455827D3E166E7BD0DD0419B,Особая благодарность за помощь,特别感谢以下人员的帮助
+Everlasting_summer\Content\main\hud\титры.json,04A50C1B4C17C4DF04882896418BEA61,"LikeendRRRea
+
+Слава Егоров
+
+Артем Головчанский
+
+Evgeny Goncharov
+
+Алексей Скребнев
+
+Арсений Макуров",
+Everlasting_summer\Content\main\hud\титры.json,ACDAD2B04D3A8778F3DEC0992DB7F26C,Без них игра бы вышла позже и хуже,没有他们，游戏会更晚发布，质量也会更差
+Everlasting_summer\Content\main\hud\титры.json,9608FD4B41BEC7028FDB5FBCC6F86BB9,"Sharon
+LeeA / Amikiri / Kanade EU
+ Hekomi
+Rexus
+ Silv
+LeeA / Silv
+                                                                      Aemi / NeoNoir
+                                                                                     Nuts
+                                                                  Cleo-Chan",
+Everlasting_summer\Content\main\hud\титры.json,33FB3682432725AB87670CB497E627B2,"Главный-разработчик/Программист/Гейм-дизайнер/
+Левел-дизайнер/Аниматор/Риггер/3D-моделлер/VFX
+/Текстурирование
+
+Гейм-дизайнер / 3D-художник персонажей / Иллюстратор /
+Продюсирование
+
+Агрегатор /Ассистент программиста/ Консультант
+
+SMM-менеджер / 3D-моделлер
+
+HR-менеджер
+
+Технический помощник/ Эксперт UE / 3D-моделлер 
+
+Риггер / 3D-моделлер 
+
+             ","主开发 / 程序员 / 游戏设计师 /
+关卡设计师 / 动画师 / 骨骼绑定 / 3D建模师 / 视觉特效
+/ 贴图绘制
+
+游戏设计师 / 3D角色艺术家 / 插画师 /
+制作
+
+整合 / 程序员助理 / 顾问
+
+社交媒体经理 / 3D建模师
+
+人事经理
+
+技术助理 / UE专家 / 3D建模师
+
+骨骼绑定 / 3D建模师"
+Everlasting_summer\Content\main\hud\титры.json,AEF9AC1C4601B9A108E4DEBAFF88EA9E,"
+Алексей Борисов
+
+
+ SkieyWayfarer
+
+
+ Follzen
+
+    Hehudojnik
+
+Даниил Чайковский
+
+  Ante Captain
+
+Alexander Portnyagin
+
+",
+Everlasting_summer\Content\main\hud\уверены.json,FD4D28E14753C2D376FBF4B60C26DF94,нет,否
+Everlasting_summer\Content\main\hud\уверены.json,F869F51D435B3FCA5BBB87A6A9D568B1,Вы уверны?,是否确认？
+Everlasting_summer\Content\main\hud\уверены.json,B9CA29684908C013BD85A5B31AEBF897,Да,是
+Everlasting_summer\Content\main\hud\ягода\подсказкаПоход.json,FA40690344183822D684C794BBDFA597,"Удерживайте shift, если хотите пропустить пешую часть похода.",按住 Shift 可跳过徒步路段。
+Everlasting_summer\Content\main\hud\ягода\ягодка.json,E145231C4C8DF1409A1DE2BA44A47EC2,Положить в корзину,放入篮子
+Everlasting_summer\Content\main\hud\ягода\ягодка.json,67FBF35B43B8BDE04E2B278FEBEDF2A1,Сьесть,吃掉
+Everlasting_summer\Content\ProIconPack\UI\Enums\E_GlassMaskTypes.json,5F843C644949EA63B54F72AF9A4E05F1,GlassMask1,
+Everlasting_summer\Content\ProIconPack\UI\Enums\E_GlassMaskTypes.json,A1E96C4F4043FF7AC5B2958944E2A7FF,GlassMask2,
+Everlasting_summer\Content\ProIconPack\UI\Enums\E_IconBaseTypes.json,43C8C5E84B1FCF64CF2242AF4061682B,Square,
+Everlasting_summer\Content\ProIconPack\UI\Enums\E_IconBaseTypes.json,E349178A449AB748B680AB87A6D5954C,Square45,
+Everlasting_summer\Content\ProIconPack\UI\Enums\E_IconBaseTypes.json,194781EB4F7909B4C5C6919C6F0FE683,Ellipse,
+Everlasting_summer\Content\ProIconPack\UI\Enums\E_IconBaseTypes.json,3D62EA554176FF733F10D5A00C1D9D05,Hexagon,
+Everlasting_summer\Content\ProIconPack\UI\Enums\E_IconBaseTypes.json,72A1C6BB4F75F320E92A65B60AF3D0A0,Custom,
+Everlasting_summer\Content\ProIconPack\UI\Enums\E_Sizes.json,D09F7FB94EEB9AEED52F05A689164B61,64 x 64,
+Everlasting_summer\Content\ProIconPack\UI\Enums\E_Sizes.json,793AA7DB4FD64ABA612D629B163AE00F,256 x 256,
+Everlasting_summer\Content\ProIconPack\UI\WB_Icon_Base.json,37EE16784A85269B58BB5BB524A3A8E2,E,
+Everlasting_summer\Content\ProIconPack\UI\WB_Icon_Base.json,16EFDB584937BEE3C987AEBBC74072D0,E,
+Everlasting_summer\Content\ProIconPack\UI\WB_Icon_Base.json,66CC74D84B73200DABAB8A8E621F7D35,!,
+Everlasting_summer\Content\ProIconPack\UI\втор.json,032631A34DC0DB16E7C60EBAA49CC238,!,
+Everlasting_summer\Content\ProIconPack\UI\осн1.json,F9CB602D44F20656884782A223EF55CC,!,
+Everlasting_summer\Content\ProIconPack\UI\осн.json,00532ECB450015CEEB6EC6B6F1275DF9,!,
+Everlasting_summer\Content\ProIconPack\UI\поиск1.json,94E8A0B3479C393F97B3F4AC2A659838,!,
+Everlasting_summer\Content\ProIconPack\UI\поиск2.json,5D1BF48A45EB3C9DB8DA1DA883E07650,!,
+Everlasting_summer\Content\ProIconPack\UI\поиск.json,5D719512429559333BBC3AB1E0DAC1B8,!,
+Everlasting_summer\Content\ProIconPack\UI\шура.json,0F6286A54A160D811CB60382213839AD,!,
+Everlasting_summer\Content\StoryAdvTemplate\Blueprints\Core\GameMenu\EMenuSection.json,C1545FC2495C6654B50C76A3D4C419FA,MainMenu,
+Everlasting_summer\Content\StoryAdvTemplate\Blueprints\Core\GameMenu\EMenuSection.json,EB45D4614A39526CC45BF8B34B5AB004,Inventory,
+Everlasting_summer\Content\StoryAdvTemplate\Blueprints\Core\GameMenu\EMenuSection.json,0447373E49039DF57C00D1A516D62354,Journal,
+Everlasting_summer\Content\StoryAdvTemplate\Blueprints\Core\LetterTypes_Enum.json,BA6619B24133D025E3F14DA9220AC5BB,Simple Letter,
+Everlasting_summer\Content\StoryAdvTemplate\Blueprints\Core\LetterTypes_Enum.json,73B4A1CC49A96F3B9158F287465E838B,Simple Letter HUD,
+Everlasting_summer\Content\StoryAdvTemplate\Blueprints\Core\LetterTypes_Enum.json,77E5BC7546C5FF25148EECA124A18BBD,UI Font Letter,
+Everlasting_summer\Content\StoryAdvTemplate\Blueprints\Core\LetterTypes_Enum.json,BAA8D7A843C6174E2E09A295C9C8B08C,No Letter,
+Everlasting_summer\Content\StoryAdvTemplate\Blueprints\Examples\Doors\BP_ExampleDoubleSwingDoor.json,A7E27288436CC5505203558A4BB79EB2,Открыть,打开
+Everlasting_summer\Content\StoryAdvTemplate\Blueprints\Examples\Objects\BP_Карточка_сцены.json,D96C1D334F4D8DF3C09C1E8F35E9B4E6,Name in Mug,
+Everlasting_summer\Content\StoryAdvTemplate\Blueprints\Examples\Objects\BP_Карточка_сцены.json,C5688B614AEAC2DB93ADB0879D85951A,Name in Mug,
+Everlasting_summer\Content\StoryAdvTemplate\Blueprints\Examples\Objects\BP_Карточка_сцены.json,B290ED754FF28912E438D39C19568BB2,"I found the word ""palinoia"" at the bottom of the mug. That's the alias of the author of this template.",
+Everlasting_summer\Content\StoryAdvTemplate\Blueprints\Examples\Objects\BP_Карточка_сцены.json,1019444C4203A1D49A8318B6EE77524D,palinoia,
+Everlasting_summer\Content\StoryAdvTemplate\Blueprints\Examples\Objects\BP_предмет_с_костюмами.json,5148D5EC4FE00D7D436537B472822F3A,Name in Mug,
+Everlasting_summer\Content\StoryAdvTemplate\Blueprints\Examples\Objects\BP_предмет_с_костюмами.json,3A139B4B47EF97E47200D3B7965C7EC3,Name in Mug,
+Everlasting_summer\Content\StoryAdvTemplate\Blueprints\Examples\Objects\BP_предмет_с_костюмами.json,2F810B6C40C79DC303E4FF917DB03CFF,"I found the word ""palinoia"" at the bottom of the mug. That's the alias of the author of this template.",
+Everlasting_summer\Content\StoryAdvTemplate\Blueprints\Examples\Objects\BP_предмет_с_костюмами.json,EED7A554446E07D22B8198BB494E9757,palinoia,

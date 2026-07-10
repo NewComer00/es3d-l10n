@@ -2,28 +2,42 @@
 
 Localization toolchain for [**Бесконечное лето 3D**](https://boosty.to/everlastingsummer3d): unpack → extract strings → translate → repack `.pak` mods.
 
-**Requires:** Windows, PowerShell, game install nested under repo root:
+**Requires:**
+- Windows, PowerShell
+- [Git LFS](https://git-lfs.com/) — binary assets under mods (e.g. `*.dds`)
+- Game install nested under repo root:
 
 ```
 es3d-l10n/                              ← toolchain (this repo)
-├── mods/          recipes + locale CSV
+├── mods/          recipes + locale CSV (+ per-mod README)
 ├── build/         working tree (gitignored)
 ├── dist/          output .pak files (gitignored)
 ├── scripts/       Python helpers
-└── Бесконечное лето 3D.v0.4.6.1/         ← game (gitignored, auto-detected)
+└── Бесконечное лето 3D.v0.5.0/         ← game (gitignored, auto-detected)
     └── Everlasting_summer.exe
         └── Everlasting_summer/Content/Paks/
 ```
 
-**Tested game version:** `v0.4.6.1` (UE 5.5)
+**Tested game versions:** `v0.5.0`, `v0.4.6.1` (UE 5.5)
+
+Per-mod docs: [`mods/<name>/README.md`](mods/).
 
 ---
+
+## Clone
+
+```powershell
+git lfs install                # once per machine
+git clone https://github.com/NewComer00/es3d-l10n.git
+cd es3d-l10n
+git lfs pull                   # if clone was without LFS smudge
+```
 
 ## Setup (once)
 
 ```powershell
 . .\bootstrap.ps1              # installs uv, Python, just; activates .venv
-just fetch-tools
+just fetch-tools               # pinned tools (repak, jmap, UAssetGUI, UE4-DDS-Tools, …)
 just extract-aes-key
 just extract-usmap             # launches game briefly; cached under .es3d/<hash>/
 ```
@@ -38,31 +52,31 @@ Activate `.venv` in every new PowerShell window before `just`:
 ```
 
 ```powershell
-just help                   # root recipes
-just mod help               # mod overview
-just mod NAME               # per-mod recipes (default)
-just mod-locale help        # locale overview
-just mod-locale NAME LOCALE # per-locale recipes (default)
+just help                       # root recipes
+just mod help                   # mod overview
+just mod NAME                   # per-mod recipes (default)
+just mod-locale help            # locale overview
+just mod-locale NAME LOCALE     # per-locale recipes (default)
 ```
 
 ---
 
 ## Build an existing mod
 
-Example: prologue subtitles (`voice_prolog` / `zh_cn`).
-
 ```powershell
 . .\.venv\Scripts\Activate.ps1
 
 just mod-locale voice_prolog zh_cn seed-locale
-just mod-locale voice_prolog zh_cn build-pak   # apply → pack → dist/mod_voice_prolog_zh_cn_P.pak
+just mod-locale voice_prolog zh_cn build-pak   # → dist/mod_voice_prolog_zh_cn_P.pak
 ```
 
-Install output: `dist/mod_voice_prolog_zh_cn_P.pak` → `Everlasting_summer/Content/Paks/`.
+Install output: `dist/mod_*_zh_cn_P.pak` → `Everlasting_summer/Content/Paks/`.
 
-**With existing translations:** `seed-locale` copies archive CSV → build, then edit build CSV if needed.
+**With existing translations:** `seed-locale` copies archive CSV → build.
 
 **Fresh extract / game update:** use `extract-csv` instead of `seed-locale`.
+
+Mod-specific steps (UI fonts/textures, dialogs sidecars, …): see that mod’s README.
 
 ---
 
@@ -72,6 +86,7 @@ Install output: `dist/mod_voice_prolog_zh_cn_P.pak` → `Everlasting_summer/Cont
 
 ```
 mods/my_mod/justfile
+mods/my_mod/README.md           ← mod-specific notes
 mods/my_mod/zh_cn/justfile
 mods/my_mod/zh_cn/locale.csv    ← optional; add after first extract-csv
 ```
@@ -100,8 +115,6 @@ locale_dir := justfile_directory()
 4. Run pipeline:
 
 ```powershell
-. .\.venv\Scripts\Activate.ps1
-
 just mod-locale my_mod zh_cn extract-csv
 # edit build/my_mod/zh_cn/locale.csv
 just mod-locale my_mod zh_cn build-pak
@@ -135,28 +148,27 @@ Locale recipes that need JSON (`extract-csv`, `apply`, `build-pak`, …) auto-ru
 - `mods/<mod>/<locale>/locale.csv` — archive (reference)
 - `build/<mod>/<locale>/locale.csv` — active (used by `apply`)
 
-Archived Chinese translations (`mods/*/zh_cn/locale.csv`) are derived from the [Everlasting Summer](https://soviet.games/everlasting-summer/) Ren'Py VN.
+---
+
+## Included mods
+
+| Mod | README |
+|-----|--------|
+| [`ui`](mods/ui/README.md) | HUD / menus; fonts + textures |
+| [`dialogs`](mods/dialogs/README.md) | DialogSystem (+ bp/skel sidecars) |
+| [`voice_prolog`](mods/voice_prolog/README.md) | Prologue subtitles |
+| [`voice_day_1`](mods/voice_day_1/README.md) | Day 1 subtitles |
+| [`voice_day_2`](mods/voice_day_2/README.md) | Day 2 subtitles |
+| [`voice_day_3`](mods/voice_day_3/README.md) | Day 3 subtitles |
+| [`voice_day_4`](mods/voice_day_4/README.md) | Day 4 subtitles |
+| [`voice_day_5`](mods/voice_day_5/README.md) | Day 5 subtitles |
 
 ---
 
 ## Credits
 
 - **Toolchain** — MIT License (see [LICENSE](LICENSE))
-- **Archived `zh_cn` translations** — derived from [Everlasting Summer](https://soviet.games/everlasting-summer/) (Ren'Py VN)
-
----
-
-## Included mods
-
-| Mod | PAK path |
-|-----|----------|
-| `dialogs` | `DialogSystem/`, `main/bp`, `main/models/руф/skel/` |
-| `voice_prolog` | `main/звуки/пролог` |
-| `voice_day_1` | `main/звуки/озвучка_1_день` |
-| `voice_day_2` | `main/звуки/озвучка_2_день` |
-| `voice_day_3` | `main/звуки/озвучка_3_день` |
-| `voice_day_4` | `main/звуки/озвучка_4_день` |
-| `voice_day_5` | `main/звуки/озвучка_5_день` |
+- **Archived `zh_cn` translations** — derived from [Everlasting Summer](https://soviet.games/everlasting-summer/) (Ren'Py VN); see each mod README for extra assets
 
 ---
 
@@ -166,7 +178,7 @@ Archived Chinese translations (`mods/*/zh_cn/locale.csv`) are derived from the [
 
 | Path | Contents |
 |------|----------|
-| `mods/` | Recipes, frozen CSV, optional `assets/` |
+| `mods/` | Recipes, frozen CSV, per-mod README |
 | `build/` | Extracted assets, JSON, active CSV, intermediates |
 | `dist/` | Output `.pak` files |
 | `.es3d/<hash>/` | Per-game cache (`aes.key`, `output.usmap`) |
@@ -181,6 +193,8 @@ Archived Chinese translations (`mods/*/zh_cn/locale.csv`) are derived from the [
 | `AES_KEY` | Override cached AES key |
 | `ES3D_DIFF` | Editor for `diff-locale` (`cursor`, `code`, `codium`) |
 
+Mod-specific env vars: see that mod’s README.
+
 **Scripts** (`scripts/`)
 
-`convert.py` · `extract_to_csv.py` · `apply_translations.py` · `strip_assets.py` · `diff_locale_csv.py`
+`convert.py` · `extract_to_csv.py` · `apply_translations.py` · `strip_assets.py` · `diff_locale_csv.py` · `scale_font_upem.py` · `inject_ui_textures.py`
