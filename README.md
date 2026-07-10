@@ -1,8 +1,12 @@
 # es3d-l10n
 
-Localization toolchain for [**Бесконечное лето 3D**](https://boosty.to/everlastingsummer3d): unpack → extract strings → translate → repack `.pak` mods (+ UE4SS Lua overlays).
+Localization toolchain for [**Бесконечное лето 3D**](https://boosty.to/everlastingsummer3d).
 
-**Requires:** Windows, PowerShell, [Git LFS](https://git-lfs.com/) (binary assets under mods, e.g. `*.dds`), and the game nested under the repo root (auto-detected; see [Reference](#reference)).
+**Requires:**
+- Windows
+- PowerShell
+- [Git](https://git-scm.com/) with [Git LFS](https://git-lfs.com/) installed
+- The *Бесконечное лето 3D* game itself to be placed under the repo root (more info in [Reference](#reference))
 
 **Tested game versions:** `v0.5.0`, `v0.4.6.1` (UE 5.5)
 
@@ -19,36 +23,67 @@ cd es3d-l10n
 git lfs pull                   # if clone was without LFS smudge
 ```
 
-### Setup (once)
+Then place the game under the repo directory:
 
-```powershell
-. .\bootstrap.ps1              # installs uv, Python, just; activates .venv
-just fetch-tools               # pinned tools (repak, jmap, UAssetGUI, UE4-DDS-Tools, …)
-just extract-aes-key
-just extract-usmap             # launches game briefly; cached under .es3d/<hash>/
+```
+es3d-l10n/                              ← toolchain (this repo)
+└── Бесконечное лето 3D.v0.5.0/         ← game (gitignored, auto-detected)
+    └── Everlasting_summer.exe
+        └── Everlasting_summer/Content/Paks/
 ```
 
-### Each session
+### Setup
+
+Download and install the Python related tools and [just](https://github.com/casey/just) runner. Activate the Python virtual environment:
+
+```powershell
+. .\bootstrap.ps1
+```
+
+Fetch the tools for Unreal Engine:
+
+```powershell
+just fetch-tools
+```
+
+Ensure the Бесконечное лето 3D game is present in the repo directory. Extract the AES key and USmap:
+
+```powershell
+just extract-aes-key
+just extract-usmap
+```
+
+The AES key and USmap are cached under `.es3d/<hash>/`. They will be reused unless the game version changes.
+
+### Help
+
+Print the help for the justfile:
+
+```powershell
+just help
+```
+
+Print the help for a specific mod or locale:
+
+```powershell
+just mod help
+just mod-locale help
+```
+
+## Build & install
+
+Ensure the Python environment is activated:
 
 ```powershell
 . .\.venv\Scripts\Activate.ps1
 # or: . .\bootstrap.ps1
-
-just help                       # root recipes
-just mod help / just mod NAME
-just mod-locale help / just mod-locale NAME LOCALE
 ```
 
----
-
-## Build & install
-
-**Build** pak mods + UE4SS into `dist/<locale>/` (locale required).
+**Build** pak mods + UE4SS into `dist/<locale>/`.
 Uses active `build/<mod>/<locale>/locale.csv` when present; otherwise seeds from archived `mods/.../locale.csv`:
 
 ```powershell
 just build-dist zh_cn
-# just build-dist all         # every locale under mods/*/
 ```
 
 **Install** copies `dist/<locale>/Everlasting_summer/` into the current game.
@@ -56,7 +91,7 @@ Builds that locale first if `dist/<locale>` is empty:
 
 ```powershell
 just install-dist zh_cn
-# or copy dist/zh_cn/* next to Everlasting_summer.exe
+# or manually copy dist/zh_cn/* next to Everlasting_summer.exe
 ```
 
 `dist/<locale>/` mirrors the game tree:
@@ -68,17 +103,18 @@ dist/zh_cn/Everlasting_summer/
   Binaries/Win64/ue4ss/…
 ```
 
-UE4SS only: `just ue4ss stage zh_cn` — details in [`ue4ss/README.md`](ue4ss/README.md).
-
 ---
 
 ## Working on a mod
 
+To work on an existing mod (e.g. `voice_prolog`), the following commands apply the pre-archived translations CSV to the UE assets, and then build the pak mod for the locale:
+
 ```powershell
-just mod-locale voice_prolog zh_cn seed-locale   # or extract-csv after a game update
+just mod-locale voice_prolog zh_cn seed-locale
 just mod-locale voice_prolog zh_cn build-pak
-# → dist/zh_cn/Everlasting_summer/Content/Paks/mod_voice_prolog_zh_cn_P.pak
 ```
+
+After that, the pak mod will be built at `dist/zh_cn/Everlasting_summer/Content/Paks/mod_voice_prolog_zh_cn_P.pak`
 
 | Level | Step | Command |
 |-------|------|---------|
