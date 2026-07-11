@@ -1,20 +1,41 @@
 # es3d-l10n
 
-Localization toolchain for [**Бесконечное лето 3D**](https://boosty.to/everlastingsummer3d).
+A localization toolchain for [**Бесконечное лето 3D**](https://boosty.to/everlastingsummer3d) (*Everlasting Summer 3D*). It unpacks the game's UE5 assets, lets you translate the extracted text in a plain CSV file, and repacks everything into an installable mod — no Unreal Engine expertise required.
 
-**Requires:**
-- Windows
-- PowerShell
-- [Git](https://git-scm.com/) with [Git LFS](https://git-lfs.com/) installed
-- The *Бесконечное лето 3D* game itself to be placed under the repo root (more info in [Reference](#reference))
-
-**Tested game versions:** `v0.5.0`, `v0.4.6.1` (UE 5.5)
+**Tested on:** game versions `v0.5.0` and `v0.4.6.1` (UE 5.5)
 
 ---
 
-## Getting started
+## Table of contents
 
-### Clone
+- [What you need](#what-you-need)
+- [Get the toolchain](#get-the-toolchain)
+- [Set up your environment](#set-up-your-environment)
+- [Build and install a translation](#build-and-install-a-translation)
+- [Working on an existing mod](#working-on-an-existing-mod)
+- [Creating a brand-new mod](#creating-a-brand-new-mod)
+- [Included mods](#included-mods)
+- [Cleaning up](#cleaning-up)
+- [Project layout](#project-layout)
+- [Environment variables](#environment-variables)
+- [Credits](#credits)
+
+---
+
+## What you need
+
+| Requirement | Notes |
+|---|---|
+| Windows | The toolchain is PowerShell-based |
+| [PowerShell](https://learn.microsoft.com/powershell/) | Comes with Windows |
+| [Git](https://git-scm.com/) + [Git LFS](https://git-lfs.com/) | For cloning this repo |
+| *Бесконечное лето 3D* | The game itself — you provide this, it's not included |
+
+---
+
+## Get the toolchain
+
+Clone the repo and pull the large files tracked by Git LFS:
 
 ```powershell
 git lfs install
@@ -23,76 +44,76 @@ cd es3d-l10n
 git lfs pull
 ```
 
-Then place the game under the repo directory:
+Now copy or place your game folder **inside** the repo, next to the toolchain files:
 
 ```
-es3d-l10n/                              ← toolchain (this repo)
-└── Бесконечное лето 3D.v0.5.0/         ← game
+es3d-l10n/                              ← the toolchain (this repo)
+└── Бесконечное лето 3D.v0.5.0/         ← the game
 ```
 
-### Setup
+> The toolchain auto-detects the game folder. If detection fails, see [`GAME_DIR`](#environment-variables).
 
-Download and install the Python related tools and [just](https://github.com/casey/just) runner. Activate the Python virtual environment:
+---
+
+## Set up your environment
+
+**a) Activate the Python environment.** This installs Python, the [`just`](https://github.com/casey/just) command runner, and everything else needed:
 
 ```powershell
 . .\bootstrap.ps1
 ```
 
-Fetch the tools for Unreal Engine:
+**b) Download the Unreal Engine tools** (unpacker, asset converter, etc.):
 
 ```powershell
 just fetch-tools
 ```
 
-Ensure the Бесконечное лето 3D game is present in the repo directory. Extract the AES key and USmap:
+**c) Extract the game's encryption key and mapping file.** These let the toolchain read the game's assets, and are cached so this only needs to happen once per game version:
 
 ```powershell
 just extract-aes-key
 just extract-usmap
 ```
 
-The AES key and USmap are cached under `.es3d/<hash>/`. They will be reused unless the game version changes.
+The results are cached under `.es3d/<hash>/` and reused automatically until the game version changes.
 
-### Help
-
-Print the help for the justfile:
+**Need help at any point?**
 
 ```powershell
-just help
+just help              # general help
+just mod help          # help for mod-level commands
+just mod-locale help   # help for locale-level commands
 ```
 
-Print the help for a specific mod or locale:
+---
 
-```powershell
-just mod help
-just mod-locale help
-```
+## Build and install a translation
 
-## Build & install
-
-Ensure the Python environment is activated:
+Every time you start a new session, activate the environment first:
 
 ```powershell
 . .\.venv\Scripts\Activate.ps1
-# or: . .\bootstrap.ps1
+# (or, you can still use: . .\bootstrap.ps1)
 ```
 
-**Build** pak mods + UE4SS into `dist/<locale>/`.
-Uses active `build/<mod>/<locale>/locale.csv` when present; otherwise seeds from archived `mods/.../locale.csv`:
+**Build** the translation into a distributable folder. This packs every mod for the chosen locale (e.g. `zh_cn`) plus UE4SS into `dist/<locale>/`:
 
 ```powershell
 just build-dist zh_cn
 ```
 
-**Install** copies `dist/<locale>/Everlasting_summer/` into the current game.
-Builds that locale first if `dist/<locale>` is empty:
+> If a mod already has an in-progress translation at `build/<mod>/<locale>/locale.csv`, that's used. Otherwise, the toolchain seeds from the frozen, pre-translated CSV shipped in `mods/.../locale.csv`.
+
+**Install** the build straight into your game folder:
 
 ```powershell
 just install-dist zh_cn
-# or manually copy dist/zh_cn/* next to Everlasting_summer.exe
 ```
 
-`dist/<locale>/` mirrors the game tree:
+(This builds the locale first automatically if `dist/<locale>` is still empty. Alternatively, just copy `dist/zh_cn/*` next to `Everlasting_summer.exe` yourself.)
+
+The resulting `dist/<locale>/` folder mirrors the game's own folder structure:
 
 ```
 dist/zh_cn/Everlasting_summer/
@@ -103,50 +124,54 @@ dist/zh_cn/Everlasting_summer/
 
 ---
 
-## Working on a mod
+## Working on an existing mod
 
-To work on an existing mod (e.g. `voice_prolog`), the following commands apply the pre-archived translations CSV to the UE assets, and then build the pak mod for the locale:
+Each translatable piece of the game (UI, dialogue, voice-over subtitles, etc.) is a separate **mod**. To pick up an existing one — say, `voice_prolog` — and turn its pre-translated text into an installable pak file:
 
 ```powershell
 just mod-locale voice_prolog zh_cn seed-locale
 just mod-locale voice_prolog zh_cn build-pak
 ```
 
-After that, the pak mod will be built at `dist/zh_cn/Everlasting_summer/Content/Paks/mod_voice_prolog_zh_cn_P.pak`
+This produces `dist/zh_cn/Everlasting_summer/Content/Paks/mod_voice_prolog_zh_cn_P.pak`.
 
-| Level | Step | Command |
-|-------|------|---------|
-| Mod | Unpack PAK paths | `just mod NAME unpack` |
-| Mod | UAsset → JSON | `just mod NAME tojson` |
-| Locale | Prepare CSV | `seed-locale` (from archive) or `extract-csv` (from json) |
-| Locale | Compare CSVs | `diff-locale` |
-| Locale | Apply → pack | `build-pak` (or apply / fromjson / strip / pack) |
+### How the pipeline fits together
 
-Locale recipes that need JSON (`extract-csv`, `apply`, `build-pak`, …) auto-run `just mod NAME tojson` when `build/<mod>/json/` is missing. After a **new game version or patch**, delete `build/<mod>/` or re-run `tojson` so strings match.
+| Level | Step | What it does | Command |
+|---|---|---|---|
+| Mod | Unpack | Extract the raw asset files from the game's PAK | `just mod NAME unpack` |
+| Mod | Convert | Turn binary UAssets into readable JSON | `just mod NAME tojson` |
+| Locale | Prepare | Get a CSV of translatable strings, either from the frozen archive or freshly extracted from JSON | `seed-locale` or `extract-csv` |
+| Locale | Review | Compare two CSVs (e.g. old vs. new) | `diff-locale` |
+| Locale | Finish | Apply translations back into the assets and repack | `build-pak` (runs `apply` → `fromjson` → `strip` → `pack`) |
 
-**Locale CSV**
+Commands that need JSON (`extract-csv`, `apply`, `build-pak`, …) will automatically run `just mod NAME tojson` for you if `build/<mod>/json/` doesn't exist yet.
 
-| Path | Role |
-|------|------|
-| `mods/<mod>/<locale>/locale.csv` | Archive (frozen reference) |
-| `build/<mod>/<locale>/locale.csv` | Active (used by `apply` / `build-dist`) |
+> **After updating the game to a new version or patch**, delete `build/<mod>/` (or re-run `tojson`) so the extracted strings match the new game files.
 
-Mod-specific steps (UI fonts/textures, dialogs sidecars, …): see that mod’s README.
+### Two versions of each locale CSV
+
+| File | Purpose |
+|---|---|
+| `mods/<mod>/<locale>/locale.csv` | The frozen, archived reference translation |
+| `build/<mod>/<locale>/locale.csv` | Your active working copy — this is what `apply` and `build-dist` actually use |
+
+Some mods have extra steps beyond text (fonts, textures, dialog sidecars). Check that mod's own README for details.
 
 ---
 
-## Create a new mod
+## Creating a brand-new mod
 
-1. Add files under `mods/<name>/`:
+**1. Lay out the folder structure** under `mods/<name>/`:
 
 ```
 mods/my_mod/justfile
-mods/my_mod/README.md           ← mod-specific notes
+mods/my_mod/README.md           ← your notes on this mod
 mods/my_mod/zh_cn/justfile
-mods/my_mod/zh_cn/locale.csv    ← optional; add after first extract-csv
+mods/my_mod/zh_cn/locale.csv    ← optional; add once you've run extract-csv
 ```
 
-2. Mod config — `mods/my_mod/justfile`:
+**2. Write the mod config** — `mods/my_mod/justfile`:
 
 ```just
 import '../justfile'
@@ -157,7 +182,7 @@ tojson_exclude := ["*LipSyncSequence.uasset"]
 uexp_signatures := ["0d02", "0d04", "1606"]
 ```
 
-3. Locale config — `mods/my_mod/zh_cn/justfile`:
+**3. Write the locale config** — `mods/my_mod/zh_cn/justfile`:
 
 ```just
 import '../justfile'
@@ -167,88 +192,96 @@ locale := "zh_cn"
 locale_dir := justfile_directory()
 ```
 
-4. Run pipeline:
+**4. Run the pipeline:**
 
 ```powershell
 just mod-locale my_mod zh_cn extract-csv
-# edit build/my_mod/zh_cn/locale.csv
+# edit build/my_mod/zh_cn/locale.csv with your translations
 just mod-locale my_mod zh_cn build-pak
 ```
 
-When translations are ready, freeze: copy `build/.../locale.csv` → `mods/.../locale.csv`.
+**5. When you're happy with the translation, freeze it** by copying it into the archive so it becomes the new default:
+
+```
+build/my_mod/zh_cn/locale.csv  →  mods/my_mod/zh_cn/locale.csv
+```
 
 ---
 
 ## Included mods
 
-| Mod | README |
-|-----|--------|
-| [`ui`](mods/ui/README.md) | HUD / menus; fonts + textures |
-| [`dialogs`](mods/dialogs/README.md) | DialogSystem (+ bp/skel sidecars) |
+| Mod | Covers |
+|---|---|
+| [`ui`](mods/ui/README.md) | HUD and menus (fonts + textures) |
+| [`dialogs`](mods/dialogs/README.md) | The in-game dialogue system |
 | [`voice_prolog`](mods/voice_prolog/README.md) | Prologue subtitles |
 | [`voice_day_1`](mods/voice_day_1/README.md) | Day 1 subtitles |
 | [`voice_day_2`](mods/voice_day_2/README.md) | Day 2 subtitles |
 | [`voice_day_3`](mods/voice_day_3/README.md) | Day 3 subtitles |
 | [`voice_day_4`](mods/voice_day_4/README.md) | Day 4 subtitles |
 | [`voice_day_5`](mods/voice_day_5/README.md) | Day 5 subtitles |
-| [`ue4ss`](ue4ss/README.md) | Runtime Lua (ChineseUI / lighting / BGM fixes) |
+| [`ue4ss`](ue4ss/README.md) | Runtime Lua fixes (Chinese UI, lighting, BGM) |
 
 ---
 
-## Clean
+## Cleaning up
 
 ```powershell
-just clean-build     # build/
-just clean-dist      # dist/
-just clean-tools     # tools/ (keeps .gitkeep)
-just clean           # all of the above + per-mod extras (= clean-all)
-just mod ui clean    # one mod: build/ui + that mod’s _clean-extra
+just clean-build     # remove build/
+just clean-dist      # remove dist/
+just clean-tools     # remove tools/ (keeps .gitkeep)
+just clean           # everything above, plus per-mod extras
+just mod ui clean    # clean just one mod (build/ui + its extras)
 ```
 
-Mods override `_clean-extra` in `mods/<name>/justfile` (e.g. ui/dialogs clear generated `zh_cn/assets/`).
+Individual mods can define their own extra cleanup via `_clean-extra` in `mods/<name>/justfile` (e.g. `ui` and `dialogs` also clear their generated `zh_cn/assets/` folders).
 
 ---
 
-## Reference
+## Project layout
 
 ```
-es3d-l10n/                              ← toolchain (this repo)
-├── mods/          pak recipes + locale CSV (+ per-mod README)
-├── ue4ss/         runtime Lua mods per locale (`ue4ss/<lang>/Mods/`)
-├── build/         working tree (gitignored)
-├── dist/          installable trees per locale (gitignored)
-├── scripts/       Python helpers
+es3d-l10n/                              ← the toolchain (this repo)
+├── mods/          pak recipes + locale CSVs (+ per-mod README)
+├── ue4ss/         runtime Lua mods, one folder per locale
+├── build/         working files (gitignored)
+├── dist/          installable output, one folder per locale (gitignored)
+├── scripts/       Python helper scripts
 ├── tools/         pinned binaries (gitignored)
-└── Бесконечное лето 3D.v0.5.0/         ← game (gitignored, auto-detected)
+└── Бесконечное лето 3D.v0.5.0/         ← the game (gitignored, auto-detected)
     └── Everlasting_summer.exe
         └── Everlasting_summer/Content/Paks/
 ```
 
-| Path | Contents |
-|------|----------|
-| `mods/` | Pak recipes, frozen CSV, per-mod README |
-| `ue4ss/` | UE4SS Lua overlay per locale |
-| `build/` | Extracted assets, JSON, active CSV, intermediates |
-| `dist/` | `dist/<locale>/Everlasting_summer/…` |
-| `.es3d/<hash>/` | Per-game cache (`aes.key`, `output.usmap`) |
-| `tools/` | Pinned binaries (`fetch-tools`, `fetch-ue4ss`) |
+| Folder | Contains |
+|---|---|
+| `mods/` | Pak recipes, frozen translation CSVs, per-mod README |
+| `ue4ss/` | UE4SS Lua overlay, per locale |
+| `build/` | Extracted assets, JSON, your active working CSVs |
+| `dist/` | Ready-to-install `dist/<locale>/Everlasting_summer/…` |
+| `.es3d/<hash>/` | Cached per-game-version data (`aes.key`, `output.usmap`) |
+| `tools/` | Pinned tool binaries fetched by `fetch-tools` / `fetch-ue4ss` |
+
+**Helper scripts** (`scripts/`): `convert.py`, `extract_to_csv.py`, `apply_translations.py`, `strip_assets.py`, `diff_locale_csv.py`, `scale_font_upem.py`, `inject_ui_textures.py`
+
+---
+
+## Environment variables
 
 | Variable | Purpose |
-|----------|---------|
-| `GAME_DIR` | Game folder name if auto-detect fails |
-| `ES3D_ROOT` | Repo root override |
-| `AES_KEY` | Override cached AES key |
-| `ES3D_DIFF` | Editor for `diff-locale` (`cursor`, `code`, `codium`) |
-| `ES3D_UE4SS_URL` | Optional pin for `fetch-ue4ss` (skip GitHub API) |
-| `GITHUB_TOKEN` / `GH_TOKEN` | Optional; raises GitHub API rate limit for `fetch-ue4ss` |
+|---|---|
+| `GAME_DIR` | Set this if auto-detecting the game folder fails |
+| `ES3D_ROOT` | Override the repo root path |
+| `AES_KEY` | Override the cached AES key |
+| `ES3D_DIFF` | Editor used by `diff-locale` (`cursor`, `code`, `codium`) |
+| `ES3D_UE4SS_URL` | Pin a specific UE4SS download URL, skipping the GitHub API |
+| `GITHUB_TOKEN` / `GH_TOKEN` | Optional; raises the GitHub API rate limit for `fetch-ue4ss` |
 
-Mod-specific env vars: see that mod’s README.
-
-**Scripts** (`scripts/`): `convert.py` · `extract_to_csv.py` · `apply_translations.py` · `strip_assets.py` · `diff_locale_csv.py` · `scale_font_upem.py` · `inject_ui_textures.py`
+Some mods also use their own environment variables — check that mod's README.
 
 ---
 
 ## Credits
 
 - **Toolchain** — MIT License (see [LICENSE](LICENSE))
-- **Archived `zh_cn` translations** — derived from [Everlasting Summer](https://soviet.games/everlasting-summer/) (Ren'Py VN); see each mod README for extra assets
+- **Archived `zh_cn` translations** — adapted from [Everlasting Summer](https://soviet.games/everlasting-summer/) (the original Ren'Py visual novel); see each mod's README for additional asset credits
