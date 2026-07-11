@@ -52,19 +52,17 @@ local function translate(str)
     return translations[str] or translationsLower[str:lower()]
 end
 
+local SafeTB = require("safe_textblock")
+
 local function translateAllTextBlocks()
-    local objects = FindAllOf("TextBlock")
-    if not objects then return end
-    for _, obj in ipairs(objects) do
-        if obj:IsValid() then
-            pcall(function()
-                local translated = translate(obj:GetText():ToString())
-                if translated then
-                    obj:SetText(FText(translated))
-                end
-            end)
-        end
-    end
+    SafeTB.forEach(function(obj)
+        pcall(function()
+            local translated = translate(obj:GetText():ToString())
+            if translated then
+                obj:SetText(FText(translated))
+            end
+        end)
+    end)
 end
 
 local function translateDeferred()

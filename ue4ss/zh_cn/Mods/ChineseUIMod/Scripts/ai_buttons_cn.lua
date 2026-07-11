@@ -1,6 +1,8 @@
 -- AI interaction button + outfit text translation to Chinese
 -- Shows Chinese normally; switches to Russian on hover so click logic works
 
+local SafeTB = require("safe_textblock")
+
 local SIG = "\u{200B}\u{200B}"
 
 local translations = {
@@ -80,40 +82,28 @@ end
 
 -- Single-pass: check hover on text + parents (Button/Border/SizeBox)
 local function doScan()
-    local objects = FindAllOf("TextBlock")
-    if not objects then return end
-
-    for _, obj in ipairs(objects) do
-        if obj:IsValid() then
-            local rus, chn = identifyText(obj)
-            if rus then
-                local text = isParentHovered(obj) and rus or chn
-                pcall(function() obj:SetText(FText(text)) end)
-            end
+    SafeTB.forEach(function(obj)
+        local rus, chn = identifyText(obj)
+        if rus then
+            local text = isParentHovered(obj) and rus or chn
+            pcall(function() obj:SetText(FText(text)) end)
         end
-    end
+    end)
 end
 
--- Periodic scan
 local function periodicScan()
     doScan()
-    ExecuteWithDelay(100, periodicScan)
+    ExecuteWithDelay(250, periodicScan)
 end
 
--- Register hooks: Interact is safety net to force Russian for logic
 local function registerHooks()
     local function forceRussianThenChinese()
-        local objects = FindAllOf("TextBlock")
-        if objects then
-            for _, obj in ipairs(objects) do
-                if obj:IsValid() then
-                    local rus, _ = identifyText(obj)
-                    if rus then
-                        pcall(function() obj:SetText(FText(rus)) end)
-                    end
-                end
+        SafeTB.forEach(function(obj)
+            local rus, _ = identifyText(obj)
+            if rus then
+                pcall(function() obj:SetText(FText(rus)) end)
             end
-        end
+        end)
         ExecuteWithDelay(0, doScan)
     end
 

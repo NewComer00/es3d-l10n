@@ -1,6 +1,8 @@
 -- Choice text runtime translation for нажмите1 -> выборы_сюжета buttons
 -- All translations from D:\SteamLibrary\steamapps\common\Everlasting Summer\game\tl\chinese\scenario\menu.rpy
 
+local SafeTB = require("safe_textblock")
+
 local SIG = "\u{200B}\u{200B}\u{200B}\u{200B}"
 
 local translations = {
@@ -133,32 +135,42 @@ local function translateChoice(text)
 end
 
 local function scan()
-    local tbs = FindAllOf("TextBlock")
-    if not tbs then return end
-
-    for _, t in ipairs(tbs) do
-        if t:IsValid() then
-            local owner = t:GetOuter()
-            if not owner or not owner:IsValid() then goto continue end
-            owner = owner:GetOuter()
-            if not owner or not owner:IsValid() then goto continue end
-            if not owner:GetClass():GetFullName():find("выборы_сюжета_C") then goto continue end
-
-            local ok, text = pcall(function() return t:GetText():ToString() end)
-            if not ok or not text or text == "" or text == "Text Block" then goto continue end
-
-            local translated = translateChoice(text)
-            if translated then
-                pcall(function() t:SetText(FText(translated)) end)
+    SafeTB.forEach(function(t)
+        local owner = nil
+        local okOwner = pcall(function()
+            owner = t:GetOuter()
+            if owner and owner:IsValid() then
+                owner = owner:GetOuter()
+            else
+                owner = nil
             end
-            ::continue::
+        end)
+        if not okOwner or not owner or not owner:IsValid() then
+            return
         end
-    end
+
+        local okClass, className = pcall(function()
+            return owner:GetClass():GetFullName()
+        end)
+        if not okClass or not className or not className:find("выборы_сюжета_C", 1, true) then
+            return
+        end
+
+        local ok, text = pcall(function() return t:GetText():ToString() end)
+        if not ok or not text or text == "" or text == "Text Block" then
+            return
+        end
+
+        local translated = translateChoice(text)
+        if translated then
+            pcall(function() t:SetText(FText(translated)) end)
+        end
+    end)
 end
 
 local function loop()
     scan()
-    ExecuteWithDelay(200, loop)
+    ExecuteWithDelay(400, loop)
 end
 
 ExecuteWithDelay(3000, loop)

@@ -1,6 +1,6 @@
 [project]
 name = "es3d-l10n"
-version = "0.1.0"
+version = "0.1.1"
 description = "Бесконечное лето 3D localization toolchain."
 readme = "README.md"
 license = "MIT"

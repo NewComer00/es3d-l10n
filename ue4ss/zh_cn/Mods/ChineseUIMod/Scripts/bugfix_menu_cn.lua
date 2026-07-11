@@ -1,6 +1,8 @@
 -- Bug-fix menu (tellmenuu) ComboBox translation
 -- Russian options kept internally; TextBlocks show Chinese, Russian on hover
 
+local SafeTB = require("safe_textblock")
+
 local SIG = "\u{200B}\u{200B}\u{200B}\u{200B}\u{200B}"
 
 local translations = {
@@ -73,24 +75,24 @@ local function applyTranslation(obj, current)
 end
 
 local function scanTextBlocks()
-    local tbs = FindAllOf("TextBlock")
-    if tbs then
-        for _, obj in ipairs(tbs) do
-            if obj:IsValid() then
-                pcall(function()
-                    applyTranslation(obj, obj:GetText():ToString())
-                end)
-            end
-        end
+    if SafeTB.inventoryOpen() then
+        return
     end
-    local rtbs = FindAllOf("RichTextBlock")
-    if rtbs then
-        for _, obj in ipairs(rtbs) do
-            if obj:IsValid() then
-                pcall(function()
-                    applyTranslation(obj, obj:GetText():ToString())
-                end)
-            end
+    SafeTB.forEach(function(obj)
+        pcall(function()
+            applyTranslation(obj, obj:GetText():ToString())
+        end)
+    end)
+    local rtbs = nil
+    pcall(function() rtbs = FindAllOf("RichTextBlock") end)
+    if not rtbs then
+        return
+    end
+    for _, obj in pairs(rtbs) do
+        if obj and obj:IsValid() and not SafeTB.shouldSkip(obj) then
+            pcall(function()
+                applyTranslation(obj, obj:GetText():ToString())
+            end)
         end
     end
 end
@@ -117,7 +119,7 @@ local function scanLoop()
     if scanActive then
         scanTextBlocks()
     end
-    ExecuteWithDelay(50, scanLoop)
+    ExecuteWithDelay(250, scanLoop)
 end
 
 local hooksRegistered = false
