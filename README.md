@@ -1,5 +1,7 @@
 # es3d-l10n
 
+[English](README.md) | [中文](README.zh_cn.md)
+
 A localization toolchain for [**Бесконечное лето 3D**](https://boosty.to/everlastingsummer3d) (*Everlasting Summer 3D*). It unpacks the game's UE5 assets, lets you translate the extracted text in a plain CSV file, and repacks everything into an installable mod — no Unreal Engine expertise required.
 
 **Tested on:** game versions `v0.5.0` and `v0.4.6.1` (UE 5.5)
