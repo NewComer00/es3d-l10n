@@ -43,8 +43,10 @@ ue4ss_tools := tool_dir + "/ue4ss"
 
 game_dir := env_var_or_default("GAME_DIR", shell('[Console]::OutputEncoding = [System.Text.UTF8Encoding]::new($false); $OutputEncoding = [Console]::OutputEncoding; Set-Location -LiteralPath "' + root + '"; $glob = "Бесконечное лето 3D*"; $matches = @(Get-ChildItem -Directory -Path $glob -ErrorAction SilentlyContinue | Where-Object { Test-Path -LiteralPath (Join-Path $_.FullName "Everlasting_summer.exe") }); if ($matches.Count -eq 0) { throw "Game not found under ' + root + '. Install game or set GAME_DIR / just --set game_dir." }; if ($matches.Count -gt 1) { throw ("Multiple game installs: " + ($matches.Name -join ", ") + ". Set GAME_DIR or just --set game_dir.") }; $matches[0].Name'))
 game_root := root + "/" + game_dir
-game_pak := game_root + "/Everlasting_summer/Content/Paks/Everlasting_summer-Windows.pak"
 game_paks_dir := game_root + "/Everlasting_summer/Content/Paks"
+# Primary pak for AES verification. v0.6+ ships split paks (pakchunk0[-_sN]-Windows.pak);
+# older builds ship a single Everlasting_summer-Windows.pak.
+game_pak := shell('[Console]::OutputEncoding = [System.Text.UTF8Encoding]::new($false); $OutputEncoding = [Console]::OutputEncoding; $dir = "' + game_paks_dir + '"; $prefer = @((Join-Path $dir "pakchunk0-Windows.pak"), (Join-Path $dir "Everlasting_summer-Windows.pak")); foreach ($p in $prefer) { if (Test-Path -LiteralPath $p) { Write-Output $p; exit 0 } }; $any = Get-ChildItem -LiteralPath $dir -Filter "*.pak" -File -ErrorAction SilentlyContinue | Sort-Object Name | Select-Object -First 1; if (-not $any) { throw "No .pak files under $dir" }; Write-Output $any.FullName')
 game_exe := game_root + "/Everlasting_summer.exe"
 game_shipping_exe := game_root + "/Everlasting_summer/Binaries/Win64/Everlasting_summer-Win64-Shipping.exe"
 game_win64_dir := game_root + "/Everlasting_summer/Binaries/Win64"

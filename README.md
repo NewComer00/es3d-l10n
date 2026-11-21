@@ -4,7 +4,7 @@
 
 A localization toolchain for [**Бесконечное лето 3D**](https://boosty.to/everlastingsummer3d) (*Everlasting Summer 3D*). It unpacks the game's UE5 assets, lets you translate the extracted text in a plain CSV file, and repacks everything into an installable mod — no Unreal Engine expertise required.
 
-**Tested on:** game versions `v0.5.0` and `v0.4.6.1` (UE 5.5)
+**Game Version:** `v0.6.0 DX11` (UE 5.5)
 
 ---
 
@@ -50,7 +50,7 @@ Now copy or place your game folder **inside** the repo, next to the toolchain fi
 
 ```
 es3d-l10n/                              ← the toolchain (this repo)
-└── Бесконечное лето 3D.v0.5.0/         ← the game
+└── Бесконечное лето 3D.v0.6.0/         ← the game
 ```
 
 > The toolchain auto-detects the game folder. If detection fails, see [`GAME_DIR`](#environment-variables).
@@ -222,6 +222,7 @@ build/my_mod/zh_cn/locale.csv  →  mods/my_mod/zh_cn/locale.csv
 | [`voice_day_3`](mods/voice_day_3/README.md) | Day 3 subtitles |
 | [`voice_day_4`](mods/voice_day_4/README.md) | Day 4 subtitles |
 | [`voice_day_5`](mods/voice_day_5/README.md) | Day 5 subtitles |
+| [`voice_day_6`](mods/voice_day_6/README.md) | Day 6 subtitles |
 | [`ue4ss`](ue4ss/README.md) | Runtime Lua fixes (Chinese UI, lighting, BGM) |
 
 ---
@@ -250,7 +251,7 @@ es3d-l10n/                              ← the toolchain (this repo)
 ├── dist/          installable output, one folder per locale (gitignored)
 ├── scripts/       Python helper scripts
 ├── tools/         pinned binaries (gitignored)
-└── Бесконечное лето 3D.v0.5.0/         ← the game (gitignored, auto-detected)
+└── Бесконечное лето 3D.v0.6.0/         ← the game (gitignored, auto-detected)
     └── Everlasting_summer.exe
         └── Everlasting_summer/Content/Paks/
 ```

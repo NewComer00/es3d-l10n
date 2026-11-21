@@ -124,7 +124,7 @@ inject-textures: fetch-dds-tools fetch-repak extract-aes-key
             --ue-version 5.5 `
             --repak '{{repak}}' `
             --aes-key '{{aes_key}}' `
-            --game-pak '{{game_pak}}' `
+            --paks-dir '{{game_paks_dir}}' `
             @force
         if ($LASTEXITCODE -ne 0) { throw "inject_ui_textures.py failed with exit code $LASTEXITCODE" }
     } finally {

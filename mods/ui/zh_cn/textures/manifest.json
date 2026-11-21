@@ -28,5 +28,50 @@
     "name": "Stand_INST_basecolor1",
     "dds": "Stand_INST_basecolor1/Stand_INST_basecolor1.dds",
     "game_uasset": "Everlasting_summer/Content/Main_Menu/Stand/Stand_Mat/Stand_INST_basecolor1.uasset"
+  },
+  {
+    "name": "audiomen",
+    "dds": "audiomen/audiomen.dds",
+    "game_uasset": "Everlasting_summer/Content/main/текстуры/ждя_hud/NewFolder/audiomen.uasset"
+  },
+  {
+    "name": "video11",
+    "dds": "video11/video11.dds",
+    "game_uasset": "Everlasting_summer/Content/main/текстуры/ждя_hud/NewFolder/video11.uasset"
+  },
+  {
+    "name": "video21",
+    "dds": "video21/video21.dds",
+    "game_uasset": "Everlasting_summer/Content/main/текстуры/ждя_hud/NewFolder/video21.uasset"
+  },
+  {
+    "name": "audio1",
+    "dds": "audio1/audio1.dds",
+    "game_uasset": "Everlasting_summer/Content/main/текстуры/ждя_hud/NewFolder/audio1.uasset"
+  },
+  {
+    "name": "audio21",
+    "dds": "audio21/audio21.dds",
+    "game_uasset": "Everlasting_summer/Content/main/текстуры/ждя_hud/NewFolder/audio21.uasset"
+  },
+  {
+    "name": "1gameplay",
+    "dds": "1gameplay/1gameplay.dds",
+    "game_uasset": "Everlasting_summer/Content/main/текстуры/ждя_hud/NewFolder/1gameplay.uasset"
+  },
+  {
+    "name": "2gameplay",
+    "dds": "2gameplay/2gameplay.dds",
+    "game_uasset": "Everlasting_summer/Content/main/текстуры/ждя_hud/NewFolder/2gameplay.uasset"
+  },
+  {
+    "name": "control1",
+    "dds": "control1/control1.dds",
+    "game_uasset": "Everlasting_summer/Content/main/текстуры/ждя_hud/NewFolder/control1.uasset"
+  },
+  {
+    "name": "control21",
+    "dds": "control21/control21.dds",
+    "game_uasset": "Everlasting_summer/Content/main/текстуры/ждя_hud/NewFolder/control21.uasset"
   }
 ]

@@ -51,7 +51,7 @@ def ensure_stock(
     extracted: Path,
     repak: Path,
     aes_key: str,
-    game_pak: Path,
+    game_paks: list[Path],
 ) -> Path:
     stock = extracted / Path(game_uasset)
     if stock.is_file():
@@ -63,21 +63,31 @@ def ensure_stock(
     print(f"[inject-textures] stock missing — unpacking {stem}.{{uasset,uexp,ubulk}}")
     extracted.mkdir(parents=True, exist_ok=True)
     includes = [f"{stem}.uasset", f"{stem}.uexp", f"{stem}.ubulk"]
-    cmd = [
-        str(repak),
-        "--aes-key",
-        aes_key,
-        "unpack",
-        "--output",
-        str(extracted),
-    ]
-    for inc in includes:
-        cmd.extend(["--include", inc])
-    cmd.append(str(game_pak))
-    subprocess.run(cmd, check=True)
-    if not stock.is_file():
-        raise SystemExit(f"stock uasset still missing after unpack: {stock}")
-    return stock
+    tried: list[str] = []
+    for pak in game_paks:
+        print(f"[inject-textures]   trying {pak.name}")
+        tried.append(pak.name)
+        cmd = [
+            str(repak),
+            "--aes-key",
+            aes_key,
+            "unpack",
+            "--output",
+            str(extracted),
+        ]
+        for inc in includes:
+            cmd.extend(["--include", inc])
+        cmd.append(str(pak))
+        result = subprocess.run(cmd)
+        if result.returncode != 0:
+            print(f"[inject-textures]   repak failed on {pak.name} (exit {result.returncode}); continuing")
+            continue
+        if stock.is_file():
+            return stock
+    raise SystemExit(
+        f"stock uasset still missing after unpack: {stock}\n"
+        f"tried: {', '.join(tried)}"
+    )
 
 
 def inject_one(
@@ -89,6 +99,7 @@ def inject_one(
     python_cmd: list[str],
     main_py: Path,
     ue_version: str,
+    force_uncompressed: bool = False,
 ) -> list[Path]:
     out_dir.mkdir(parents=True, exist_ok=True)
     # Clear previous outputs for this asset name.
@@ -108,6 +119,8 @@ def inject_one(
         "--max_workers",
         "1",
     ]
+    if force_uncompressed:
+        cmd.append("--force_uncompressed")
     print(f"[inject-textures] {stock.name} <- {dds.name}")
     subprocess.run(cmd, check=True, cwd=str(tool_root))
     written = sorted(out_dir.glob(stock.stem + ".*"))
@@ -138,7 +151,13 @@ def main() -> int:
     ap.add_argument("--ue-version", default="5.5")
     ap.add_argument("--repak", type=Path, required=True)
     ap.add_argument("--aes-key", required=True)
-    ap.add_argument("--game-pak", type=Path, required=True)
+    ap.add_argument("--game-pak", type=Path, action="append", default=[], help="stock game pak (repeatable)")
+    ap.add_argument(
+        "--paks-dir",
+        type=Path,
+        default=None,
+        help="directory with stock game paks; all *.pak files are tried (preferred)",
+    )
     ap.add_argument(
         "--force",
         action="store_true",
@@ -155,6 +174,22 @@ def main() -> int:
     if not entries:
         print("[inject-textures] empty manifest — nothing to do")
         return 0
+
+    game_paks: list[Path] = list(args.game_pak)
+    if args.paks_dir is not None:
+        game_paks.extend(sorted(args.paks_dir.glob("*.pak")))
+    # Drop duplicates while preserving order, then put the primary pak first.
+    deduped: list[Path] = []
+    seen: set[str] = set()
+    for pak in game_paks:
+        key = str(pak).lower()
+        if key not in seen:
+            seen.add(key)
+            deduped.append(pak)
+    game_paks = [p for p in deduped if p.is_file()]
+    game_paks.sort(key=lambda p: (p.name != "pakchunk0-Windows.pak", p.name.lower()))
+    if not game_paks:
+        raise SystemExit("no stock paks found: pass --paks-dir DIR or --game-pak FILE")
 
     done = 0
     skipped = 0
@@ -175,7 +210,7 @@ def main() -> int:
                 extracted=args.extracted,
                 repak=args.repak,
                 aes_key=args.aes_key,
-                game_pak=args.game_pak,
+                game_paks=game_paks,
             )
             out_dir = tmp_path / name
             written = inject_one(
@@ -186,6 +221,7 @@ def main() -> int:
                 python_cmd=python_cmd,
                 main_py=args.main,
                 ue_version=args.ue_version,
+                force_uncompressed=bool(entry.get("force_uncompressed")),
             )
             dest_dir = dest_uasset.parent
             dest_dir.mkdir(parents=True, exist_ok=True)

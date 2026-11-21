@@ -87,6 +87,10 @@ Everlasting_summer\Content\main\hud\hp\славввв.json,7A7821F342CF975002C3B
 Everlasting_summer\Content\main\hud\hp\славввв.json,9A1996DA4C1306A0CBDDA397933383E8,персонажа по умолчанию?,恢复角色默认值？
 Everlasting_summer\Content\main\hud\interactive\button_pad.json,TextBlockDefaultValue,Text Block,Text Block
 Everlasting_summer\Content\main\hud\interactive\button_pad.json,19D8378045335D3844CDDB81091E935F,По умолчанию,默认
+Everlasting_summer\Content\main\hud\interactive\глава.json,79E42A0E4F373685185E7BB452B841E0,Принять,接受
+Everlasting_summer\Content\main\hud\interactive\глава.json,181153024CA32946F3DD93935187915A,Выбрать рут,选择路线
+Everlasting_summer\Content\main\hud\interactive\новаяИгра.json,B65CA6164249D7409F587DB6D0C4FE7C,Выбрать Главу,选择章节
+Everlasting_summer\Content\main\hud\interactive\новаяИгра.json,B405E437484567A224D2D5B60CF36D09,Новая игра,新游戏
 Everlasting_summer\Content\main\hud\interface.json,4FF9D09C45815FA7691A30AE2F410048,Текст заданий,任务文本
 Everlasting_summer\Content\main\hud\interface.json,24E1366643B8516137407CBFE03ACC6E,Чтобы увидеть маркер задания нажмите Q,按 Q 查看任务标记
 Everlasting_summer\Content\main\hud\loadscreen\loadscreen.json,39AFB7494335B663E3D4B8B5E24891F2,Загрузка...,加载中...
@@ -250,7 +254,7 @@ Everlasting_summer\Content\main\hud\алфа.json,BAF3D9704D0EFA9C72A67487739571
 Everlasting_summer\Content\main\hud\алфа.json,00A7BA37497F1A84AC6BB1A4C2C48B00,"Обнулить прогресс по найденным
 коллекционным предметам?","重置已找到的
 收藏品进度？"
-Everlasting_summer\Content\main\hud\алфа.json,DB77B2D742D9A542C58A37930CEC1C10,V 0.5.0,
+Everlasting_summer\Content\main\hud\алфа.json,DB77B2D742D9A542C58A37930CEC1C10,V 0.6.0,
 Everlasting_summer\Content\main\hud\алфа.json,731F10754EEA968C4BAF6AAD17E64C34,Все материалы включены ,所有内容已启用
 Everlasting_summer\Content\main\hud\алфа.json,2F5420E3476A56BBB10746A91D891224,Краткий,简洁版
 Everlasting_summer\Content\main\hud\алфа.json,787964D043DEF5655DAFBEAD398A24B8,Оригинальный,原版
@@ -283,16 +287,27 @@ Everlasting_summer\Content\main\hud\демо.json,B0F50D544CBC69F201B097BE349A75
 我们将在后续更新中完善。"
 Everlasting_summer\Content\main\hud\демо.json,AC4B93694113A14C5DAD319F2134E897,Принять,接受
 Everlasting_summer\Content\main\hud\журнал_рыбалки\журнал_рыбака.json,467DF37E46B9CEFB303BA2826180E6B1,Назад,返回
-Everlasting_summer\Content\main\hud\загрузка.json,AF80AAB74369C61E69E900940F12946A,Пусто,空
-Everlasting_summer\Content\main\hud\загрузка.json,2D9A862F488545FBBC37C4994AE7D687,Пусто,空
-Everlasting_summer\Content\main\hud\загрузка.json,925540F941B79E0E7F30D592AB030748,Пусто,空
-Everlasting_summer\Content\main\hud\загрузка.json,TextBlockDefaultValue,Text Block,Text Block
-Everlasting_summer\Content\main\hud\загрузка.json,4615732F4DAEAD3218378A9D2AE45F5C,Пусто,空
-Everlasting_summer\Content\main\hud\загрузка.json,64CFD6934507415A9CC81585A58D95EA,Автосохранение,自动保存
-Everlasting_summer\Content\main\hud\загрузка.json,067C9CAB46FBD7323CAE79BBFAD75586,Пусто,空
-Everlasting_summer\Content\main\hud\загрузка.json,124F485040521A7EE46075A21A4265CD,Пусто,空
-Everlasting_summer\Content\main\hud\загрузка.json,FD2EF8BC4DA1888C0972449C954121B9,Пусто,空
-Everlasting_summer\Content\main\hud\загрузка.json,507FFFD648B67DF1066C39AB2C2ED2AB,Назад,返回
+Everlasting_summer\Content\main\hud\сохранение\загрузка.json,507FFFD648B67DF1066C39AB2C2ED2AB,Назад,返回
+Everlasting_summer\Content\main\hud\сохранение\сохран2.json,E48D19A140ECAB1F4A5344AED51CD9EC,Сохранено...,存档中...
+Everlasting_summer\Content\main\hud\сохранение\сохран2.json,296D78F9402476EE8E3BE6B324ACAB25,Назад,返回
+Everlasting_summer\Content\main\hud\сохранение\сохран2.json,923007034B6A7A823B221A99DD531579,2,
+Everlasting_summer\Content\main\hud\сохранение\СлотЗагрузки.json,CFD5DC6F401A06EE8AB49A81E560D040,дата,日期
+Everlasting_summer\Content\main\hud\сохранение\СлотЗагрузки.json,D0426FF44694021277B9EDB14223C29A,День,天
+Everlasting_summer\Content\main\hud\сохранение\СлотЗагрузки.json,5D422BEE4146A3DDE72B96AAD70C8CD3,1,
+Everlasting_summer\Content\main\hud\сохранение\СлотЗагрузки.json,9E0FA5424AC33939F72F7183FE98492D,10,
+Everlasting_summer\Content\main\hud\сохранение\СлотЗагрузки.json,EF49A70C487DF9547BC6CB9024D760D5,Сохранение,存档
+Everlasting_summer\Content\main\hud\сохранение\СлотПервогоСохранения.json,D87861774DD60A894155159E9B5E2D1A,Создать новое сохранение,创建新存档
+Everlasting_summer\Content\main\hud\сохранение\СлотПервогоСохранения.json,423CB3FE414DC3ADE9591A9E72D852A8,+,
+Everlasting_summer\Content\main\hud\сохранение\СлотСохранения.json,A59D900745E1F7CCB1996DAB9C0B3023,дата,日期
+Everlasting_summer\Content\main\hud\сохранение\СлотСохранения.json,4F591E9B467DE037A5047CB4395E1C2E,День,天
+Everlasting_summer\Content\main\hud\сохранение\СлотСохранения.json,696C476C4D49A42752CBBE9D95142F8B,1,
+Everlasting_summer\Content\main\hud\сохранение\СлотСохранения.json,3F214F92460A412DB249E3AB925B0446,10,
+Everlasting_summer\Content\main\hud\сохранение\СлотСохранения.json,FA6ED6B044B8747C20DD2586151D4AC7,Сохранение,存档
+Everlasting_summer\Content\main\hud\сохранение\удалитьСохранение.json,BE9E13714C60DAB747E784BB4440F242,Нет,否
+Everlasting_summer\Content\main\hud\сохранение\удалитьСохранение.json,601CCD604947FC7D8046CA95C0D6BCA6,да,是
+Everlasting_summer\Content\main\hud\сохранение\удалитьСохранение.json,23869E1448011D3589D94C8737E9994B,Удаление сохранения,删除存档
+Everlasting_summer\Content\main\hud\сохранение\удалитьСохранение.json,C87D250248B17620D5F25EA7AFA62F8B,Вы действительно хотите удалить это сохранение?,您确定要删除此存档吗？
+Everlasting_summer\Content\main\hud\сохранение\удалитьСохранение.json,282D82374878F125FE5A98B9ED2827F9,Больше не спрашивать,不再询问
 Everlasting_summer\Content\main\hud\инвентарь\UI_FullscreenInventory.json,EBAE8FFE4D627F76725A8EA9AD4EF1A5,"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
 Everlasting_summer\Content\main\hud\инвентарь\UI_FullscreenInventory.json,1474A860411BD748E341AFA923238073,Lorem Ipsum is simply dummy text of the printing and typesetting industry.,
 Everlasting_summer\Content\main\hud\инвентарь\UI_FullscreenInventory.json,FAEBFB4249C020F750EFACAB68CCC629,Object Name,
@@ -312,12 +327,12 @@ Everlasting_summer\Content\main\hud\информация.json,ACA2FBC34D073327C2
 Everlasting_summer\Content\main\hud\кнопка_Y.json,9BD8F58948B1C8972820FE94FDA4299A,Нажмите Y чтобы играть,按 Y 开始演奏
 Everlasting_summer\Content\main\hud\кнопка_Y.json,CE9737034541366C7BF7B4AB38EA8542,Нажмите E чтобы выбросить гитару,按 E 放下吉他
 Everlasting_summer\Content\main\hud\конец5дня.json,9FC19A684985BC8B0FD31EB0B338FDFE,"Поздравляем вы прошли Бесконечное лето 3D,
- в котором доступно пока 5 дней,
+ в котором доступно пока 6 дней,
  ждите продолжения и следите за 
  новостями в наших группах.
 Сейчас доступна свободная игра,
  для исследования лагеря без влияния на сюжет.","恭喜您通关了《永恒之夏 3D》，
- 目前仅开放前 5 天剧情，
+ 目前仅开放前 6 天剧情，
  请关注我们群组的
  后续消息。
 现在您可以进入自由模式，
@@ -361,13 +376,13 @@ Everlasting_summer\Content\main\hud\пианино_игра.json,51F0EB0A4024863
 Everlasting_summer\Content\main\hud\пианино_игра.json,947575A549D35155ADDB4288330D2355,7,
 Everlasting_summer\Content\main\hud\пианино_игра.json,9BB7C3664B9D0153860F789B00812152,8,
 Everlasting_summer\Content\main\hud\пианино_игра.json,DFA5427148CDEB3B8D56F283BC031712,9,
-Everlasting_summer\Content\main\hud\плашка_предупреждашка.json,0601301E4941080C1C9F79A52D10F692,"Дорогой товарищ! Мы — команда Summer's Builders, рады 
+Everlasting_summer\Content\main\hud\титры\плашка_предупреждашка.json,0601301E4941080C1C9F79A52D10F692,"Дорогой товарищ! Мы — команда Summer's Builders, рады 
 приветствовать тебя на бета-тестировании нашей
  игры ""Бесконечное Лето 3D"" версия 2026 года, по мотивам 
 визуальной новеллы ""Бесконечное лето""!
 Эта версия игры нестабильна и предназначена для тестирования, 
 выявления багов для последующего их исправления разработчиками.
-В текущей сборке доступны 5 сюжетных дней, различные активности. 
+В текущей сборке доступны 6 сюжетных дней, различные активности. 
 Некоторые фичи отключены до следующего обновления.
  Красивые интерфейсы, звукорежиссура, дальнейший сюжет 
 и многое другое появятся уже в финальной стадии разработки.
@@ -388,7 +403,7 @@ Everlasting_summer\Content\main\hud\плашка_предупреждашка.js
 本作改编自视觉小说《永恒之夏》！
 该版本游戏不稳定，仅用于测试
 和发现 Bug 以便开发者修复。
-当前版本开放 5 天主线剧情及多种活动。
+当前版本开放 6 天主线剧情及多种活动。
 部分功能已暂时禁用，将在下次更新中恢复。
  精美界面、音效、后续剧情
 等内容将在最终开发阶段亮相。
@@ -404,7 +419,7 @@ VK @everlastingsummer3d
 
 希望本项目能给您带来快乐！
 祝您游戏愉快！"
-Everlasting_summer\Content\main\hud\плашка_предупреждашка.json,F444E4B44C9F16389FE688B3A62D4720,Принять,接受
+Everlasting_summer\Content\main\hud\титры\плашка_предупреждашка.json,F444E4B44C9F16389FE688B3A62D4720,Принять,接受
 Everlasting_summer\Content\main\hud\подсказки\выбор_убигать.json,E7DCFA1D4860FF7C37702AA424926581,Сбежать или остаться,逃跑还是留下
 Everlasting_summer\Content\main\hud\подсказки\выборы_сюжета.json,TextBlockDefaultValue,Text Block,Text Block
 Everlasting_summer\Content\main\hud\подсказки\диалоги_СНпс.json,TextBlockDefaultValue,Text Block,Text Block
@@ -503,6 +518,7 @@ Everlasting_summer\Content\main\hud\подсказки\руты_выбераем
 Everlasting_summer\Content\main\hud\подсказки\руты_выбераем.json,115B6F9247DB623A66EFDCA9828D953C,спорить с алисой,和阿丽夏打赌
 Everlasting_summer\Content\main\hud\подсказки\руты_выбераем.json,A0F8C2DC418E2D8CC7730DAE29651D16,пойти со славей за к,和斯拉维娅去拿纸牌
 Everlasting_summer\Content\main\hud\подсказки\руты_выбераем.json,242C0ECF4422606B6BEFE089197AF4ED,Оригинальный,原版
+Everlasting_summer\Content\main\hud\подсказки\руты_выбераем.json,F0550A6943CFA71FE269E19264B192F2,6 день,第 6 天
 Everlasting_summer\Content\main\hud\подсказки\текстовое_окно.json,D7EEAA844377AC8A6B5D4A973E7CB0FC,Имя,姓名
 Everlasting_summer\Content\main\hud\поймала.json,4B83A3A243DE2EE1D3963B978131CC7B,Проснуться,醒来
 Everlasting_summer\Content\main\hud\поймала.json,A591A3F844EFF2483FA8C78C87D36312,Повторить,重试
@@ -607,18 +623,6 @@ Everlasting_summer\Content\main\hud\рыбка.json,FF2C564A498A35920F606BAA8135
 Everlasting_summer\Content\main\hud\рыбка.json,44FC41BE40D807988995F9B817EA78AD,Название:,标题：
 Everlasting_summer\Content\main\hud\рыбка.json,C4CFB5174625C32DD4B7D5A1ED4737FE,Закрыть,关闭
 Everlasting_summer\Content\main\hud\рыбка.json,TextBlockDefaultValue,Text Block,Text Block
-Everlasting_summer\Content\main\hud\сохран2.json,168027BB45ADE4B303ABF6800677AF26,Пусто,空
-Everlasting_summer\Content\main\hud\сохран2.json,6E502BE5464A20302140F581E62B6CB6,Пусто,空
-Everlasting_summer\Content\main\hud\сохран2.json,6032AB2B4512A4DDF1CDD78658618CC0,Пусто,空
-Everlasting_summer\Content\main\hud\сохран2.json,E48D19A140ECAB1F4A5344AED51CD9EC,Сохранено...,存档中...
-Everlasting_summer\Content\main\hud\сохран2.json,TextBlockDefaultValue,Text Block,Text Block
-Everlasting_summer\Content\main\hud\сохран2.json,2E2094FF49536DB30AD8BD8C653C3080,Пусто,空
-Everlasting_summer\Content\main\hud\сохран2.json,1D3D3FA546E0F25534CCD6A7BAAD8A88,Автосохранение,自动保存
-Everlasting_summer\Content\main\hud\сохран2.json,1E5E4A494C42EF974A31099518742E28,Пусто,空
-Everlasting_summer\Content\main\hud\сохран2.json,F0B6C2D34520AD966C4615AD52BFC67C,Пусто,空
-Everlasting_summer\Content\main\hud\сохран2.json,296D78F9402476EE8E3BE6B324ACAB25,Назад,返回
-Everlasting_summer\Content\main\hud\сохран2.json,A4B0F9C742EFBC8CBE6C71BD20C6AC83,Пусто,空
-Everlasting_summer\Content\main\hud\сохран2.json,923007034B6A7A823B221A99DD531579,2,
 Everlasting_summer\Content\main\hud\таймер.json,TextBlockDefaultValue,Text Block,Text Block
 Everlasting_summer\Content\main\hud\титры.json,3F7C3D164AFEC12BF63C79810511214D,"
 Sergey Illusive
@@ -1416,3 +1420,28 @@ Everlasting_summer\Content\StoryAdvTemplate\Blueprints\Examples\Objects\BP_пр�
 Everlasting_summer\Content\StoryAdvTemplate\Blueprints\Examples\Objects\BP_предмет_с_костюмами.json,3A139B4B47EF97E47200D3B7965C7EC3,Name in Mug,
 Everlasting_summer\Content\StoryAdvTemplate\Blueprints\Examples\Objects\BP_предмет_с_костюмами.json,2F810B6C40C79DC303E4FF917DB03CFF,"I found the word ""palinoia"" at the bottom of the mug. That's the alias of the author of this template.",
 Everlasting_summer\Content\StoryAdvTemplate\Blueprints\Examples\Objects\BP_предмет_с_костюмами.json,EED7A554446E07D22B8198BB494E9757,palinoia,
+Everlasting_summer\Content\main\hud\5день\бутылки.json,1528B9D54B738FEFB76E638A3689D2E1,Содержание,内容
+Everlasting_summer\Content\main\hud\5день\бутылки.json,CDE23E3E4033FE8BA389F388E28957AC,Наполняемость,填充度
+Everlasting_summer\Content\main\hud\5день\бутылки.json,0927C99744C00E36A75563B78DD80941,Водки:,伏特加：
+Everlasting_summer\Content\main\hud\5день\бутылки.json,DE7A941B4244290DD54FA2B6748EAB40,A/D крутить предмет.,A/D 旋转物品。
+Everlasting_summer\Content\main\hud\5день\бутылки.json,DAC37DD142110F86867D90BAB67FE933,"Удерживаете ЛКМ, чтобы поднять предмет.",按住鼠标左键拿起物品。
+Everlasting_summer\Content\main\hud\5день\бутылки.json,010E54C2424466B8C0012BB8C3061BE8,ПКМ начать заново или пропустить.,右键重新开始或跳过。
+Everlasting_summer\Content\main\hud\5день\бутылки.json,3D3C60A448FA184F2CBEF5A0452A3088,Воды:,水：
+Everlasting_summer\Content\main\hud\5день\бутылки.json,BF7C092B4DD3E281DB32E2A40C04FE86,Наполнить бутылку водки водой больше 85%,将伏特加瓶中的水加至 85% 以上
+Everlasting_summer\Content\main\hud\5день\бутылки.json,5A806425413A1EE3139F3E9787C6E8D2,Задание,任务
+Everlasting_summer\Content\main\hud\5день\бутылки.json,4AF25D9D47A0534A743EEF99B6B4BDAA,Наполнить пластиковую бутылку водкой больше 80%,将塑料瓶中的伏特加加至 80% 以上
+Everlasting_summer\Content\main\hud\5день\бутылки.json,0E67F8FA4DEF01084DA7DBBB43AE565C,100%,100%
+Everlasting_summer\Content\main\hud\5день\поймали.json,CEC966FC423FB024154E7C8F74F9A2AD,Пропустить ,跳过
+Everlasting_summer\Content\main\hud\5день\поймали.json,88375AF8418B914054AC9EB39471ED7F,Вы не добились успеха,你未能成功
+Everlasting_summer\Content\main\hud\5день\поймали.json,A861B71B4736A344356585BD9BC8C034,"Можно пропустить  и двигаться по сюжету
+или повторить.","可以跳过并继续剧情
+或重试。"
+Everlasting_summer\Content\main\hud\5день\поймали.json,39FE37D348C6A48AB13888A02492A13D,Повторить,重试
+Everlasting_summer\Content\main\hud\5день\преследование.json,9EC00B77467555E50EB04FB74C4C5716,Растояние,距离
+Everlasting_summer\Content\main\hud\5день\пропуститьИгру.json,B8B384B24F501FCFF3995E81B7AB1DCF,Назад,返回
+Everlasting_summer\Content\main\hud\5день\пропуститьИгру.json,B573C69244CE24DE749D2C97D7F1A8FA,Пропустить ,跳过
+Everlasting_summer\Content\main\hud\5день\пропуститьИгру.json,DC332CA047D7E603E78F2BB255231A19,Выбор,选择
+Everlasting_summer\Content\main\hud\5день\пропуститьИгру.json,B6E140F24410327E545E0698D68F4EC2,"Можно пропустить игру и двигаться по сюжету
+или повторить игру.","可以跳过游戏并继续剧情
+或重试游戏。"
+Everlasting_summer\Content\main\hud\5день\пропуститьИгру.json,F38C301644146F776B137DA885091896,Повторить,重试

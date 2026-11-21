@@ -40,11 +40,14 @@ unpack: fetch-repak extract-aes-key
     $tag = '{{mod}}'
     Write-Host "[${tag}:unpack] starting..."
     $repakExe = '{{repak}}'
-    $pakPath = '{{game_pak}}'
+    $pakDir = '{{game_paks_dir}}'
     $aesKey = '{{aes_key}}'
     $outDir = '{{mod_extracted}}'
-    if (-not (Test-Path -LiteralPath $pakPath)) {
-        throw "PAK not found: $pakPath"
+    $pakPaths = @(Get-ChildItem -LiteralPath $pakDir -Filter '*.pak' -File -ErrorAction SilentlyContinue |
+        Sort-Object @{ Expression = { if ($_.Name -eq 'pakchunk0-Windows.pak') { 0 } else { 1 } } }, Name |
+        ForEach-Object { $_.FullName })
+    if (-not $pakPaths.Count) {
+        throw "No PAK files under $pakDir"
     }
     if (Test-Path -LiteralPath $outDir) {
         Write-Host "[${tag}:unpack] removing existing $outDir"
@@ -56,13 +59,16 @@ unpack: fetch-repak extract-aes-key
         throw "No unpack paths configured (set unpack_paths in mods/{{mod}}/justfile)"
     }
     Write-Host "[${tag}:unpack] includes=$($includes -join ', ')"
-    $repakArgs = @('--aes-key', $aesKey, 'unpack', '--output', $outDir)
-    foreach ($inc in $includes) {
-        $repakArgs += @('--include', $inc)
+    foreach ($pakPath in $pakPaths) {
+        Write-Host "[${tag}:unpack] $([System.IO.Path]::GetFileName($pakPath))"
+        $repakArgs = @('--aes-key', $aesKey, 'unpack', '--output', $outDir)
+        foreach ($inc in $includes) {
+            $repakArgs += @('--include', $inc)
+        }
+        $repakArgs += $pakPath
+        & $repakExe @repakArgs
+        if ($LASTEXITCODE -ne 0) { throw "repak unpack failed: $pakPath (exit $LASTEXITCODE)" }
     }
-    $repakArgs += $pakPath
-    & $repakExe @repakArgs
-    if ($LASTEXITCODE -ne 0) { throw "repak unpack failed with exit code $LASTEXITCODE" }
     Write-Host "[${tag}:unpack] wrote $outDir"
 
 [script("powershell", "-NoProfile", "-ExecutionPolicy", "Bypass")]
@@ -92,6 +98,10 @@ _tojson:
 
 [doc("UAssetGUI convert uassets to build/MOD/json/ (needs extract-usmap once)")]
 tojson: unpack extract-usmap fetch-uassetgui _tojson
+
+# tojson_exclude supports gitignore-style negation: a later "!pattern"
+# re-includes files (patterns are applied in order; last match wins).
+# Example: ["**/dir/**", "!**/dir/keep.*"] excludes dir/ except keep.*.
 
 # Override `_clean-extra` in mods/<name>/justfile for generated assets, caches, etc.
 [private]

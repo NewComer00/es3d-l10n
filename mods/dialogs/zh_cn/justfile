@@ -9,19 +9,32 @@ locale_dir := justfile_directory()
 font_url := "https://github.com/lxgw/LxgwWenKai/releases/download/v1.522/LXGWWenKai-Regular.ttf"
 font_asset := locale_assets + "/Everlasting_summer/Content/main/hud/hp/Neucha-Regular.ufont"
 
+# A truncated .ttf/.ufont still exists on disk but renders CJK as blank; validate tables/cmap.
 [script("powershell", "-NoProfile", "-ExecutionPolicy", "Bypass")]
 _ensure-assets:
     $ErrorActionPreference = 'Stop'
     $tag = '{{mod}}:{{locale}}'
     $dest = '{{font_asset}}'
-    if (Test-Path -LiteralPath $dest) {
+    function Test-FontFile([string]$Path) {
+        if (-not (Test-Path -LiteralPath $Path)) { return $false }
+        & '{{uv}}' run python -c "import sys; from fontTools.ttLib import TTFont; TTFont(sys.argv[1], lazy=True).getBestCmap()" $Path 2>$null | Out-Null
+        return ($LASTEXITCODE -eq 0)
+    }
+    if (Test-FontFile $dest) {
         Write-Host "[${tag}:ensure-assets] font cached: $dest"
         return
+    }
+    if (Test-Path -LiteralPath $dest) {
+        Write-Host "[${tag}:ensure-assets] cached font invalid/truncated — re-downloading"
+        Remove-Item -LiteralPath $dest -Force
     }
     $dir = Split-Path -Parent $dest
     New-Item -ItemType Directory -Force -Path $dir | Out-Null
     Write-Host "[${tag}:ensure-assets] downloading font -> $dest"
     Invoke-WebRequest -Uri '{{font_url}}' -OutFile $dest -UseBasicParsing
+    if (-not (Test-FontFile $dest)) {
+        throw "Downloaded font is invalid or truncated: $dest (check network/proxy)"
+    }
     Write-Host "[${tag}:ensure-assets] done"
 
 [doc("Re-download LXGW WenKai dialog font into mods/.../assets/")]
@@ -34,4 +47,11 @@ fetch-font:
     New-Item -ItemType Directory -Force -Path $dir | Out-Null
     Write-Host "[${tag}:fetch-font] downloading -> $dest"
     Invoke-WebRequest -Uri '{{font_url}}' -OutFile $dest -UseBasicParsing
+    function Test-FontFile([string]$Path) {
+        & '{{uv}}' run python -c "import sys; from fontTools.ttLib import TTFont; TTFont(sys.argv[1], lazy=True).getBestCmap()" $Path 2>$null | Out-Null
+        return ($LASTEXITCODE -eq 0)
+    }
+    if (-not (Test-FontFile $dest)) {
+        throw "Downloaded font is invalid or truncated: $dest (check network/proxy)"
+    }
     Write-Host "[${tag}:fetch-font] done"

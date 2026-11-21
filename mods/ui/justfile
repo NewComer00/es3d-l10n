@@ -15,6 +15,8 @@ unpack_paths := [
 # Keep DialogSystem / main/bp / models out — owned by dialogs (and other mods).
 # Skip textures / fonts / materials / demo BP (no CultureInvariantString).
 # Categories: fonts; textures/materials; hud image packs; interaction/LSS; StoryAdv BP; ProIconPack junk.
+# Split-pak additions: 5день/, 6_день/, and specific material/texture/blueprint assets without text.
+# Patterns support gitignore-style negation: a later "!pattern" re-includes (last match wins).
 tojson_exclude := [
   "**/*Font*",
   "**/*_Font*",
@@ -38,7 +40,29 @@ tojson_exclude := [
   "**/photo_*",
   "**/пианино/**",
   "**/радио/**",
+  "!**/радио/радио.*",
+  "!**/радио/какая_касета.*",
+  "!**/радио/пиано_выбор_песен.*",
+  "!**/радио/песня.*",
+  "!**/радио/песня_пиан.*",
+  "!**/радио/видео_приемн.*",
+  "!**/радио/деталь_выбор.*",
+  "!**/радио/инстру_выбор.*",
   "**/титры/**",
+  "!**/титры/плашка_предупреждашка.*",
+  "**/5день/**",
+  "!**/5день/поймали.*",
+  "!**/5день/пропуститьИгру.*",
+  "!**/5день/бутылки.*",
+  "!**/5день/преследование.*",
+  "**/6_день/**",
+  "**/3d/radialMaterial.*",
+  "**/3d/иконкаПоиска.*",
+  "**/3d/поискПионер.*",
+  "**/tellmenuuСообщения.*",
+  "**/interactive/разраб.*",
+  "**/инвентарь/удар.*",
+  "**/сохранение/SaveStructuraMy.*",
   "**/tekst/для_компа/**",
   "**/tekst/код/**",
   "**/ягода/**",
@@ -96,6 +120,7 @@ uexp_signatures := [
   "0201", "0202", "0206",
   "0301", "0302", "0304",
   "0402", "0404", "0405", "0406",
+  "0502",
   "0504",
   "0602",
   "0702", "0703", "0705", "0707",
@@ -112,6 +137,7 @@ uexp_signatures := [
 ]
 merge_extracted := "true"
 fromjson_inplace := "true"
+fromjson_workers := "1"
 
 _mod_dir := justfile_directory()
 

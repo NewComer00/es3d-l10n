@@ -4,7 +4,7 @@
 
 [**Бесконечное лето 3D**](https://boosty.to/everlastingsummer3d)（《永恒之夏 3D》）本地化工具链。它可以解包游戏的 UE5 资源，让你在纯文本 CSV 文件中翻译提取出的文本，再将所有内容重新打包成可安装的 mod。全程无需 Unreal Engine 正式开发工具的参与。
 
-**已测试的游戏版本：** `v0.5.0` 与 `v0.4.6.1`（UE 5.5）
+**游戏版本：** `v0.6.0 DX11`（UE 5.5）
 
 ---
 
@@ -50,7 +50,7 @@ git lfs pull
 
 ```
 es3d-l10n/                              ← 工具链（本仓库）
-└── Бесконечное лето 3D.v0.5.0/         ← 游戏
+└── Бесконечное лето 3D.v0.6.0/         ← 游戏
 ```
 
 > 工具链会自动检测游戏文件夹。如果自动检测失败，请参见 [`GAME_DIR`](#环境变量)。
@@ -222,6 +222,7 @@ build/my_mod/zh_cn/locale.csv  →  mods/my_mod/zh_cn/locale.csv
 | [`voice_day_3`](mods/voice_day_3/README.md) | 第 3 天配音字幕 |
 | [`voice_day_4`](mods/voice_day_4/README.md) | 第 4 天配音字幕 |
 | [`voice_day_5`](mods/voice_day_5/README.md) | 第 5 天配音字幕 |
+| [`voice_day_6`](mods/voice_day_6/README.md) | 第 6 天配音字幕 |
 | [`ue4ss`](ue4ss/README.md) | 运行时 Lua 修复（中文 UI、光照、背景音乐） |
 
 ---
@@ -250,7 +251,7 @@ es3d-l10n/                              ← 工具链（本仓库）
 ├── dist/          可安装输出，按语言分文件夹（已加入 gitignore）
 ├── scripts/       Python 辅助脚本
 ├── tools/         固定版本的工具二进制文件（已加入 gitignore）
-└── Бесконечное лето 3D.v0.5.0/         ← 游戏（已加入 gitignore，自动检测）
+└── Бесконечное лето 3D.v0.6.0/         ← 游戏（已加入 gitignore，自动检测）
     └── Everlasting_summer.exe
         └── Everlasting_summer/Content/Paks/
 ```
